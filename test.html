@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Delayed Section</title>
+  <style>
+    /* Initially hide the section */
+    #hiddenSection {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+
+  <div>
+    <!-- Your other content goes here -->
+  </div>
+
+  <div id="hiddenSection">
+    <p>This section will appear after a delay.</p>
+  </div>
+
+  <script>
+    // Function to show the hidden section after a delay
+    function showHiddenSection() {
+      document.getElementById('hiddenSection').style.display = 'block';
+    }
+
+    // Set a timeout for 2000 milliseconds (2 seconds)
+    setTimeout(showHiddenSection, 2000);
+  </script>
+
+</body>
+</html>
