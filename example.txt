@@ -1,0 +1,118 @@
+ <!-- About Section -->
+    <section class="about" >
+
+        <div class="container">
+            <div class="image">
+                <img src="Portfolio.jpeg" alt="">
+            </div>
+        </div>
+
+        <div class="about-content">
+            <h1>Hello, I am Sithum Raigamage</h1>
+            <h3>Software Engineering Undergraduate</h3>
+            <p>"Passionate software engineering student skilled in HTML,
+                CSS, JS, Python, Java, MySQL, Spring Boot, Postman API, and Arduino projects."
+            </p>
+            <button class="btn">Vist Linkedin Profile</button>
+        </div>
+    </section>
+
+    <section class="card-grid">
+
+        
+          
+
+    </section>
+
+
+
+
+    * ------------------------------------------------------------------- 
+ * ## download resume button
+ * ------------------------------------------------------------------- */
+.header-content .btn {
+  border-color: #0e2b6a;
+  border-radius: 10px;
+  background-color: transparent;
+  color:#0e2b6a;
+  margin: 0;
+  padding: 0 4rem;
+  font-size: 15px;
+  height: 60px;
+  width: 200px;
+  position: absolute;
+  top: 20%;
+  right: 8rem;
+}
+
+/* ------------------------------------------------------------------- 
+ * ## about container
+ * ------------------------------------------------------------------- */
+ .about{
+  height: 600px;
+  margin-left:20px;
+  margin-right:20px;
+  margin-top: 175px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 50px;
+  grid-row-gap: 0px;
+  
+ }
+.about .container {
+  background-color: #0e2b6a;
+  padding: 30px;
+  grid-area: 1 / 1 / 2 / 2;
+}
+.about .container img {
+  width: 500px;
+  border-radius: 10px;
+  height: 500px;
+  box-shadow: #0e2b6a;
+}
+
+.about .about-content {
+  background-color: aqua;
+  padding: 30px;
+  width: 700px;
+  grid-area: 1 / 2 / 2 / 3;
+}
+
+.about .about-content h1 {
+  font-size: 4rem;
+  color: #0e2b6a;
+}
+
+.about .about-content h3 {
+  color:#0e2b6a;
+  font-size: 3rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  
+}
+
+.about .about-content p {
+  font-size: 2rem;
+  font-weight: 300;
+  color: #0e2b6a;
+}
+.about .about-content .btn{
+  position: relative;
+  top: 30px;
+  width:200px;
+  height:50px ;
+  border-color: #0e2b6a;
+  border-radius: 10px;
+  background-color: transparent;
+  color:#0e2b6a;
+
+}
+.about .about-content .btn:hover{
+  background-color: #ffffff;
+  transition: all ease-in-out 0.5s;
+  border-color: #0e2b6a;
+}
+
+
+
