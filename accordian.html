@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Accordion Menu with Dropdown in Grid Layout</title>
+  <style>
+    /* Basic styling for the grid layout */
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+      padding: 20px;
+    }
+
+    /* Basic styling for the accordion */
+    .accordion {
+      max-width: 100%;
+    }
+
+    .accordion .accordion-item {
+      border-bottom: 1px solid #ddd;
+    }
+
+    .accordion .accordion-item:last-child {
+      border-bottom: none;
+    }
+
+    .accordion .accordion-title {
+      background-color: #f4f4f4;
+      padding: 10px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+    }
+
+    .accordion .accordion-title img {
+      margin-right: 10px;
+      max-height: 20px;
+    }
+
+    .accordion .accordion-content {
+      display: none;
+      padding: 10px;
+    }
+
+    /* Styling specific to each accordion */
+    .frontend-tech .accordion-title {
+      background-color: #a1d9f2;
+    }
+
+    .backend-tech .accordion-title {
+      background-color: #a1f2b4;
+    }
+
+    .database-tech .accordion-title {
+      background-color: #f2d9a1;
+    }
+
+    /* Dropdown styling */
+    .dropdown {
+      position: relative;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      min-width: 100%;
+      box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+      z-index: 1;
+    }
+
+    /* Change text color to blue when dropdown items are hovered */
+    .dropdown-content .accordion-item:hover .accordion-title {
+      color: blue;
+    }
+
+    /* Display dropdown content on hover */
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <div class="grid-container">
+    <!-- Frontend Tech Stack Accordion -->
+    <div class="accordion frontend-tech">
+      <div class="accordion-item dropdown">
+        <div class="accordion-title">
+          <img src="frontend_icon.png" alt="Frontend Icon">
+          Frontend Tech Stack
+        </div>
+        <div class="dropdown-content">
+          <!-- Dropdown Items -->
+          <div class="accordion-item">
+            <div class="accordion-title">HTML</div>
+            <div class="accordion-content">HTML is a markup language used for creating web pages.</div>
+          </div>
+          <div class="accordion-item">
+            <div class="accordion-title">CSS</div>
+            <div class="accordion-content">CSS is a stylesheet language used for styling HTML documents.</div>
+          </div>
+          <div class="accordion-item">
+            <div class="accordion-title">JavaScript</div>
+            <div class="accordion-content">JavaScript is a programming language used for adding interactivity to web pages.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Backend Tech Stack Accordion -->
+    <div class="accordion backend-tech">
+      <div class="accordion-item dropdown">
+        <div class="accordion-title">
+          <img src="backend_icon.png" alt="Backend Icon">
+          Backend Tech Stack
+        </div>
+        <div class="dropdown-content">
+          <!-- Dropdown Items -->
+          <div class="accordion-item">
+            <div class="accordion-title">Python</div>
+            <div class="accordion-content">Python is a high-level programming language used for backend development.</div>
+          </div>
+          <div class="accordion-item">
+            <div class="accordion-title">Java</div>
+            <div class="accordion-content">Java is a widely-used programming language for enterprise-level applications.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Database Tech Stack Accordion -->
+    <div class="accordion database-tech">
+      <div class="accordion-item dropdown">
+        <div class="accordion-title">
+          <img src="database_icon.png" alt="Database Icon">
+          Database
+        </div>
+        <div class="dropdown-content">
+          <!-- Dropdown Items -->
+          <div class="accordion-item">
+            <div class="accordion-title">MySQL</div>
+            <div class="accordion-content">MySQL is an open-source relational database management system.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

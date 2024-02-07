@@ -70,14 +70,14 @@ nav .links a:hover::after {
   width: 100%;
 }
 
-.about .container {
+.aboutMe .container {
   display: flex;
   margin:40px ;
   padding:20px ;
   justify-content: space-between;
 }
 
-.about .container .image {
+.aboutMe .container .image {
   flex-basis: 40%;
   background-size: cover;
   background-repeat: no-repeat;
@@ -89,23 +89,23 @@ nav .links a:hover::after {
   align-items: center;
   box-shadow: 0px 0px 10px 0px rgb(54,84, 134);
 }
-.about-content{
+.aboutMe-content{
   height:600px ;
   width:600px ;
 }
 
-.about .container .about-content {
+.aboutMe .container .aboutMe-content {
   padding-left: 0px;
 }
 
-.about .container .about-content h1 {
+.aboutMe .container .aboutMe-content h1 {
   font-size: 4rem;
   color: #365486;
   padding: 1rem 0;
   
 }
 
-.about .container .about-content h3 {
+.aboutMe .container .aboutMe-content h3 {
   color:#365486 ;
   font-size: 3.0rem;
   font-weight: 600;
@@ -113,12 +113,13 @@ nav .links a:hover::after {
   padding: 1rem 0;
 }
 
-.about .container .about-content p {
+.aboutMe .container .aboutMe-content p {
   font-size: 1.8rem;
   font-weight: 300;
   color: #365486;
   line-height: 1.5;
 }
+
 .btn {
   padding: 1.3rem 5rem;
   margin: 3rem 0;
@@ -137,6 +138,135 @@ nav .links a:hover::after {
   color: #0F1035;
   transform: translate(0px, -3px);
 }
+
+.heading {
+  color: #365486;
+  font-size: 3rem;
+  text-align: center;
+}
+
+.aboutMe .education .container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(28rem, 1fr));
+  gap: 2rem;
+  padding: 2.5rem 0;
+}
+.aboutMe .education .container .post {
+  border: 0.2rem solid var(--bg);
+  border-radius: 10px;
+  height: auto;
+  cursor: pointer;
+  box-shadow: 0px 0px 5px 0px grey;
+  transition: 0.4s linear all;
+}
+
+.aboutMe .education .container .post:hover {
+  transform: translate(0px, -5px);
+}
+
+.aboutMe .education .container .post .blog-img {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  position: relative;
+  border-radius: 10px;
+}
+
+.aboutMe .education .container .post .blog-img img {
+  width: 100%;
+  height: auto;
+}
+
+.aboutMe .education .container .post .blog-content {
+  padding: 2rem;
+}
+.aboutMe .education .container .post .blog-content h4 {
+  font-size: 1.3rem;
+  color:#365486;
+}
+
+.aboutMe .education .container .post .blog-content h3 {
+  font-size: 1.6rem;
+  padding: 1.3rem 0;
+  letter-spacing: 0.1rem;
+  color: #365486;
+}
+
+.aboutMe .education .container .post .blog-content h3 span {
+  color: #365486;
+}
+
+.aboutMe .education .container .post .blog-content h1 {
+  font-size: 2rem;
+  color: #365486;
+  padding-bottom: 2rem;
+}
+
+.aboutMe .education .container .post .blog-content p {
+  font-size: 1.4rem;
+  color: #365486;
+}
+
+.aboutMe .education .container .post:hover img {
+  transform: scale(1.1);
+}
+
+.aboutMe .education .container .post .blog-img span {
+  position: absolute;
+  background: var(--bg);
+  bottom: 5%;
+  right: 5%;
+  padding: 1.2rem 1.4rem;
+  color: #365486;
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+
+
+
+.projects{
+  background-color: #be2a17;
+  height:50vh ;
+}
+
+.certificates{
+  background-color: #368655;
+  height:50vh ;
+
+
+}
+
+.skills{
+  background-color: #866f36;
+  height:50vh ;
+
+
+}
+
+.contact{
+  background-color: #5b6b86;
+  height:50vh ;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .footer {
   background-color: #0F1035;
