@@ -69,61 +69,13 @@ nav .links a:after {
 nav .links a:hover::after {
   width: 100%;
 }
-
-.aboutMe .container {
-  display: flex;
-  margin:40px ;
-  padding:20px ;
-  justify-content: space-between;
-}
-
-.aboutMe .container .image {
-  flex-basis: 40%;
-  background-size: cover;
-  background-repeat: no-repeat;
-  padding: 16rem 0;
-  border-radius: 10px;
-  height: 600px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  box-shadow: 0px 0px 10px 0px rgb(54,84, 134);
-}
-.aboutMe-content{
-  height:600px ;
-  width:600px ;
-}
-
-.aboutMe .container .aboutMe-content {
-  padding-left: 0px;
-}
-
-.aboutMe .container .aboutMe-content h1 {
-  font-size: 4rem;
-  color: #365486;
-  padding: 1rem 0;
-  
-}
-
-.aboutMe .container .aboutMe-content h3 {
-  color:#365486 ;
-  font-size: 3.0rem;
-  font-weight: 600;
-  letter-spacing: 1px;
-  padding: 1rem 0;
-}
-
-.aboutMe .container .aboutMe-content p {
-  font-size: 1.8rem;
-  font-weight: 300;
-  color: #365486;
-  line-height: 1.5;
-}
-
 .btn {
+  position: relative;
+  left: 140px;
   padding: 1.3rem 5rem;
   margin: 3rem 0;
   cursor: pointer;
+  color: #0F1035;
   font-size: 1.4rem;
   font-weight: 500;
   border: 0.3rem solid #365486;
@@ -134,10 +86,53 @@ nav .links a:hover::after {
 }
 
 .btn:hover {
-  background:#365486;
+  background: #365486;
   color: #0F1035;
   transform: translate(0px, -3px);
 }
+
+.about .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.about .container .image {
+  flex-basis: 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 16rem 0;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 0px 10px 0px #0F1035;
+}
+
+.about .container .aboutMe-content {
+  flex-basis: 40%;
+}
+
+.about .container .aboutMe-content h1 {
+  font-size: 4rem;
+  color: #365486;
+  padding: 1rem 0;
+}
+
+.about .container .aboutMe-content h3 {
+  color: #365486;
+  font-size: 2.5rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  padding: 1rem 0;
+}
+
+.about .container .aboutMe-content p {
+  font-size: 1.9rem;
+  font-weight: 300;
+  color: #365486;
+  line-height: 1.5;
+}
+
 
 .heading {
   color: #365486;
@@ -145,26 +140,33 @@ nav .links a:hover::after {
   text-align: center;
 }
 
-.aboutMe .education .container {
+
+.about .education .container2 {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(28rem, 1fr));
   gap: 2rem;
   padding: 2.5rem 0;
+  
 }
-.aboutMe .education .container .post {
-  border: 0.2rem solid var(--bg);
+.about .education .heading {
+  margin-top: 5rem;
+  font-size: 5rem;
+  
+}
+.about .education .container2 .post {
+  border: 0.2rem solid #0F1035;
   border-radius: 10px;
   height: auto;
   cursor: pointer;
-  box-shadow: 0px 0px 5px 0px grey;
+  box-shadow: 0px 0px 5px 0px #0F1035;
   transition: 0.4s linear all;
 }
 
-.aboutMe .education .container .post:hover {
+.about .education .container2 .post:hover {
   transform: translate(0px, -5px);
 }
 
-.aboutMe .education .container .post .blog-img {
+.about .education .container2 .post .blog-img {
   width: 100%;
   height: auto;
   overflow: hidden;
@@ -172,48 +174,48 @@ nav .links a:hover::after {
   border-radius: 10px;
 }
 
-.aboutMe .education .container .post .blog-img img {
+.about .education .container2 .post .blog-img img {
   width: 100%;
   height: auto;
 }
 
-.aboutMe .education .container .post .blog-content {
+.about .education .container2 .post .blog-content {
   padding: 2rem;
 }
-.aboutMe .education .container .post .blog-content h4 {
+.about .education .container2 .post .blog-content h4 {
   font-size: 1.3rem;
   color:#365486;
 }
 
-.aboutMe .education .container .post .blog-content h3 {
+.about .education .container2 .post .blog-content h3 {
   font-size: 1.6rem;
   padding: 1.3rem 0;
   letter-spacing: 0.1rem;
   color: #365486;
 }
 
-.aboutMe .education .container .post .blog-content h3 span {
+.about .education .container2 .post .blog-content h3 span {
   color: #365486;
 }
 
-.aboutMe .education .container .post .blog-content h1 {
+.about .education .container2 .post .blog-content h1 {
   font-size: 2rem;
   color: #365486;
   padding-bottom: 2rem;
 }
 
-.aboutMe .education .container .post .blog-content p {
+.about .education .container2 .post .blog-content p {
   font-size: 1.4rem;
   color: #365486;
 }
 
-.aboutMe .education .container .post:hover img {
+.about .education .container2 .post:hover img {
   transform: scale(1.1);
 }
 
-.aboutMe .education .container .post .blog-img span {
+.about .education .containe2 .post .blog-img span {
   position: absolute;
-  background: var(--bg);
+  background: #0F1035;
   bottom: 5%;
   right: 5%;
   padding: 1.2rem 1.4rem;
@@ -226,30 +228,69 @@ nav .links a:hover::after {
 
 
 
-
 .projects{
-  background-color: #be2a17;
-  height:50vh ;
+  height:auto ;
+}
+.projects .heading{
+  margin-top: 5rem;
+  color: #365486;
+  font-size: 5rem;
+  text-align: center;
 }
 
-.certificates{
-  background-color: #368655;
-  height:50vh ;
-
-
+.projects .container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(28rem, 1fr));
+  gap: 2rem;
+  padding: 2.5rem 0;
+  grid-row-gap: 4rem;
 }
 
-.skills{
-  background-color: #866f36;
-  height:50vh ;
-
-
+.projects .container .project-box {
+  height: auto;
+  cursor: pointer;
+  box-shadow: 3px 3px 10px #0F1035;
+  padding-bottom: 3rem;
+  border-radius: 10px;
 }
 
-.contact{
-  background-color: #5b6b86;
-  height:50vh ;
+.projects .container .project-box img {
+  width: 10%;
+  border-radius: 10px;
+}
 
+.projects .container .project-box .project-content {
+  padding: 1.5rem;
+}
+
+.projects .container .project-box .project-content h3 {
+  color: #365486;
+  font-size: 2.5rem;
+  padding: 1.3rem 0;
+}
+
+.projects .container .project-box .project-content p {
+  font-size: 1.6rem;
+  padding: 1.3rem 0;
+  font-weight: 400;
+  color: #365486;
+}
+
+.projects .container .project-box:hover {
+  transform: translateY(-1rem);
+}
+.projects .container .project-box .project-content .visibility {
+  font-size: 1.6rem;
+  padding: 1rem 2rem;
+  margin: 2rem 0;
+  cursor: pointer;
+  color: #365486;
+  font-size: 1.4rem;
+  font-weight: 500;
+  border: 0.3rem solid #0F1035;
+  border-radius: 7px;
+  background: none;
+  transition: all linear 0.5s;
 }
 
 
