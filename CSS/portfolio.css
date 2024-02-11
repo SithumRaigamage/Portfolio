@@ -247,6 +247,7 @@ nav .links a:hover::after {
 }
 
 .projects .container .project-box {
+  border: 0.2rem solid #0F1035;
   height: auto;
   cursor: pointer;
   box-shadow: 3px 3px 10px #0F1035;
@@ -292,6 +293,56 @@ nav .links a:hover::after {
   background: none;
   transition: all linear 0.5s;
 }
+
+
+.certificates{
+  height: 500px;
+  background-color: green;
+}
+.certificates .heading{
+  margin-top: 5rem;
+  color: #365486;
+  font-size: 5rem;
+  text-align: center;
+}
+
+
+
+
+.skills{
+  height: 500px;
+  background-color: red;
+
+}
+.skills .heading{
+  margin-top: 5rem;
+  color: #365486;
+  font-size: 5rem;
+  text-align: center;
+
+}
+
+
+
+.contact{
+  height: 500px;
+  background-color: rgb(111, 57, 57);
+
+
+}
+
+.contact .heading{
+  margin-top: 5rem;
+  color: #365486;
+  font-size: 5rem;
+  text-align: center;
+
+}
+
+
+
+
+
 
 
 
@@ -368,22 +419,6 @@ nav .links a:hover::after {
   line-height: 3rem;
   text-align: center;
   font-size: 40px;
-}
-
-
-@media only screen and (max-width: 991px) {
-  html {
-      font-size: 55%;
-
-  }
-
-  nav {
-      padding: 3rem 3rem;
-  }
-
-  .content {
-      text-align: center;
-  }
 }
 
 
