@@ -356,16 +356,24 @@ nav .links a:hover::after {
 
 .skills{
   height: auto;
-  
-
 }
 .skills .heading{
   margin-top: 5rem;
   color: #365486;
   font-size: 5rem;
   text-align: center;
-
 }
+
+.skills .skill-container{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  gap: 10px;
+  padding: 20px;
+}
+
+
+
+
 
 
 
