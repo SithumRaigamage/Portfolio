@@ -1,5 +1,5 @@
 body{
-  background-color: #DCF2F1;
+  background-color: #ffffff;
 }
 
 * {
@@ -166,19 +166,6 @@ nav .links a:hover::after {
   transform: translate(0px, -5px);
 }
 
-.about .education .container2 .post .blog-img {
-  width: 100%;
-  height: auto;
-  overflow: hidden;
-  position: relative;
-  border-radius: 10px;
-}
-
-.about .education .container2 .post .blog-img img {
-  width: 100%;
-  height: auto;
-}
-
 .about .education .container2 .post .blog-content {
   padding: 2rem;
 }
@@ -293,11 +280,8 @@ nav .links a:hover::after {
   background: none;
   transition: all linear 0.5s;
 }
-
-
 .certificates{
-  height: 500px;
-  background-color: green;
+  height: auto;
 }
 .certificates .heading{
   margin-top: 5rem;
@@ -307,11 +291,72 @@ nav .links a:hover::after {
 }
 
 
+.certificates .certificate-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  gap: 2rem;
+  padding: 2.5rem 0;
 
+}
+
+.certificates .certificate-container .certificate-box {
+  border: 0.2rem solid #0F1035;
+  border-radius: 1rem;
+  padding: 2rem;
+  cursor: pointer;
+}
+
+.certificates .certificate-container .certificate-box .certificate-content {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.3rem 0;
+}
+
+.certificates .certificate-container .certificate-box .certificate-content i {
+  color: #0077B5; /* LinkedIn blue color */
+  font-size: 7rem; /* Adjust the size as needed */
+}
+
+.certificates .certificate-container .certificate-box .certificate-content h2 {
+  font-size: 1.9rem;
+  color:#365486;
+}
+
+.certificates .certificate-container .certificate-box .certificate-content h2 span {
+  font-weight: 300;
+}
+
+.certificates .certificate-container .certificate-box .certificate-content2 .tech{
+  font-size: 1.8rem;
+  color:#365486;
+}
+.certificates .certificate-container .certificate-box .certificate-content2 .description{
+  margin-top: 10px;
+  font-size: 1.5rem;
+  color:#365486;
+}
+.certificates .certificate-container .certificate-box .certificate-content2 .link-btn{
+  font-size: 1.6rem;
+  padding: 1rem 2rem;
+  margin: 2rem 0;
+  cursor: pointer;
+  color: #365486;
+  font-size: 1.4rem;
+  font-weight: 500;
+  border: 0.3rem solid #0077B5;
+  border-radius: 7px;
+  background: none;
+  transition: all linear 0.5s;
+}
+
+
+.certificates .certificate-container .certificate-box:hover {
+  background: #7FC7D9;
+}
 
 .skills{
-  height: 500px;
-  background-color: red;
+  height: auto;
+  
 
 }
 .skills .heading{
