@@ -1,0 +1,51 @@
+<section class="skills" id="skills">
+        <h1 class="heading">Skills</h1>
+        <div class="skill-container">
+            <div class="skill">
+                <div class="skill-content">
+                    <img src="technology.png" alt="" class="menu-icon" width="50px" height="50px">
+                    <h1>Frontend Tech Stack</h1>
+                    
+                </div> 
+            </div> 
+        </div>
+ </section>
+
+
+
+.skills{
+  height: auto;
+}
+.skills .heading{
+  margin-top: 5rem;
+  color: #365486;
+  font-size: 5rem;
+  text-align: center;
+}
+
+.skills .skill-container{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  gap: 10px;
+}
+
+.skills .skill-container .skill .skill-content {
+  margin-top: 20px;
+  border: 0.2rem solid #0F1035;
+  border-radius: 10px;
+  height: auto;
+  cursor: pointer;
+  width: auto;
+  box-shadow: 0px 0px 5px 0px #0F1035;
+  transition: 0.4s linear all;
+  display: flex;
+  align-items: center;
+
+}
+
+.skills .skill-container .skill .skill-content:hover {
+  transform: translate(0px, -5px);
+}
+.skills .skill-container .skill .skill-content img{
+  padding: 10px;
+}
