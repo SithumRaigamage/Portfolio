@@ -17,7 +17,9 @@ document.addEventListener('DOMContentLoaded', function () {
     var typedElement = document.querySelector(".tech");
     if (typedElement) {
         var typed = new Typed(typedElement, {
-            strings: ["Python", "Java","HTML","CSS","JavaScript","Dart","Flutter","Machine Learning","SpringBoot","Object Detection","API"],
+            strings: ["Python", "Java","HTML","CSS","JavaScript","Dart",
+            "Flutter","Machine Learning","SpringBoot","Object Detection",
+            "API","Figma",Arduino],
             typeSpeed: 100,
             backSpeed: 100,
             backDelay: 1000,

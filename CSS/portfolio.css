@@ -2,11 +2,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
 
 :root {
-  --font-heading: crimson;
-  --para-font: #777777;
+  --font-heading: #365486;
   --black: #222222;
-  --bg: rgba(237, 28, 70);
-  --white: #fff;
 }
 
 * {
@@ -58,14 +55,14 @@ body{
   animation-delay: calc(.2s* var(--i));
 }
 .navbar a:hover {
-  color: crimson;
+  color: var(--font-heading);
   
 }
 .navbar a:after {
   content: '';
   width: 0%;
   height: 2px;
-  background-color:crimson;
+  background-color:var(--font-heading);
   position: absolute;
   left: 0;
   bottom: -12px;
@@ -106,7 +103,7 @@ body{
 
 }
 .home-content h3 span{
-  color: crimson;
+  color: var(--font-heading);
 }
 .home-content h1{
   font-size: 56px;
@@ -131,10 +128,10 @@ body{
   width:40px;
   height: 40px;
   background: transparent;
-  border: 3px solid crimson;
+  border: 3px solid var(--font-heading);
   border-radius: 40%;
   font-size: large;
-  color: crimson;
+  color: var(--font-heading);
   text-decoration: none;
   opacity: 0;
   animation: slideLeft 1s ease forwards;
@@ -142,14 +139,14 @@ body{
   margin: 30px 15px 30px 0; 
 }
 .home-social a:hover{
-  background: crimson;
+  background: var(--font-heading);
   color: rgb(255, 255, 255);
-  box-shadow: 0 0 20px crimson;
+  box-shadow: 0 0 20px var(--font-heading);
 }
 .me-btn{
   display:inline-block;
   padding: 12px 28px;
-  background: crimson;
+  background: var(--font-heading);
   border-radius: 40px;
   font-size: 1.4rem;
   color: #000;
@@ -158,10 +155,10 @@ body{
   font-weight: 600;
 }
 .me-btn:hover{
-  box-shadow: 0 0 5px crimson,
-  0 0 25px crimson,
-  0 0 20px crimson,
-  0 0 10px crimson,0 0 20px crimson
+  box-shadow: 0 0 5px var(--font-heading),
+  0 0 25px var(--font-heading),
+  0 0 20px var(--font-heading),
+  0 0 10px var(--font-heading),0 0 20px var(--font-heading)
 }
 
 @keyframes slideRight{
@@ -234,7 +231,7 @@ body{
 }
 
 .about .education-container .education {
-  border: 0.2rem solid var(--bg);
+  border: 0.2rem solid var(--font-heading);
   border-radius: 10px;
   height: auto;
   cursor: pointer;
@@ -270,7 +267,7 @@ body{
 }
 
 .about .education-container .education .education-content h3 span {
-  color: var(--bg);
+  color: var(--font-heading);
 }
 
 .about .education-container .education .education-content h1 {
@@ -281,7 +278,7 @@ body{
 
 .about .education-container .education .education-content p {
   font-size: 1.2rem;
-  color: var(--para-font);
+  color: var(--font-heading);
 }
 
 .about .education-container .education:hover img {
@@ -290,11 +287,11 @@ body{
 
 .about .education-container .education .education-img span {
   position: absolute;
-  background: var(--bg);
+  background: var(--font-heading);
   bottom: 5%;
   right: 5%;
   padding: 1.2rem 1.4rem;
-  color: var(--white);
+  color: var(--font-heading);
   text-align: center;
   font-size: 1.2rem;
   font-weight: bold;
@@ -317,8 +314,8 @@ body{
 .about .tech-container .tech-content h1{
   font-size: 3rem;
   font-weight: 700px;
-
 }
+
 .blog{
   height: auto;
 }
@@ -335,7 +332,7 @@ body{
 
 
 .blog .container .post {
-  border: 0.2rem solid var(--bg);
+  border: 0.2rem solid var(--font-heading);
   border-radius: 10px;
   height: auto;
   cursor: pointer;
