@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', function () {
         var typed = new Typed(typedElement, {
             strings: ["Python", "Java","HTML","CSS","JavaScript","Dart",
             "Flutter","Machine Learning","SpringBoot","Object Detection",
-            "API","Figma",Arduino],
+            "API","Figma","Arduino"],
             typeSpeed: 100,
             backSpeed: 100,
             backDelay: 1000,

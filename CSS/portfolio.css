@@ -508,3 +508,71 @@ textarea {
 .social-icons a:hover {
   color: #ccc;
 }
+
+
+/* CSS for Desktop */
+
+/* All existing CSS styles remain as they are for desktop */
+
+@media only screen and (max-width: 768px) {
+  /* CSS for Tablets and Mobile Devices */
+
+  /* Header */
+  .header {
+    padding: 20px 5%; /* Reduce padding for smaller screens */
+  }
+
+  /* Logo */
+  .logo {
+    font-size: 2.5rem; /* Decrease font size for smaller screens */
+  }
+
+  /* Navbar Links */
+  .navbar a {
+    font-size: 1.2rem; /* Decrease font size for smaller screens */
+    margin-left: 20px; /* Reduce margin between links */
+  }
+
+  /* Home Content */
+  .home-content {
+    padding: 0 5%; /* Reduce padding for smaller screens */
+  }
+
+  .home-content h3 {
+    font-size: 28px; /* Decrease font size for smaller screens */
+  }
+
+  .home-content h1 {
+    font-size: 48px; /* Decrease font size for smaller screens */
+  }
+
+  .home-content p {
+    font-size: 18px; /* Decrease font size for smaller screens */
+  }
+
+  /* Social Icons */
+  .home-social a {
+    margin: 20px 10px; /* Reduce margin between icons */
+  }
+
+  /* Education Section */
+  .education-container {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Adjust grid columns for smaller screens */
+    gap: 1rem; /* Reduce gap between education items */
+  }
+
+  /* Blog/Projects Section */
+  .blog .container {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Adjust grid columns for smaller screens */
+  }
+
+  /* Contact Form */
+  .contact-form {
+    padding: 30px 5%; /* Reduce padding for smaller screens */
+  }
+
+  /* Footer */
+  .footer-content {
+    padding: 10px 5%; /* Reduce padding for smaller screens */
+  }
+}
