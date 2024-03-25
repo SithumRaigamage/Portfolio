@@ -1,3 +1,14 @@
+/* google font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+
+:root {
+  --font-heading: crimson;
+  --para-font: #777777;
+  --black: #222222;
+  --bg: rgba(237, 28, 70);
+  --white: #fff;
+}
+
 * {
   font-family: 'Roboto', sans-serif;
   margin: 0;
@@ -25,7 +36,7 @@ body{
 }
 .logo{
   position: relative;
-  font-size:25px;
+  font-size: 3rem;
   color: #000;
   text-decoration: none;
   font-weight: 600;
@@ -35,19 +46,33 @@ body{
 }
 .navbar a{
   display: inline-block;
-  font-size: 25px;
+  font-size: 1.5rem;
   color: #000000;
   text-decoration: none;
   font-weight: 600;
   margin-left: 35px;
   transition: .3s;
   opacity: 0;
+  text-transform: uppercase;
   animation: slideTop .5s ease forwards;
   animation-delay: calc(.2s* var(--i));
 }
 .navbar a:hover {
   color: crimson;
   
+}
+.navbar a:after {
+  content: '';
+  width: 0%;
+  height: 2px;
+  background-color:crimson;
+  position: absolute;
+  left: 0;
+  bottom: -12px;
+  transition: 0.4s;
+}
+.navbar a:hover::after {
+  width: 100%;
 }
 
 .home{
@@ -126,7 +151,7 @@ body{
   padding: 12px 28px;
   background: crimson;
   border-radius: 40px;
-  font-size: 16px;
+  font-size: 1.4rem;
   color: #000;
   letter-spacing: 2px;
   text-decoration: none;
@@ -135,8 +160,8 @@ body{
 .me-btn:hover{
   box-shadow: 0 0 5px crimson,
   0 0 25px crimson,
-  0 0 50px crimson,
-  0 0 100px crimson,0 0 200px crimson
+  0 0 20px crimson,
+  0 0 10px crimson,0 0 20px crimson
 }
 
 @keyframes slideRight{
@@ -183,3 +208,257 @@ body{
   }
 
 }
+
+.heading {
+  font-size: 3rem;
+  text-align: center;
+}
+
+.heading span {
+  color: var(--font-heading);
+}
+
+.heading-description {
+  text-align: center;
+  padding: 1.3rem 0;
+  font-size: 2.6rem;
+  font-weight: 300;
+}
+
+.about .education-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(28rem, 1fr));
+  gap: 2rem;
+  padding: 2.5rem 0;
+  margin: 1rem;
+}
+
+.about .education-container .education {
+  border: 0.2rem solid var(--bg);
+  border-radius: 10px;
+  height: auto;
+  cursor: pointer;
+  box-shadow: 0px 0px 5px 0px grey;
+  transition: 0.4s linear all;
+}
+
+.about .education-container .education:hover {
+  transform: translate(0px, -5px);
+}
+
+.about .education-container .education .education-img {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  position: relative;
+  border-radius: 10px;
+}
+
+.about .education-container .education .education-img img {
+  width: 100%;
+  height: auto;
+}
+
+.about .education-container .education .education-content {
+  padding: 1rem;
+}
+
+.about .education-container .education .education-content h3 {
+  font-size: 1.6rem;
+  padding: 1.3rem 0;
+  letter-spacing: 0.1rem;
+}
+
+.about .education-container .education .education-content h3 span {
+  color: var(--bg);
+}
+
+.about .education-container .education .education-content h1 {
+  font-size: 1rem;
+  color: var(--black);
+  padding-bottom: 2rem;
+}
+
+.about .education-container .education .education-content p {
+  font-size: 1.2rem;
+  color: var(--para-font);
+}
+
+.about .education-container .education:hover img {
+  transform: scale(1.1);
+}
+
+.about .education-container .education .education-img span {
+  position: absolute;
+  background: var(--bg);
+  bottom: 5%;
+  right: 5%;
+  padding: 1.2rem 1.4rem;
+  color: var(--white);
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.about .tech-container{
+  padding: 30px 10% 0;
+  min-height: 30vh;
+}
+
+.about .tech-container .tech-content{
+  max-width:600px;
+}
+.about .tech-container .tech-content h3{
+  font-size: 2.5rem;
+  font-weight: 700;
+  
+}
+.about .tech-container .tech-content h1{
+  font-size: 3rem;
+  font-weight: 700px;
+
+}
+
+.blog .container {
+  max-width: 800px;
+  margin: 0 auto; /* Center the container */
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(28rem, 1fr));
+  gap: 2rem;
+  padding: 2.5rem 0;
+}
+
+
+.blog .container .post {
+  border: 0.2rem solid var(--bg);
+  border-radius: 10px;
+  height: auto;
+  cursor: pointer;
+  box-shadow: 0px 0px 5px 0px grey;
+  transition: 0.4s linear all;
+}
+
+.blog .container .post:hover {
+  transform: translate(0px, -5px);
+}
+
+.blog .container .post .blog-img {
+  overflow: hidden;
+  position: relative;
+  border-radius: 10px;
+  
+}
+
+.blog .container .post .blog-img img {
+  width: 50px;
+  height: 50px;
+  
+}
+
+.blog .container .post .blog-content {
+  padding: 1rem;
+}
+
+.blog .container .post .blog-content h3 {
+  font-size: 1.2rem;
+  padding: 1.3rem 0;
+  letter-spacing: 0.1rem;
+}
+
+.blog .container .post .blog-content h3 span {
+  color: var(--bg);
+}
+
+.blog .container .post .blog-content h1 {
+  font-size: 1.4rem;
+  color: var(--black);
+  padding-bottom: 2rem;
+}
+
+.blog .container .post .blog-content p {
+  font-size: 1.3rem;
+  color: var(--para-font);
+}
+
+.blog .container .post:hover img {
+  transform: scale(1.1);
+}
+
+.blog .container .post .blog-img span {
+  position: absolute;
+  background: var(--bg);
+  bottom: 5%;
+  right: 5%;
+  padding: 1.2rem 1.4rem;
+  color: var(--white);
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+
+.contact {
+  padding: 50px 0;
+
+  color: #333;
+  text-align: center;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.section-heading {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  color: #fff;
+  text-shadow: 2px 2px 3px rgba(0,0,0,0.3);
+}
+
+.contact-form {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  margin-bottom: 40px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 150px;
+}
+
+.btn {
+  background-color: var(--font-heading);
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
