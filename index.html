@@ -9,40 +9,49 @@
     <link rel="stylesheet" href="CSS/portfolio.css">
     <!-- Include Font Awesome CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
 </head>
 <body>
-    <!-- Navbar Section -->
-    <div class="header">
-        <a href="#home" class="logo">SRAIG</a>
-        <button class="toggle-nav"><i class="fas fa-bars"></i></button>
-        <nav class="navbar">
-            <a href="#home" style="--i:1" class="active">Home</a>
-            <a href="#about"  style="--i:2">About</a>
-            <a href="#projects" style="--i:3">Projects</a>
-            <a href="#contact" style="--i:4">Contact</a>
-        </nav>
-    </div>
-    <!-- Navbar Section End -->
-
-    <section class="home" id="home">
-        <div class="home-content">
-            <h3>Hello, It's Me</h3>
-            <h1>Sithum Raigamage</h1>
-            <h3>And I'm a <span class="heading"></span></h3>
-            <div class="home-social">
-                <a href="https://github.com/SithumRaigamage" style="--i:8"><i class="fab fa-github"></i></a>
-                <a href="www.linkedin.com/in/sithum-raigamage" style="--i:9"><i class="fab fa-linkedin"></i></a>
-                <a href="mailto:sraig2002@gmail.com" style="--i:10"><i class="fas fa-envelope"></i></a>
+    <!-- Header Section -->
+    <div class="header" id="home">
+        <nav id="navbar">
+            <a href="#home" class="logo">SRAIG</a>
+            <div class="links" id="nav">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
             </div>
-            
-            <a href="cv/Sithum raigamage.pdf" download class="me-btn">Download CV</a>
-        </div>
-        <div class="home-image">
-            <img src="Pics/DSC_4735.jpg" alt="" height="500px" width="400px">
-        </div>
-    </section>
+            <div class="fas fa-bars" id="menu-btn" onclick="openmenu()"></div>
+            <div class="fa-solid fa-xmark" id="close" onclick="closemenu()"></div>
+        </nav>
 
+        <div class="container">
+            <div class="image">
+                <img src="Pics/DSC_4735.jpg" alt="" height="500px" width="400px">
+            </div>
+            <div class="about-content">
+                <h1>Hello, It's Me</h1>
+                <h3>Sithum Raigamage</h3>
+                <h3>I'm a <span>Software Engineering Intern</span></h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus, tempora maiores est aut nulla
+                    dicta molestias temporibus consequuntur fugiat repellendus. Nobis suscipit at beatae obcaecati?
+                    Omnis, earum. Nemo, culpa? Mollitia unde dignissimos reprehenderit architecto.
+                </p>
+                <div class="about-social">
+                    <a href="https://github.com/SithumRaigamage" style="--i:8"><i class="fab fa-github"></i></a>
+                    <a href="www.linkedin.com/in/sithum-raigamage" style="--i:9"><i class="fab fa-linkedin"></i></a>
+                    <a href="mailto:sraig2002@gmail.com" style="--i:10"><i class="fas fa-envelope"></i></a>
+                </div>
+                <a href="cv/Sithum raigamage.pdf" download class="about-btn">Download CV</a>
+            </div>
+        </div>
+    </div>
+    <!-- Header Section End -->
+    
     <!-- About Section -->
     <section class="about" id="about">
         <h1 class="heading">About<span> Me</span></h1>
@@ -83,42 +92,66 @@
                 </div>
             </div>
         </div>
-        <!-- Education Section End-->
+    </section>
 
-        <!-- Tech Section-->
-        <p class="heading-description">Tech Skills</p>
-
+     <!-- Tech Section-->
+    <section class="tech-skills" id="skills">
+       
+        <h1 class="heading">Technical<span> Skills</span></h1>
         <div class="tech-container">
             <div class="tech-content">
                 <h3>I Have</h3>
                 <h1>Experience in <span class="tech"></span></h1>
             </div>
         </div>
-        <!-- Tech Section End-->
-
     </section>
-    <!-- About Section End-->
+    <!-- Tech Section End-->
 
-    <!-- Blog Section -->
-    <section class="blog" id="projects">
+    <!-- Project Section -->
+    <section class="projects" id="projects">
         <h1 class="heading">My <span>Projects</span></h1>
         <div class="container">
             <div class="post">
-                <div class="blog-img">
+                <div class="project-img">
                     <img src="Pics/icon-01.png"  alt="">
                 </div>
-                <div class="blog-content">
+                <div class="project-content">
                     <h3>CeraFlaw |<span>Tile Manufacturing Industry</span></h3>
 
                     <h1>Detection of visual defects in Ceramic Tiles</h1>
-                    <p>Software Development Group project dealing with Flutter,Dart,Python,MachineLearning
-                        and Computer vision and Objet Detection
-                    </p>
+                    <p>Software Development Group project</p>
+                    <p>Team Leader</p>
+                    <!-- Add the website link here -->
+                    <p>Website Link : <a href="https://sithumraigamage.github.io/CeraFlaw-Website/">CeraFlaw Website</a>.</p>
+                    <br>
+                    <div class="project-icons">
+                        <a><img src="Pics/pngwing.com.png" alt="Flutter"></a>
+                        <a><img src="Pics/dart-programming-language-icon.png" alt="Dart"></a>
+                        <a><img src="Pics/python.png" alt="Python"></a>
+                        <a><img src="Pics/OpenCV-01.png" alt="OpenCV"></a>
+                    </div>                    
+                </div>
+            </div>
+            <div class="post">
+                <div class="project-img">
+                    <img src="Pics/DSC_4735.jpg"  alt="">
+                </div>
+                <div class="project-content">
+                    <h3>Portfolio |<span>Self Project</span></h3>
+
+                    <h1>Created a Personal Project</h1>
+                    <p>Demonstrating About Myself,Skills,Projects and How to contact Me</p>
+                    <br>
+                    <div class="project-icons">
+                        <a><img src="Pics/html-5.png" alt="HTML"></a>
+                        <a><img src="Pics/css-3.png" alt="Dart"></a>
+                        <a><img src="Pics/js.png" alt="Python"></a>
+                    </div>                    
                 </div>
             </div>
         </div>
     </section>
-    <!-- Blog Section End-->
+    <!-- Project Section End-->
 
     <section class="contact" id="contact">
         <div class="container">
@@ -151,9 +184,6 @@
             </div>
         </div>
     </footer>
-    
-    
-    
 
     <script src="portfolio.js"></script>
 </body>
