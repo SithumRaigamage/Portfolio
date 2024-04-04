@@ -553,39 +553,108 @@ textarea {
   }
 }
 
+/* Media query for screens smaller than 768px */
 @media only screen and (max-width: 768px) {
-
-  nav #menu-btn {
-      display: inline-block;
+  /* Adjustments for the navigation menu */
+  nav {
+    padding: 1.5rem;
   }
 
   nav .links {
-      position: absolute;
-      top: 100%;
-      left: -100%;
-      width: 100%;
-      height: 100vh;
-      background: #eee;
-      transition: 0.5s;
-      background: black;
+    position: fixed;
+    top: 5rem;
+    left: -100%;
+    width: 100%;
+    height: calc(100vh - 5rem); /* Adjust based on the height of your navigation */
+    background: #eee;
+    transition: left 0.3s ease;
+    z-index: 10;
+  }
+
+  nav .links.show {
+    left: 0;
   }
 
   nav .links a {
-      display: block;
-      padding: 1.5rem;
-      margin: 1rem;
-      font-size: 1.5rem;
-      font-weight: 600;
-      color: var(--white);
-      text-align: center;
+    display: block;
+    padding: 1rem;
+    margin: 0.5rem 0;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--black);
+    text-align: center;
   }
 
-  .about .container {
-      flex-direction: column;
+  /* Adjustments for the header container */
+  .header .container {
+    flex-direction: column;
+    align-items: center;
+    padding: 5rem 2rem;
   }
 
-  .about .container .about-content {
-      text-align: center;
+  .header .container .image img {
+    height: auto;
+    max-width: 100%;
+  }
+
+  .header .container .about-content {
+    text-align: center;
+    margin-top: 2rem;
+  }
+
+  .header .container .about-content h1,
+  .header .container .about-content h3,
+  .header .container .about-content p {
+    font-size: 2rem;
+  }
+
+  /* Adjustments for the about section */
+  .about .education-container {
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  }
+
+  .about .education-container .education {
+    margin-bottom: 2rem;
+  }
+
+  /* Adjustments for the projects section */
+  .projects .container .post .project-img img {
+    width: 100%;
+    height: auto;
+  }
+
+  .projects .container .post .project-content {
+    padding: 1rem;
+    text-align: center;
+  }
+
+  .projects .container .post .project-content h3,
+  .projects .container .post .project-content h1,
+  .projects .container .post .project-content p {
+    font-size: 1.8rem;
+  }
+
+  .projects .container .post .project-content .project-icons a {
+    width: 40px;
+    height: 40px;
+  }
+
+  /* Adjustments for the contact section */
+  .contact-form {
+    padding: 2rem;
+  }
+
+  .form-group label,
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    font-size: 1.4rem;
+  }
+
+  .btn {
+    padding: 0.8rem 1.5rem;
+    font-size: 1.4rem;
   }
 }
+
 
