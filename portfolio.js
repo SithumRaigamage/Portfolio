@@ -30,6 +30,14 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 });
 
-
+document.addEventListener('DOMContentLoaded', function () {
+    const toggleButton = document.querySelector('.toggle-nav');
+    const navbar = document.querySelector('.navbar');
+  
+    toggleButton.addEventListener('click', function () {
+      navbar.classList.toggle('active');
+    });
+  });
+  
 
   
