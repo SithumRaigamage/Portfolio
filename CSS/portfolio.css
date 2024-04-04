@@ -52,10 +52,6 @@ nav {
   color: var(--black);
 }
 
-.logo span {
-  color: var(--black);
-}
-
 nav .links a {
   color: black;
   font-size: 1.5rem;
@@ -82,7 +78,7 @@ nav .links a:hover::after {
 
 nav #menu-btn,
 nav #close {
-  color: var(--white);
+  color: var(--font-heading);
   font-size: 2.5rem;
   cursor: pointer;
   display: none;
@@ -94,7 +90,6 @@ nav #close {
 
 .header .container {
   padding: 150px 7%;
-  color: var(--white);
 }
 .header .container {
   display: flex;
@@ -109,11 +104,11 @@ nav #close {
   align-items: center;
 }
 
-.header .container .about-content {
+.header .container .home-content {
   flex-basis: 40%;
 }
 
-.header .container .about-content h1 {
+.header .container .home-content h1 {
   font-size: 4rem;
   color: var(--font-heading);
   padding: 1rem 0;
@@ -122,7 +117,7 @@ nav #close {
   animation-delay: 1s;
 }
 
-.header .container .about-content h3 {
+.header .container .home-content h3 {
   color: var(--black);
   font-size: 4.3rem;
   font-weight: 600;
@@ -132,16 +127,16 @@ nav #close {
   animation: slideBottom 1s ease forwards;
   animation-delay: .5s;
 }
-.header .container .about-content h3:nth-of-type(2){
+.header .container .home-content h3:nth-of-type(2){
   margin-bottom: 10px;
   animation: slideTop 1s ease forwards;
   animation-delay: .5s;
 }
-.header .container .about-content h3 span{
+.header .container .home-content h3 span{
   color: var(--font-heading);
 }
 
-.header .container .about-content p {
+.header .container .home-content p {
   font-size: 1.8rem;
   font-weight: 300;
   color: var(--black);
@@ -149,9 +144,10 @@ nav #close {
   opacity: 0;
   animation: slideLeft 1s ease forwards;
   animation-delay: 1s;
+  text-align: justify;
 }
 
-.header .container .about-content .about-social a{
+.header .container .home-content .home-social a{
   display: inline-flex;
   justify-content:center;
   align-items: center;
@@ -168,12 +164,12 @@ nav #close {
   animation-delay: calc(.3s*var(--i));
   margin: 30px 15px 30px 0; 
 }
-.header .container .about-content .about-social a:hover{
+.header .container .home-content .home-social a:hover{
   background: var(--font-heading);
   color: rgb(255, 255, 255);
   box-shadow: 0 0 20px var(--font-heading);
 }
-.header .container .about-content .about-btn {
+.header .container .home-content .home-btn {
   padding: 1.3rem 5rem;
   margin: 2rem 0;
   cursor: pointer;
@@ -187,7 +183,7 @@ nav #close {
 
 }
 
-.header .container .about-content .about-btn:hover {
+.header .container .home-content .home-btn:hover {
   background: var(--bg);
   color: var(--white);
   transform: translate(0px, -3px);
@@ -556,105 +552,112 @@ textarea {
 /* Media query for screens smaller than 768px */
 @media only screen and (max-width: 768px) {
   /* Adjustments for the navigation menu */
-  nav {
-    padding: 1.5rem;
-  }
+  nav #menu-btn {
+    display: inline-block;
+}
 
-  nav .links {
-    position: fixed;
-    top: 5rem;
+nav .links {
+    position: absolute;
+    top: 100%;
     left: -100%;
     width: 100%;
-    height: calc(100vh - 5rem); /* Adjust based on the height of your navigation */
+    height: 100vh;
     background: #eee;
-    transition: left 0.3s ease;
-    z-index: 10;
-  }
+    transition: 0.5s;
+    background: rgb(249, 247, 247);
+}
 
-  nav .links.show {
-    left: 0;
-  }
-
-  nav .links a {
+nav .links a {
     display: block;
-    padding: 1rem;
-    margin: 0.5rem 0;
+    padding: 1.5rem;
+    margin: 1rem;
     font-size: 1.5rem;
     font-weight: 600;
-    color: var(--black);
+    color: var(--font-heading);
     text-align: center;
-  }
-
-  /* Adjustments for the header container */
+}
+  /* Adjustments for header */
   .header .container {
     flex-direction: column;
-    align-items: center;
-    padding: 5rem 2rem;
+    padding: 100px 7%;
   }
 
-  .header .container .image img {
-    height: auto;
-    max-width: 100%;
-  }
-
-  .header .container .about-content {
-    text-align: center;
-    margin-top: 2rem;
-  }
-
-  .header .container .about-content h1,
-  .header .container .about-content h3,
-  .header .container .about-content p {
-    font-size: 2rem;
-  }
-
-  /* Adjustments for the about section */
-  .about .education-container {
-    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
-  }
-
-  .about .education-container .education {
+  .header .container .image {
+    order: 2;
+    margin-top: 20px;
     margin-bottom: 2rem;
   }
 
-  /* Adjustments for the projects section */
-  .projects .container .post .project-img img {
-    width: 100%;
-    height: auto;
-  }
-
-  .projects .container .post .project-content {
-    padding: 1rem;
+  .header .container .home-content {
+    order: 1;
     text-align: center;
   }
 
-  .projects .container .post .project-content h3,
-  .projects .container .post .project-content h1,
+  .header .container .home-content h1,
+  .header .container .home-content h3,
+  .header .container .home-content p,
+  .header .container .home-content .home-social {
+    text-align: center;
+  }
+
+  .header .container .home-content .home-social {
+    margin-top: 2rem;
+    margin: 20px;
+  }
+
+  .header .container .home-content .home-social a {
+    margin: 10px;
+  }
+
+  .about {
+    padding-top: 330px; /* Adjust padding to avoid overlapping with the fixed header */
+  }
+
+  .about .heading {
+    font-size: 5.5rem; /* Decrease font size for smaller screens */
+  }
+
+  .about .education-container {
+    flex-direction: column; /* Stack education items vertically on smaller screens */
+    align-items: center; /* Center-align education items */
+  }
+
+  .about .education {
+    width: 90%; /* Adjust width to fit smaller screens */
+    margin: 20px; /* Add vertical margin between education items */
+    align-items: center;
+  }
+
+  .about .education .education-img {
+    text-align: center; /* Center-align education images */
+  }
+
+  .about .education .education-content {
+    text-align: center; /* Center-align education content */
+  }
+
+  /* Adjustments for project section */
+  .projects .container {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+
+  .projects .container .post {
+    padding: 1rem;
+  }
+
   .projects .container .post .project-content p {
-    font-size: 1.8rem;
+    text-align: center;
+  }
+
+  .projects .container .post .project-content .project-icons {
+    justify-content: center;
   }
 
   .projects .container .post .project-content .project-icons a {
-    width: 40px;
-    height: 40px;
+    margin: 0 5px;
   }
 
-  /* Adjustments for the contact section */
-  .contact-form {
-    padding: 2rem;
-  }
-
-  .form-group label,
-  input[type="text"],
-  input[type="email"],
-  textarea {
-    font-size: 1.4rem;
-  }
-
-  .btn {
-    padding: 0.8rem 1.5rem;
-    font-size: 1.4rem;
-  }
+  
 }
 
 

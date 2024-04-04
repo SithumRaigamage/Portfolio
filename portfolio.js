@@ -25,6 +25,8 @@ function change() {
   }
 }
 
+window.addEventListener("scroll", change);
+
 document.addEventListener('DOMContentLoaded', function () {
     var typedElement = document.querySelector(".tech");
     if (typedElement) {
@@ -43,7 +45,7 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 
-window.addEventListener("scroll", change);
+
   
 
   
