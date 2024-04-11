@@ -399,6 +399,25 @@ nav #close {
   height: 100%;
   object-fit: contain;
 }
+.more-projects {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.arrow-button {
+  display: inline-block;
+  background-color: var(--font-heading); /* Example blue background */
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.arrow-button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
 
 .contact {
   padding: 50px 0;
