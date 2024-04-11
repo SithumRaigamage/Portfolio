@@ -90,12 +90,9 @@ nav #close {
 
 .header .container {
   padding: 150px 7%;
-}
-.header .container {
   display: flex;
   justify-content:space-between;
 }
-
 
 .header .container .image {
   border-radius: 10px;
@@ -205,6 +202,80 @@ nav #close {
   font-weight: 300;
 }
 
+.about .education-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(28rem, 1fr));
+  gap: 2rem;
+  padding: 3.5rem 0;
+  margin: 1rem;
+}
+
+.about .education-container .education {
+  border: 0.2rem solid var(--font-heading);
+  border-radius: 10px;
+  height: auto;
+  cursor: pointer;
+  transition: 0.4s linear all;
+}
+
+.about .education-container .education:hover {
+  transform: translate(0px, -5px);
+}
+
+.about .education-container .education .education-img {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  position: relative;
+  border-radius: 10px;
+}
+
+.about .education-container .education .education-img img {
+  width: 100%;
+  height: auto;
+}
+
+.about .education-container .education .education-content {
+  padding: 4rem;
+}
+
+.about .education-container .education .education-content h3 {
+  font-size:1.9rem;
+  padding: 1.3rem 0;
+  letter-spacing: 0.1rem;
+}
+
+.about .education-container .education .education-content h3 span {
+  color: var(--font-heading);
+}
+
+.about .education-container .education .education-content h1 {
+  font-size: 2rem;
+  color: var(--black);
+  padding-bottom: 2rem;
+}
+
+.about .education-container .education .education-content p {
+  font-size: 2rem;
+  color: var(--font-heading);
+}
+
+.about .education-container .education:hover img {
+  transform: scale(1.1);
+}
+
+.about .education-container .education .education-img span {
+  position: absolute;
+  background: var(--font-heading);
+  bottom: 5%;
+  right: 5%;
+  padding: 1.2rem 1.4rem;
+  color: var(--font-heading);
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border-radius: 5px;
+}
 
 .tech-skills .tech-container{
   padding: 30px 10% 0;
