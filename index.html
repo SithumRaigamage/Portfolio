@@ -1,252 +1,154 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE-edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    <!-- Custom css -->
-    <link rel="stylesheet" href="CSS/portfolio.css">
-    <!-- Include Font Awesome CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PortFolio</title>
+  <link rel="stylesheet" href="portfolio.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- Font Awesome for icons -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
 
-    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
 </head>
+
 <body>
-    <!-- Header Section -->
-    <div class="header" id="home">
-        <nav id="navbar">
-            <a href="#home" class="logo">SRAIG</a>
-            <div class="links" id="nav">
-                <a href="#home">Home</a>
-                <a href="#about">About</a>
-                <a href="#skills">Skills</a>
-                <a href="#projects">Projects</a>
-                <a href="#contact">Contact</a>
-            </div>
-            <div class="fas fa-bars" id="menu-btn" onclick="openmenu()"></div>
-            <div class="fa-solid fa-xmark" id="close" onclick="closemenu()"></div>
-        </nav>
-
-        <div class="container">
-            <div class="image">
-                <img src="Pics/DSC_4735.jpg" alt="" height="500px" width="400px">
-            </div>
-            <div class="home-content">
-                <h1>Hello, It's Me</h1>
-                <h3>Sithum Raigamage</h3>
-                <h3>I'm a <span>Software Engineering Intern</span></h3>
-                <p>As a passionate software engineering student, I thrive on exploring various technologies and adapting
-                    quickly to new ones and With a flexible mindset and a hunger for knowledge,
-                    I'm always eager to tackle new challenges and stay ahead of the curve in the dynamic world of technology.
-                </p>
-                <div class="home-social">
-                    <a href="https://github.com/SithumRaigamage" style="--i:8"><i class="fab fa-github"></i></a>
-                    <a href="https://www.linkedin.com/in/sithum-raigamage" style="--i:9" target="_blank"><i class="fab fa-linkedin"></i></a>
-                    <a href="mailto:sraig2002@gmail.com" style="--i:10"><i class="fas fa-envelope"></i></a>
-                </div>
-                <a href="cv/Sithum raigamage.pdf" download class="home-btn">Download CV</a>
-            </div>
+  <div class="ezy__nav1 dark ">
+    <nav class="navbar navbar-expand-lg navbar-light py-3">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          PortFolio
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+          aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+          <span>
+            <span></span>
+          </span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 mt-4 mt-lg-0">
+            <li class="nav-item"><a class="nav-link active" href="#">About Me</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Services</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Projects</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Awards and Certifications</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Technologies</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Why Me?</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Testimonials</a></li>
+          </ul>
         </div>
+      </div>
+    </nav>
+  </div>
+
+  <section class="ezy__about17 gray">
+    <!-- shape three -->
+    <svg class="ezy__about17-shape-three position-absolute" width="223" height="262" viewBox="0 0 223 262"
+      fill="var(--ezy-body-color-invert)" xmlns="http://www.w3.org/2000/svg">
+      <path
+        d="M212.555 100.254C224.477 169.763 239.522 246.47 170.132 258.373C100.741 270.275 36.3657 251.51 24.443 182C12.5203 112.491 -30.8157 14.839 38.5748 2.93669C107.965 -8.96565 200.632 30.7447 212.555 100.254Z"
+        fill="var(--ezy-body-color-invert)" fill-opacity="0.8" />
+    </svg>
+    <!-- shape four -->
+    <svg class="ezy__about17-shape-four position-absolute" width="155" height="166" viewBox="0 0 155 166"
+      fill="var(--ezy-body-color-invert)" xmlns="http://www.w3.org/2000/svg">
+      <path
+        d="M141.003 54.264C153.758 98.3055 169.054 146.771 125.088 159.504C81.1214 172.237 38.1659 164.793 25.4108 120.751C12.6556 76.7097 -22.4405 16.769 21.5258 4.03561C65.4921 -8.69781 128.248 10.2226 141.003 54.264Z"
+        fill="var(--ezy-body-color-invert)" fill-opacity="0.8" />
+    </svg>
+
+    <div class="container">
+      <div class="row justify-content-between">
+        <div class="col-12 col-md-5">
+          <div class="position-relative">
+            <!-- shape one -->
+            <svg class="ezy__about17-shape-one position-absolute" width="499" height="499" viewBox="0 0 600 600"
+              fill="var(--ezy-body-color-invert)" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="249.5" cy="249.5" r="249.5" fill="var(--ezy-body-color-invert)" fill-opacity="1" />
+            </svg>
+            <img src="" alt="" class="img-fluid" />
+            <!-- shape two -->
+            <svg class="ezy__about17-shape-two position-absolute" width="134" height="133" viewBox="0 0 134 133"
+              fill="var(--ezy-body-color-invert)" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M66.9999 133C104.003 133 134 103.227 134 66.5C134 29.773 104.003 0 66.9999 0C29.9968 0 0 29.773 0 66.5C0 103.227 29.9968 133 66.9999 133Z"
+                fill="var(--ezy-body-color-invert)" fill-opacity="1" />
+            </svg>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 me-md-4">
+          <div>
+            <h1 class="ezy__about17-heading">My Story</h1>
+            <h2 class="ezy__about17-name"> I am Sithum Raigamage</h2>
+            <h3 class="ezy__about17-title">Software Engineering Intern and SE UnderGraduate</h3>
+            <p class="ezy__about17-sub-heading my-4 pe-lg-5">
+              I am a passionate Software Engineering student, I thrive on exploring various technologies and adapting
+              quickly to new ones and With a flexible mindset and a hunger for knowledge,
+              I'm always eager to tackle new challenges and stay ahead of the curve in the dynamic world of technology.
+            </p>
+            <div class="ezy__about17-cards">
+              <div class="d-flex align-items-center justify-content-center justify-content-md-start mt-5">
+                <i class="fas fa-briefcase ezy__about17-icon me-3"></i>
+                <h6 class="mb-0">6+ Months as a Software Engineer Intern</h6>
+              </div>
+              <div class="d-flex align-items-center justify-content-center justify-content-md-start mt-5">
+                <i class="fas fa-graduation-cap ezy__about17-icon me-3"></i>
+                <h6 class="mb-0">SE UnderGraduate at IIT</h6>
+              </div>
+              <div class="d-flex align-items-center justify-content-center justify-content-md-start mt-5">
+                <i class="fa-solid fa-certificate ezy__about17-icon me-3"></i>
+                <h6 class="mb-0">6+ Certifications</h6>
+              </div>
+              <div class="d-flex align-items-center justify-content-center justify-content-md-start mt-5">
+                <i class="fas fa-project-diagram ezy__about17-icon me-3"></i>
+                <h6 class="mb-0">Worked on 10+ Projects</h6>
+              </div>
+              <div class="d-flex align-items-center justify-content-center justify-content-md-start mt-5">
+                <i class="fas fa-code  ezy__about17-icon me-3"></i>
+                <h6 class="mb-0">Full Stack Developer</h6>
+              </div>
+              <div class="d-flex align-items-center justify-content-center justify-content-md-start mt-5">
+                <i class="fas fa-users ezy__about17-icon me-3"></i>
+                <h6 class="mb-0">Collaborated in Cross-functional Teams</h6>
+              </div>
+            </div>
+          </div>
+          <div class="d-flex mt-5">
+            <div class="btn ezy__about17-btn">Connect With Me</div>
+            <div class="d-flex ms-5">
+              <ul class="ezy__about17-social nav">
+                <li>
+                  <a href="" class="border d-flex justify-content-center align-items-center rounded-circle"><i
+                      class="fa-brands fa-linkedin"></i></a>
+                </li>
+                <li>
+                  <a href="" class="border d-flex justify-content-center align-items-center rounded-circle"><i
+                      class="fa-brands fa-github"></i></a>
+                </li>
+                <li>
+                  <a href="" class="border d-flex justify-content-center align-items-center rounded-circle"><i
+                      class="fab fa-facebook-f"></i></a>
+                </li>
+                <li>
+                  <a href="" class="border d-flex justify-content-center align-items-center rounded-circle"><i
+                      class="fa-brands fa-medium"></i></a>
+                </li>
+                <li>
+                  <a href="" class="border d-flex justify-content-center align-items-center rounded-circle"><i
+                      class="fa-brands fa-discord"></i></a>
+                </li>
+                <li>
+                  <a href="" class="border d-flex justify-content-center align-items-center rounded-circle"><i
+                      class="fa-solid fa-envelope"></i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-    <!-- Header Section End -->
-    <!-- About Section -->
-    <section class="about" id="about">
-        <h1 class="heading">About<span> Me</span></h1>
-        <!-- Education Section-->
-        <p class="heading-description">Education</p>
-        <div class="education-container">
-            <div class="education">
-                <div class="education-img">
-                    <img src="img/post1.jpg" alt="">
-                    <span><br></span>
-                </div>
-                <div class="education-content">
-                    <h3>IIT |<span> Bambalapitiya</span></h3>
-                    <h1>BEng (Hons) Software Engineering</h1>
-                    <p>Second Year</p>
-                </div>
-            </div>
-            <div class="education">
-                <div class="education-img">
-                    <img src="img/post2.jpg" alt="">
-                    <span><br></span>
-                </div>
-                <div class="education-content">
-                    <h3>Lyceum International School|<span> Nugegoda</span></h3>
-                    <h1>Completed my A/Ls and O/Ls</h1>
-                    <p>Alumni</p>
-                </div>
-            </div>
-            <div class="education">
-                <div class="education-img">
-                    <img src="img/post3.jpg" alt="">
-                    <span><br> </span>
-                </div>
-                <div class="education-content">
-                    <h3>Lyceum International School|<span> Panadura</span></h3>
-                    <h1>Grade 3 to Grade 9</h1>
-                    <p>Alumni</p>
-                </div>
-            </div>
-        </div>
-    </section>
-     <!-- Tech Section-->
-    <section class="tech-skills" id="skills">
-       
-        <h1 class="heading">Technical<span> Skills</span></h1>
-        <div class="tech-container">
-
-            <div class="tech-content">
-                <h3>I Have</h3>
-                <h1>Experience in <span class="tech"></span></h1>
-            </div>
-
-            <div class="tech-stack">
-                <div class="backend">
-                    <h3>Backend</h3>
-                    <img src="Pics/java.png" alt="">
-                    <img src="Pics/python.png" alt="">
-                    <img src="Pics/js.png" alt="">
-                    <img src="Pics/springboot.png" alt="">
-                </div>
-                <div class="frontend">
-                    <h3>Frontend</h3>
-                    <img src="Pics/html-5.png" alt="">
-                    <img src="Pics/css-3.png" alt="">
-                    <img src="Pics/js.png" alt="">
-    
-                </div>
-                <div class="database">
-                    <h3>Database</h3>
-                    <img src="Pics/mysql.png" alt="">
-                </div>
-                <div class="mobile">
-                    <h3>Mobile</h3>
-                    <img src="Pics/dart.png" alt="">
-                    <img src="Pics/flutter.png" alt="">
-                </div>
-
-    
-    
-            </div>
-        </div>
-        
-    </section>
-    <!-- Tech Section End-->
-
-    <!-- Project Section -->
-    <section class="projects" id="projects">
-        <h1 class="heading">My <span>Projects</span></h1>
-        <div class="container">
-            <div class="post">
-                <div class="project-img">
-                    <img src="Pics/icon-01.png"  alt="">
-                </div>
-                <div class="project-content">
-                    <h3>CeraFlaw |<span>Group Project</span></h3>
-
-                    <h1>Detection of visual defects in Ceramic Tiles</h1>
-                    <p>Software Development Group project</p>
-                    <p>Team Leader</p>
-                    <!-- Add the website link here -->
-                    <p>Website Link : <a href="https://sithumraigamage.github.io/CeraFlaw-Website/">CeraFlaw Website</a></p>
-                    <br>
-                    <div class="project-icons">
-                        <a><img src="Pics/flutter.png" alt="Flutter"></a>
-                        <a><img src="Pics/dart.png" alt="Dart"></a>
-                        <a><img src="Pics/python.png" alt="Python"></a>
-                        <a><img src="Pics/OpenCV-01.png" alt="OpenCV"></a>
-                    </div>                    
-                </div>
-            </div>
-            <div class="post">
-                <div class="project-img">
-                    <img src="Pics/DSC_4735.jpg"  alt="">
-                </div>
-                <div class="project-content">
-                    <h3>Portfolio |<span>Self Project</span></h3>
-
-                    <h1>Created a Personal Project</h1>
-                    <p>Demonstrating About Myself,Skills,Projects and How to contact Me</p>
-                    <br>
-                    <div class="project-icons">
-                        <a><img src="Pics/html-5.png" alt="HTML"></a>
-                        <a><img src="Pics/css-3.png" alt="Dart"></a>
-                        <a><img src="Pics/js.png" alt="Python"></a>
-                    </div>                    
-                </div>
-            </div>
-            <div class="post">
-                <div class="project-img">
-                    <img src="Pics/shopping-cart.png"  alt="">
-                </div>
-                <div class="project-content">
-                    <h3>ShoppingCart|<span>Self Project</span></h3>
-
-                    <h1>Created a Shopping Cart Project</h1>
-                    <p>Features Including User login[manager,customer],add products,remove,calculate total and discount</p>
-                    <br>
-                    <div class="project-icons">
-                        <a><img src="Pics/java.png" alt="HTML"></a>
-                    </div>                    
-                </div>
-            </div>
-            <div class="post">
-                <div class="project-img">
-                    <img src="Pics/line.png"  alt="Queue">
-                </div>
-                <div class="project-content">
-                    <h3>Queue Management system|<span>Self Project</span></h3>
-
-                    <h1>Created a Queue Management System Project</h1>
-                    <p>Implemented using Arrays and circular queue add people,remove</p>
-                    <br>
-                    <div class="project-icons">
-                        <a><img src="Pics/java.png" alt="HTML"></a>
-                    </div>                    
-                </div>
-            </div>
-        </div>
-        <div class="more-projects">
-            <a href="#more-projects" class="arrow-button">More Projects →</a>
-        </div>
-    </section>
-    <!-- Project Section End-->
-
-    <section class="contact" id="contact">
-        <div class="container">
-            <h2 class="heading">Contact <span>Me</span></h2>
-            <br>
-            <div class="contact-form">
-                <form action="mailto:sraig2002@gmail.com" method="post">
-                    <div class="form-group">
-                        <label for="name">Your Name</label>
-                        <input type="text" id="name" name="name" placeholder="Enter your name" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="email">Your Email</label>
-                        <input type="email" id="email" name="email" placeholder="Enter your email" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="message">Message</label>
-                        <textarea id="message" name="message" placeholder="Type your message here" rows="5" required></textarea>
-                    </div>
-                    <button type="submit" class="btn">Send Message</button>
-                </form>
-            </div>
-        </div>
-    </section>
-
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <p>&copy; 2024 Sithum Raigamage. All rights reserved.</p>
-            </div>
-        </div>
-    </footer>
-
-    <script src="portfolio.js"></script>
+  </section>
 </body>
+
 </html>
