@@ -218,6 +218,7 @@ section {
   color: #fff;
   background-color: var(--ezy-theme-color);
 }
+
 .ezy__header42-btn:hover {
   color: #fff;
   background-color: rgba(var(--ezy-theme-color-rgb));
@@ -270,15 +271,31 @@ section {
 
 /* For 14-inch laptop screens (1366px to 1920px) */
 @media (min-width: 1366px) and (max-width: 1920px) {
+  body, html {
+    overflow: hidden; /* Prevent horizontal scrollbar on laptop screens */
+  }
+
   .ezy__header42 {
     padding: 50px 0; /* Adjust padding for 14-inch laptop screens */
+  }
+
+  .ezy__header42-img {
+    width: 396px; /* Set desired width for the image */
   }
 }
 
 /* For 24-inch monitors (1920px and larger) */
 @media (min-width: 1920px) {
+  body, html {
+    overflow-x: hidden; /* Prevent horizontal scrollbar on large screens */
+  }
+
   .ezy__header42 {
     padding: 158px 0; /* Adjust padding for 24-inch monitor screens */
+  }
+
+  .ezy__header42-img {
+    width: 396px; /* Set desired width for the image */
   }
 }
 
