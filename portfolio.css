@@ -244,6 +244,7 @@ section {
 }
 
 
+/* ----------- about me --------------*/
 
 .ezy__about17 {
   /* Bootstrap variables */
@@ -258,6 +259,7 @@ section {
 
   background-color: var(--bs-body-bg);
   color: var(--bs-body-color);
+  padding: 50PX 20PX;
 }
 
 .dark .ezy__about17,
@@ -272,75 +274,84 @@ section {
 
 .ezy__about17-heading {
   font-weight: bold;
-  font-size: 62px;
+  font-size: 48px;
   line-height: 1.2;
-}
-
-/* shapes */
-.ezy__about17-shape-one {
-  z-index: -1;
-  top: -10%;
-  left: -10%;
-}
-.ezy__about17-shape-two {
-  z-index: -1;
-  top: 75%;
-  right: 0%;
-}
-.ezy__about17-shape-three {
-  z-index: -1;
-  top: 15%;
-  right: 10%;
-}
-.ezy__about17-shape-four {
-  z-index: -1;
-  bottom: 22%;
-  right: 15%;
-}
-
-.ezy__about17-cards {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr); /* 4 columns */
-  gap: 20px; /* Space between the items */
-  padding: 10px 10px;
-}
-
-.ezy__about17-icon {
-  font-size: 50px;
-  color: var(--ezy-theme-color);
-}
-
-.ezy__about17-btn {
-  padding: 10px 40px;
+  margin-bottom: 30px;
   color: var(--bs-body-color);
-  border: 2px solid var(--bs-body-color);
-  transition: 0.5s;
 }
-.ezy__about17-btn:hover {
-  color: #fff;
-  background-color: var(--ezy-theme-color);
-  border-color: var(--ezy-theme-color);
+
+.nav-tabs {
+  border-bottom: 10px solid #dee2e6;
+}
+
+/* Custom Active Tab Styling */
+.nav-tabs .nav-link.active {
+  color: white !important;
+  border-bottom: 10px solid var(--ezy-theme-color); /* Highlight the active tab with a thicker bottom border */
+}
+
+/* Default tab styling */
+.nav-tabs .nav-link {
+  color: var(--bs-body-color) !important;
+  border: none;
+  border-radius: 5px;
+  padding: 15px 30px; /* Increase horizontal and vertical padding */
+}
+
+.nav-tabs .nav-link:hover {
+  background-color: var(--ezy-theme-color) !important;
+  color: white !important;
+}
+
+/* Remove margin from the last tab to prevent extra space at the end */
+.nav-tabs .nav-item:last-child .nav-link {
+  margin-right: 0;
+}
+
+.tab-content {
+  border: 1px solid #dee2e6;
+  border-top: none;
+  padding: 20px;
+  border-radius: 0 0 5px 5px;
+  color: #ffffff;
 }
 
 .ezy__about17-social li {
-  list-style-type: none;
+  list-style: none;
   display: inline-block;
-  margin: 6px 8px;
+  margin: 0 15px; /* Increase space between icons */
 }
 
 .ezy__about17-social li a {
-  color: var(--bs-body-color);
-  width: 35px;
-  height: 35px;
+  color: #fff; /* White icons */
+  width: 50px; /* Increase size of icons */
+  height: 50px;
+  border: 3px solid #ccc; /* Slightly thicker border */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px; /* Increase font size for icons */
   text-decoration: none;
-  transition: 0.5s;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+  background: #333; /* Dark background for a modern look */
 }
 
 .ezy__about17-social li a:hover {
-  background-color: var(--ezy-theme-color);
-  border-color: var(--ezy-theme-color) !important;
+  background: linear-gradient(45deg, #ff5722, #007bff); /* Gradient background on hover */
   color: #fff;
+  border-color: #007bff;
 }
+
+.ezy__about17-social li a i {
+  transition: transform 0.3s ease; /* Icon transform effect */
+}
+
+.ezy__about17-social li a:hover i {
+  transform: scale(1.1); /* Slightly enlarge the icon when hovered */
+}
+
+
 
 
 

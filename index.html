@@ -6,8 +6,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>PortFolio</title>
   <link rel="stylesheet" href="portfolio.css">
+  <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+  <!-- Your other content goes here -->
+
+  <!-- Popper.js (needed for Bootstrap components like tooltips and popovers) -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"></script>
+
+ 
   <!-- Font Awesome for icons -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
@@ -77,42 +88,137 @@
 
 
   <section class="ezy__about17 dark">
-    <div class="container d-flex justify-content-center align-items-center">
-      <div class="col-12 col-md-6 me-md-4 text-center">
-        <h1 class="ezy__about17-heading">About Me</h1>
-        <div class="ezy__about17-cards">
-          <div class="ezy__about17-card">
-              <h3>Heading 1</h3>
-          </div>
-          <div class="ezy__about17-card">
-              <h3>Heading 2</h3>
-          </div>
-          <div class="ezy__about17-card">
-              <h3>Heading 3</h3>
-          </div>
-          <div class="ezy__about17-card">
-              <h3>Heading 4</h3>
-          </div>
-      </div>
-        <div class="d-flex justify-content-center mt-5">
-        </div>
-        <div class="d-flex justify-content-center mt-5">
-          <ul class="ezy__about17-social nav">
-            <li>
-              <a href="" class="border d-flex justify-content-center align-items-center rounded-circle"><i
-                  class="fab fa-facebook-f"></i></a>
+    <div class="container">
+      <div class="row justify-content-center text-center">
+        <div class="col-12 col-md-8">
+          <h1 class="ezy__about17-heading">About Me</h1>
+  
+          <!-- Tabs navigation -->
+          <ul class="nav nav-tabs justify-content-center" id="myTab" role="tablist">
+            <li class="nav-item" role="presentation">
+              <button class="nav-link active" id="tab1-tab" data-bs-toggle="tab" data-bs-target="#tab1" type="button"
+                role="tab" aria-controls="tab1" aria-selected="true">Personal details</button>
             </li>
-            <li>
-              <a href="" class="border d-flex justify-content-center align-items-center rounded-circle"><i
-                  class="fab fa-twitter"></i></a>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="tab2-tab" data-bs-toggle="tab" data-bs-target="#tab2" type="button" role="tab"
+                aria-controls="tab2" aria-selected="false">Education</button>
             </li>
-            <li>
-              <a href="" class="border d-flex justify-content-center align-items-center rounded-circle"><i
-                  class="fab fa-pinterest-p"></i></a>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="tab3-tab" data-bs-toggle="tab" data-bs-target="#tab3" type="button" role="tab"
+                aria-controls="tab3" aria-selected="false">Hobbies</button>
             </li>
-            <li>
-              <a href="" class="border d-flex justify-content-center align-items-center rounded-circle"><i
-                  class="fab fa-linkedin-in"></i></a>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="tab4-tab" data-bs-toggle="tab" data-bs-target="#tab4" type="button" role="tab"
+                aria-controls="tab4" aria-selected="false">Stats</button>
+            </li>
+          </ul>
+
+          <!-- Tab content -->
+          <div class="tab-content mt-4" id="myTabContent">
+            <!-- Tab 1 Content: Personal Details -->
+            <div class="tab-pane fade show active" id="tab1" role="tabpanel" aria-labelledby="tab1-tab">
+              <div class="row justify-content-center">
+                <div class="col-md-5">
+                  <h3>Personal Information</h3>
+                </div>
+                <div class="col-md-5 border-start">
+                  <h3>Education</h3>
+                </div>
+              </div>
+            </div>
+
+            <!-- Tab 2 Content: Education -->
+            <div class="tab-pane fade" id="tab2" role="tabpanel" aria-labelledby="tab2-tab">
+              <div class="row justify-content-center">
+                <div class="col-md-5">
+                  <h3>Academic Qualifications</h3>
+                </div>
+                <div class="col-md-5 border-start">
+                  <h3>Certifications</h3>
+                </div>
+              </div>
+            </div>
+
+            <!-- Tab 3 Content: Hobbies -->
+            <div class="tab-pane fade" id="tab3" role="tabpanel" aria-labelledby="tab3-tab">
+              <div class="row justify-content-center">
+                <div class="col-md-6">
+                  <h3>Interests</h3>
+                </div>
+              </div>
+            </div>
+
+            <!-- Tab 4 Content: Stats -->
+            <div class="tab-pane fade" id="tab4" role="tabpanel" aria-labelledby="tab4-tab">
+              <div class="container">
+                <h3 class="text-center mb-4">Website Stats</h3>
+                <div class="row row-cols-1 row-cols-md-3 g-4 justify-content-center">
+                  <!-- Remove border-start from this column -->
+                  <div class="col">
+                    <div class="card">
+                      <div class="card-body">
+                        <h5 class="card-title">Visitors</h5>
+                        <p class="card-text">Current active visitors on the website: 20</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col border-start">
+                    <div class="card">
+                      <div class="card-body">
+                        <h5 class="card-title">Page Views</h5>
+                        <p class="card-text">Total page views for today: 8</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col border-start">
+                    <div class="card">
+                      <div class="card-body">
+                        <h5 class="card-title">Completed Projects</h5>
+                        <p class="card-text">Total projects completed: 5+</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <!-- Social Media Icons -->
+          <ul class="ezy__about17-social nav justify-content-center mt-5">
+            <li class="nav-item">
+              <a href="#" class="border d-flex justify-content-center align-items-center rounded-circle social-icon">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="border d-flex justify-content-center align-items-center rounded-circle social-icon">
+                <i class="fab fa-twitter"></i>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="border d-flex justify-content-center align-items-center rounded-circle social-icon">
+                <i class="fab fa-pinterest-p"></i>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="border d-flex justify-content-center align-items-center rounded-circle social-icon">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="border d-flex justify-content-center align-items-center rounded-circle social-icon">
+                <i class="fab fa-instagram"></i>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="border d-flex justify-content-center align-items-center rounded-circle social-icon">
+                <i class="fab fa-youtube"></i>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="border d-flex justify-content-center align-items-center rounded-circle social-icon">
+                <i class="fab fa-github"></i>
+              </a>
             </li>
           </ul>
         </div>
