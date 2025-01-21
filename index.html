@@ -11,6 +11,7 @@
   integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
   <!-- Your other content goes here -->
+   <script src="index.js"></script>
 
   <!-- Popper.js (needed for Bootstrap components like tooltips and popovers) -->
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
@@ -45,7 +46,6 @@
             <li class="nav-item"><a class="nav-link" href="#">About Me</a></li>
             <li class="nav-item"><a class="nav-link" href="#">Services</a></li>
             <li class="nav-item"><a class="nav-link" href="#">Projects</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">Awards and Certifications</a></li>
             <li class="nav-item"><a class="nav-link" href="#">Technologies</a></li>
             <li class="nav-item"><a class="nav-link" href="#">Testimonials</a></li>
             <li class="nav-item"><a class="nav-link" href="#">Contact Me</a></li>
@@ -231,41 +231,41 @@
       <div class="ezy__service9-shape"></div>
       <div class="row mb-md-4">
         <div class="col-lg-6">
-          <h2 class="ezy__service9-heading mb-4">Services We Have</h2>
-          <p class="ezy__service9-sub-heading mb-0">Good void fruitful us unto brought firmament, in upon, spirit rule face. Forth created good let you'll years heaven above.</p>
+          <h2 class="ezy__service9-heading mb-4">Web Development Services</h2>
+          <p class="ezy__service9-sub-heading mb-0">Creating seamless and responsive websites that deliver exceptional user experiences. Whether it's front-end, back-end, or full-stack, I bring your ideas to life with modern web technologies.</p>
         </div>
       </div>
       <div class="row ezy__service9-card">
         <div class="col-md-4 mt-5">
           <div class="card ezy__service9-item mt-5">
             <div class="card-body py-0">
-              <div class="ezy__service9-icon"><i class="fas fa-cannabis"></i></div>
+              <div class="ezy__service9-icon"><i class="fas fa-code"></i></div>
             </div>
             <div class="card-body px-lg-4 pt-4 pb-lg-5">
-              <h4 class="ezy__service9-title fs-4 mb-3">Product Design</h4>
-              <p class="ezy__service9-content mb-0">So meat isn't you're appear moving great creeping the living saw female bring there may him evening seed set give.</p>
+              <h4 class="ezy__service9-title fs-4 mb-3">Custom Website Development</h4>
+              <p class="ezy__service9-content mb-0">Building responsive, high-performance websites tailored to your business goals, ensuring fast load times and an optimized user experience.</p>
             </div>
           </div>
         </div>
         <div class="col-md-4 mt-5">
           <div class="card ezy__service9-item mt-5">
             <div class="card-body py-0">
-              <div class="ezy__service9-icon"><i class="fas fa-random"></i></div>
+              <div class="ezy__service9-icon"><i class="fas fa-laptop-code"></i></div>
             </div>
             <div class="card-body px-lg-4 pt-4 pb-lg-5">
-              <h4 class="ezy__service9-title fs-4 mb-3">Content Marketing</h4>
-              <p class="ezy__service9-content mb-0">Gathered moveth. Forth saying may, morning divided, light can't night, fowl, lights that deep light have i meat air life.</p>
+              <h4 class="ezy__service9-title fs-4 mb-3">Front-End Development</h4>
+              <p class="ezy__service9-content mb-0">Transforming designs into interactive, responsive, and user-friendly websites using modern front-end technologies like HTML, CSS, and JavaScript.</p>
             </div>
           </div>
         </div>
         <div class="col-md-4 mt-5">
           <div class="card ezy__service9-item mt-5">
-            <div class="card-body px-lg-4 py-0">
-              <div class="ezy__service9-icon"><i class="fas fa-camera"></i></div>
+            <div class="card-body py-0">
+              <div class="ezy__service9-icon"><i class="fas fa-database"></i></div>
             </div>
             <div class="card-body px-lg-4 pt-4 pb-lg-5">
-              <h4 class="ezy__service9-title fs-4 mb-3">Digital Strategy</h4>
-              <p class="ezy__service9-content mb-0">You're don't signs moveth open brought heaven moveth fruit, saying moveth. Is god Of divided beast after. Fish were rule.</p>
+              <h4 class="ezy__service9-title fs-4 mb-3">Back-End Development</h4>
+              <p class="ezy__service9-content mb-0">Building scalable, secure, and efficient server-side applications with modern back-end technologies to support your website's data and functionality.</p>
             </div>
           </div>
         </div>
@@ -278,187 +278,68 @@
     <div class="container">
       <div class="row justify-content-center mb-4 mb-md-5">
         <div class="col-lg-6 text-center">
-          <p class="ezy__portfolio1-sub-heading mb-2">THIS IS WHAT WE DO</p>
+          <p class="ezy__portfolio1-sub-heading mb-2">THIS IS WHAT I DO</p>
           <h2 class="ezy__portfolio1-heading mb-4">My Latest Works</h2>
         </div>
         <div class="col-md-12 text-center mt-4">
-          <button class="btn m-1 ezy__portfolio1-btn-filter">All</button>
-          <button class="btn m-1 ezy__portfolio1-btn-filter">Branding</button>
-          <button class="btn m-1 ezy__portfolio1-btn-filter">Code</button>
-          <button class="btn m-1 ezy__portfolio1-btn-filter">Marketing</button>
-          <button class="btn m-1 ezy__portfolio1-btn-filter">Photography</button>
-          <button class="btn m-1 ezy__portfolio1-btn-filter">Development</button>
+          <button class="btn m-1 ezy__portfolio1-btn-filter" onclick="filterPortfolio('all')">All</button>
+          <button class="btn m-1 ezy__portfolio1-btn-filter" onclick="filterPortfolio('branding')">Branding</button>
+          <button class="btn m-1 ezy__portfolio1-btn-filter" onclick="filterPortfolio('code')">Code</button>
+          <button class="btn m-1 ezy__portfolio1-btn-filter" onclick="filterPortfolio('development')">Development</button>
         </div>
       </div>
-      <div class="row">
-        <div class="col-md-6 col-lg-4">
+      <div class="row" id="portfolioItems">
+        <div class="col-md-6 col-lg-4 portfolio-item branding">
           <div class="ezy__portfolio1-item position-relative mt-4">
             <img
               src="https://cdn.easyfrontend.com/pictures/portfolio/portfolio_1_1.png"
-              alt=""
+              alt="Branding Project" 
               class="img-fluid w-100"
             />
             <div class="ezy__portfolio1-content text-center p-4">
-              <h5>Photography</h5>
-              <p class="mb-0">Cinematography</p>
-            </div>
+              <h5>Branding Project</h5>
+              <p class="mb-0">Logo Design</p>
+          </div>
           </div>
         </div>
-        <div class="col-md-6 col-lg-4">
+        <div class="col-md-6 col-lg-4 portfolio-item code">
           <div class="ezy__portfolio1-item active position-relative mt-4">
             <img
               src="https://cdn.easyfrontend.com/pictures/portfolio/portfolio_1_2.png"
-              alt=""
+              alt="Code Project"
               class="img-fluid w-100"
             />
             <div class="ezy__portfolio1-content text-center p-4">
               <h5>Web Portal Dev</h5>
-              <p class="mb-0">Product Design</p>
-            </div>
+              <p class="mb-0">Front-End Development</p>
+          </div>
           </div>
         </div>
-        <div class="col-md-6 col-lg-4">
+        <div class="col-md-6 col-lg-4 portfolio-item development">
           <div class="ezy__portfolio1-item position-relative mt-4">
             <img
               src="https://cdn.easyfrontend.com/pictures/portfolio/portfolio_1_3.png"
-              alt=""
+              alt="Development Project"
               class="img-fluid w-100"
             />
             <div class="ezy__portfolio1-content text-center p-4">
-              <h5>Marketing</h5>
-              <p class="mb-0">Digital Marketing</p>
-            </div>
+              <h5>Full Stack Web App</h5>
+              <p class="mb-0">Full Stack Development</p>
           </div>
-        </div>
-        <div class="col-md-6 col-lg-4">
-          <div class="ezy__portfolio1-item position-relative mt-4">
-            <img
-              src="https://cdn.easyfrontend.com/pictures/portfolio/portfolio_1_4.png"
-              alt=""
-              class="img-fluid w-100"
-            />
-            <div class="ezy__portfolio1-content text-center p-4">
-              <h5>Web Portal Dev</h5>
-              <p class="mb-0">Web Design</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-4">
-          <div class="ezy__portfolio1-item position-relative mt-4">
-            <img
-              src="https://cdn.easyfrontend.com/pictures/portfolio/portfolio_1_5.png"
-              alt=""
-              class="img-fluid w-100"
-            />
-            <div class="ezy__portfolio1-content text-center p-4">
-              <h5>VS Code Editor</h5>
-              <p class="mb-0">Specialist</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-4">
-          <div class="ezy__portfolio1-item position-relative mt-4">
-            <img
-              src="https://cdn.easyfrontend.com/pictures/portfolio/portfolio_1_6.png"
-              alt=""
-              class="img-fluid w-100"
-            />
-            <div class="ezy__portfolio1-content text-center p-4">
-              <h5>Management</h5>
-              <p class="mb-0">Project Manager</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-4">
-          <div class="ezy__portfolio1-item position-relative mt-4">
-            <img
-              src="https://cdn.easyfrontend.com/pictures/portfolio/portfolio_1_7.png"
-              alt=""
-              class="img-fluid w-100"
-            />
-            <div class="ezy__portfolio1-content text-center p-4">
-              <h5>Logo Design</h5>
-              <p class="mb-0">Branding</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-4">
-          <div class="ezy__portfolio1-item position-relative mt-4">
-            <img
-              src="https://cdn.easyfrontend.com/pictures/portfolio/portfolio1.jpg"
-              alt=""
-              class="img-fluid w-100"
-            />
-            <div class="ezy__portfolio1-content text-center p-4">
-              <h5>Full Stack Dev</h5>
-              <p class="mb-0">Wordpress</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-4">
-          <div class="ezy__portfolio1-item position-relative mt-4">
-            <img
-              src="https://cdn.easyfrontend.com/pictures/portfolio/portfolio5.jpg"
-              alt=""
-              class="img-fluid w-100"
-            />
-            <div class="ezy__portfolio1-content text-center p-4">
-              <h5>Designing</h5>
-              <p class="mb-0">Product Design</p>
-            </div>
           </div>
         </div>
       </div>
     </div>
-  </section>
-
-  <section class="ezy__numbers11 dark">
-    <div class="container">
-      <div class="row text-center">
-        <div class="col-12">
-          <h2 class="ezy__numbers11-heading">Awards</h2>
-        </div>
-        <div class="col-12 col-md-4">
-          <div class="card ezy__numbers11-card border-0 mt-5">
-            <div class="mb-4">
-              <img src="https://cdn.easyfrontend.com/pictures/logos/award-logo.png" alt="" class="img-fluid" />
-            </div>
-            <h5 class="mb-0">Total Awards 1000</h5>
-          </div>
-        </div>
-        <div class="col-12 col-md-4">
-          <div class="card ezy__numbers11-card border-0 mt-5">
-            <div class="mb-4">
-              <img src="https://cdn.easyfrontend.com/pictures/logos/award-logo.png" alt="" class="img-fluid" />
-            </div>
-            <h5 class="mb-0">Ex velit cupidatat magna voluptate deserunt quis et dolor adipisicing elit culpa</h5>
-          </div>
-        </div>
-        <div class="col-12 col-md-4">
-          <div class="card ezy__numbers11-card border-0 mt-5">
-            <div class="mb-4">
-              <img src="https://cdn.easyfrontend.com/pictures/logos/award-logo.png" alt="" class="img-fluid" />
-            </div>
-            <h5 class="mb-0">Do more than is required.</h5>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="ezy__testimonial10 dark">
-    
   </section>
 
   <section class="ezy__testimonial10 dark">
     <div class="container position-relative">
       <div class="row mb-4 mb-lg-5">
         <div class="col-lg-6">
-          <h2 class="ezy__testimonial10-heading mb-4">Community Reviews</h2>
+          <h2 class="ezy__testimonial10-heading mb-4">Testimonials</h2>
           <p class="ezy__testimonial10-sub-heading mb-0">
-            Assumenda non repellendus distinctio nihil dicta sapiente, quibusdam maiores, illum at, aliquid blanditiis
-            eligendi qui.
-          </p>
+            Hear what my supervisors say about the web development projects I've worked on. I'm passionate about creating solutions that truly work for their business.
+        </p>
         </div>
       </div>
       <div class="row ezy__testimonial10-card">
@@ -572,23 +453,25 @@
             <div class="col-md-10 mx-auto">
               <div class="ezy__contact1-content rounded text-white my-5 py-4">
                 <div class="mb-5">
-                  <h2 class="ezy__contact1-heading mb-3 mt-0">Contact Us</h2>
-                  <p class="ezy__contact1-sub-heading mb-0 text-white">We list your menu online, help
-                    you process orders.</p>
+                  <h2 class="ezy__contact1-heading mb-3 mt-0">Get in Touch</h2>
+                  <p class="ezy__contact1-sub-heading mb-0 text-white">
+                    I'm always open to discussing new projects, creative ideas, or opportunities to be part of your
+                    vision.
+                  </p>
                 </div>
+                <!-- Contact Form -->
                 <form class="pe-md-4">
                   <div class="form-group mb-3">
-                    <input type="text" class="form-control" placeholder="Enter Name" />
+                    <input type="text" class="form-control" placeholder="Your Name" required />
                   </div>
                   <div class="form-group mb-3">
-                    <input type="email" class="form-control" placeholder="Enter Email" />
+                    <input type="email" class="form-control" placeholder="Your Email" required />
                   </div>
                   <div class="form-group mb-3">
-                    <textarea name="message" class="form-control" placeholder="Enter Message"
-                      rows="4"></textarea>
+                    <textarea name="message" class="form-control" placeholder="Your Message" rows="4" required></textarea>
                   </div>
                   <div class="text-end">
-                    <button type="submit" class="btn ezy__contact1-btn mb-3">Send</button>
+                    <button type="submit" class="btn ezy__contact1-btn mb-3">Send Message</button>
                   </div>
                 </form>
               </div>
