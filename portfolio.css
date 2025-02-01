@@ -250,43 +250,33 @@ section {
   }
 }
 
+.about{
+  background: var(--bs-body-bg);
+}
 
-/* ----------- about me --------------*/
+.dark .about,
+.about.dark {
+	/* Bootstrap variables */
+	--bs-body-color: #ffffff;
+	--bs-body-bg: rgb(11, 23, 39);
 
-.ezy__about17 {
-  /* Bootstrap variables */
-  --bs-body-color: #28303b;
-  --bs-body-bg: rgb(255, 255, 255);
+	/* Easy Frontend variables */
+	--ezy-item-bg: #162231;
+	--ezy-item-icon-bg: #0B1727;
+	--ezy-item-shadow: none;
+}
 
-  /* Easy Frontend variables */
-  --ezy-theme-color: rgb(13, 110, 253);
-  --ezy-theme-color-rgb: 13, 110, 253;
-  --ezy-body-color-invert: rgb(246, 246, 246);
-  --ezy-border-color: rgba(171, 171, 171, 0.6);
-
-  background-color: var(--bs-body-bg);
+.about-heading {
+  font-weight: bold;
+  font-size: 25px;
+  line-height: 25px;
   color: var(--bs-body-color);
-  padding: 50PX 20PX;
 }
-
-.dark .ezy__about17,
-.ezy__about17.dark {
-  /* Bootstrap variables */
-  --bs-body-color: #ffffff;
-  --bs-body-bg: rgb(11, 23, 39);
-
-  /* Easy Frontend variables */
-  --ezy-body-color-invert: rgb(30, 39, 53);
-}
-
 
 .services {
 	/* Bootstrap variables */
 	--bs-body-color: #2B323C;
 	--bs-body-bg: rgb(255, 255, 255);
-
-	/* Easy Frontend variables */
-	--ezy-theme-color: rgb(13, 110, 253);
 	--ezy-theme-color-rgb: 13, 110, 253;
 	--ezy-item-bg: #ffffff;
 	--ezy-item-icon-bg: #ffffff;
