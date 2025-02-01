@@ -145,7 +145,7 @@ section {
 
 /* ----------- home --------------*/
 
-.ezy__header42 {
+.home {
   /* Bootstrap variables */
   --bs-body-bg: rgb(255, 255, 255);
   --bs-body-bg-invert: rgb(246, 246, 246);
@@ -163,8 +163,8 @@ section {
 }
 
 /* Dark Block Style */
-.dark .ezy__header42,
-.ezy__header42.dark {
+.dark .home,
+.home.dark {
   /* Bootstrap variables */
   --bs-body-color: #ffffff;
   --bs-body-bg: rgb(11, 23, 39);
@@ -173,21 +173,21 @@ section {
   --ezy-body-color-invert: rgb(30, 39, 53);
 }
 
-.ezy__header42-heading {
+.home-heading {
   font-weight: bold;
   font-size: 32px;
   line-height: 1.2;
   letter-spacing: 1px;
 }
 
-.ezy__header42-sub-heading {
+.home-sub-heading {
   font-size: 17px;
   line-height: 1.8;
   opacity: 0.8;
   text-align: justify;
 }
 
-.ezy__header42-btn {
+.home-btn {
   padding: 10px 30px;
   font-weight: 500;
   color: #fff;
@@ -198,7 +198,7 @@ section {
   transition: all 0.3s ease-in-out;
 }
 
-.ezy__header42-btn:hover {
+.home-btn:hover {
   color: #fff;
   background-color: rgba(var(--ezy-theme-color-rgb), 0.9);
   border-color: rgba(var(--ezy-theme-color-rgb), 0.7);
@@ -207,14 +207,14 @@ section {
 }
 
 
-.ezy__header42-img {
+.home-img {
   box-shadow: -50px 0 0 0 var(--ezy-body-color-invert);
   border-radius: 50%;
 }
 
 /* For tablet and smaller laptop screens (min-width: 768px) */
 @media (min-width: 768px) {
-  .ezy__header42 {
+  .home {
     padding: 100px 0; /* Adjust padding for tablets and small laptops */
   }
 }
@@ -225,11 +225,11 @@ section {
      /* Prevent horizontal scrollbar on laptop screens */
   }
 
-  .ezy__header42 {
+  .home {
     padding: 50px 0; /* Adjust padding for 14-inch laptop screens */
   }
 
-  .ezy__header42-img {
+  .home-img {
     width: 396px; /* Set desired width for the image */
   }
 }
@@ -239,11 +239,11 @@ section {
   body, html { /* Prevent horizontal scrollbar on large screens */
   }
 
-  .ezy__header42 {
+  .home {
     padding: 158px 0; /* Adjust padding for 24-inch monitor screens */
   }
 
-  .ezy__header42-img {
+  .home-img {
     width: 396px; /* Set desired width for the image */
   }
 }
@@ -276,89 +276,6 @@ section {
   /* Easy Frontend variables */
   --ezy-body-color-invert: rgb(30, 39, 53);
 }
-
-.ezy__about17-heading {
-  font-weight: bold;
-  font-size: 48px;
-  line-height: 1.2;
-  margin-bottom: 30px;
-  color: var(--bs-body-color);
-}
-
-.nav-tabs {
-  border-bottom: 10px solid #dee2e6;
-}
-
-/* Custom Active Tab Styling */
-.nav-tabs .nav-link.active {
-  color: white !important;
-  border-bottom: 10px solid var(--ezy-theme-color); /* Highlight the active tab with a thicker bottom border */
-}
-
-/* Default tab styling */
-.nav-tabs .nav-link {
-  color: var(--bs-body-color) !important;
-  border: none;
-  border-radius: 5px;
-  padding: 15px 30px; /* Increase horizontal and vertical padding */
-}
-
-.nav-tabs .nav-link:hover {
-  background-color: var(--ezy-theme-color) !important;
-  color: white !important;
-}
-
-/* Remove margin from the last tab to prevent extra space at the end */
-.nav-tabs .nav-item:last-child .nav-link {
-  margin-right: 0;
-}
-
-.tab-content {
-  border: 1px solid #dee2e6;
-  border-top: none;
-  padding: 20px;
-  border-radius: 0 0 5px 5px;
-  color: #ffffff;
-}
-
-.ezy__about17-social li {
-  list-style: none;
-  display: inline-block;
-  margin: 0 15px; /* Increase space between icons */
-}
-
-.ezy__about17-social li a {
-  color: #fff; /* White icons */
-  width: 50px; /* Increase size of icons */
-  height: 50px;
-  border: 3px solid #ccc; /* Slightly thicker border */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 24px; /* Increase font size for icons */
-  text-decoration: none;
-  border-radius: 50%;
-  transition: all 0.3s ease;
-  background: #333; /* Dark background for a modern look */
-}
-
-.ezy__about17-social li a:hover {
-  background: linear-gradient(45deg, #ff5722, #007bff); /* Gradient background on hover */
-  color: #fff;
-  border-color: #007bff;
-}
-
-.ezy__about17-social li a i {
-  transition: transform 0.3s ease; /* Icon transform effect */
-}
-
-.ezy__about17-social li a:hover i {
-  transform: scale(1.1); /* Slightly enlarge the icon when hovered */
-}
-
-
-
-
 
 
 .ezy__service9 {
