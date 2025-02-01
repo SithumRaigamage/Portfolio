@@ -4,6 +4,7 @@ body {
   overflow-x: hidden;
 }
 
+
 html {
   scroll-behavior: smooth;
 }
@@ -11,6 +12,7 @@ html {
 
 section {
   padding: 60px 20px;
+  scroll-margin-top: 100px; /* Adjust based on navbar height */
 }
 
 /* ----------- nav bar --------------*/
@@ -278,7 +280,7 @@ section {
 }
 
 
-.ezy__service9 {
+.services {
 	/* Bootstrap variables */
 	--bs-body-color: #2B323C;
 	--bs-body-bg: rgb(255, 255, 255);
@@ -299,8 +301,8 @@ section {
 }
 
 /* Dark Block Style */
-.dark .ezy__service9,
-.ezy__service9.dark {
+.dark .services,
+.services.dark {
 	/* Bootstrap variables */
 	--bs-body-color: #ffffff;
 	--bs-body-bg: rgb(11, 23, 39);
@@ -311,34 +313,34 @@ section {
 	--ezy-item-shadow: none;
 }
 
-.ezy__service9-heading {
+.services-heading {
 	font-weight: bold;
-	font-size: 25px;
+	font-size: 40px;
 	line-height: 25px;
 	color: var(--bs-body-color);
 }
 
-.ezy__service9-sub-heading {
+.services-sub-heading {
 	font-size: 18px;
 	line-height: 25px;
 	color: var(--bs-body-color);
 	opacity: .8;
 }
 
-.ezy__service9-item {
+.services-item {
 	background-color: var(--ezy-item-bg);
 	box-shadow: var(--ezy-item-shadow);
 	border-radius: 20px;
 	border: none;
 }
 
-.ezy__service9-icon {
+.services-icon {
 	background-color: var(--ezy-item-icon-bg);
 	box-shadow: 0 4px 34px 0 rgba(255, 255, 255, 0.12);
 	color: var(--ezy-theme-color);
 }
 
-.ezy__service9-icon {
+.services-icon {
 	width: 85px;
 	height: 85px;
 	border-radius: 50%;
@@ -349,16 +351,16 @@ section {
 	margin-top: -42px;
 }
 
-.ezy__service9-title {
+.services-title {
 	color: var(--bs-body-color);
 }
 
-.ezy__service9-content {
+.services-content {
 	color: var(--bs-body-color);
 	opacity: .8;
 }
 
-.ezy__service9-shape {
+.services-shape {
 	background-color: rgba(var(--ezy-theme-color-rgb), .1);
 	border-radius: 30px 0 0 30px;
 	position: absolute;
@@ -373,7 +375,7 @@ section {
 
 
 
-.ezy__portfolio1 {
+.projects {
   /* Bootstrap variables */
   --bs-body-color: #373572;
   --bs-body-bg: rgb(255, 255, 255);
@@ -389,14 +391,14 @@ section {
 }
 
 @media (min-width: 768px) {
-  .ezy__portfolio1 {
+  .projects {
     padding: 100px 0;
   }
 }
 
 /* Gray Block Style */
-.gray .ezy__portfolio1,
-.ezy__portfolio1.gray {
+.gray .projects,
+.projects.gray {
   /* Bootstrap variables */
   --bs-body-bg: rgb(246, 246, 246);
 
@@ -405,8 +407,8 @@ section {
 }
 
 /* Dark Gray Block Style */
-.dark-gray .ezy__portfolio1,
-.ezy__portfolio1.dark-gray {
+.dark-gray .projects,
+.projects.dark-gray {
   /* Bootstrap variables */
   --bs-body-color: #ffffff;
   --bs-body-bg: rgb(30, 39, 53);
@@ -416,8 +418,8 @@ section {
 }
 
 /* Dark Block Style */
-.dark .ezy__portfolio1,
-.ezy__portfolio1.dark {
+.dark .projects,
+.projects.dark {
   /* Bootstrap variables */
   --bs-body-color: #ffffff;
   --bs-body-bg: rgb(11, 23, 39);
@@ -426,7 +428,7 @@ section {
   --ezy-popup-bg-rgb: 11, 23, 39;
 }
 
-.ezy__portfolio1-heading {
+.projects-heading {
   font-weight: bold;
   font-size: 25px;
   line-height: 25px;
@@ -434,24 +436,24 @@ section {
 }
 
 @media (min-width: 768px) {
-  .ezy__portfolio1-heading {
+  .projects-heading {
     font-size: 45px;
     line-height: 45px;
   }
 }
 
-.ezy__portfolio1-sub-heading {
+.projects-sub-heading {
   font-size: 16px;
   line-height: 22px;
   color: var(--bs-body-color);
 }
 
-.ezy__portfolio1-item {
+.projects-item {
   border-radius: 12px;
   overflow: hidden;
 }
 
-.ezy__portfolio1-content {
+.projects-content {
   position: absolute;
   left: 16px;
   right: 16px;
@@ -464,23 +466,23 @@ section {
   transition: all 0.25s ease-in-out;
 }
 
-.ezy__portfolio1-content * {
+.projects-content * {
   color: var(--bs-body-color);
 }
 
-.ezy__portfolio1-item:hover .ezy__portfolio1-content {
+.projects-item:hover .projects-content {
   transform: translateY(0);
   opacity: 1;
 }
 
-.ezy__portfolio1-btn-filter {
+.projects-btn-filter {
   padding: 7px 20px;
   border-color: var(--ezy-theme-color);
   color: var(--ezy-theme-color);
 }
 
-.ezy__portfolio1-btn-filter:hover,
-.ezy__portfolio1-btn-filter.active {
+.projects-btn-filter:hover,
+.projects-btn-filter.active {
   background-color: var(--ezy-theme-color);
   color: #fff;
 }
