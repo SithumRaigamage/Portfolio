@@ -740,6 +740,56 @@ section {
 }
 
 
+.techstack {
+  /* Bootstrap variables */
+  --bs-body-color: #373572;
+  --bs-body-bg: rgb(255, 255, 255);
+
+  /* Easy Frontend variables */
+  --ezy-theme-color: rgb(13, 110, 253);
+  --ezy-theme-color-rgb: 13, 110, 253;
+  --ezy-popup-bg-rgb: 255, 255, 255;
+
+  background-color: var(--bs-body-bg);
+  overflow: hidden;
+  padding: 60px 0;
+}
+
+/* Dark Block Style */
+.dark .techstack,
+.techstack.dark {
+  /* Bootstrap variables */
+  --bs-body-color: #ffffff;
+  --bs-body-bg: rgb(11, 23, 39);
+
+  /* Easy Frontend variables */
+  --ezy-popup-bg-rgb: 11, 23, 39;
+}
+
+.techstack-heading {
+	font-weight: bold;
+	font-size: 40px;
+	line-height: 25px;
+	color: var(--bs-body-color);
+}
+
+/* Fixed Size for Images */
+.techstack-item img {
+  width: 30px; /* Set your desired width */
+  height: 30px; /* Set your desired height */
+  object-fit: contain; /* Ensures the image scales without distortion */
+}
+
+/* Optional: You can add margin or padding to control spacing around the images */
+.techstack-item {
+  padding: 15px; /* Adjust padding if necessary */
+}
+
+/* White text for h4 and p tags */
+.techstack .techstack-item h4,
+.techstack .techstack-item p {
+  color: #ffffff; /* Set the text color to white */
+}
 
 
 
