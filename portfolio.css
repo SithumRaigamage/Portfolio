@@ -311,7 +311,46 @@ section {
   color: var(--bs-body-color);
 }
 
+/* General Styles */
+#education {
+  color: white;
+  padding: 20px;
+}
 
+/* Timeline Container */
+.timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* Adds space between education items */
+}
+
+/* Education Item */
+.education-item {
+  background-color: rgba(255, 255, 255, 0.1); /* Subtle background for contrast */
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Layout for content and image */
+.education-item .d-flex {
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Text Styling */
+.education-item h4, .education-item p, .education-item i, .education-item .text-muted {
+  margin: 0;
+  color: white !important;
+}
+
+/* Image Styling */
+.education-img {
+  width: 80px; /* Adjust as needed */
+  height: auto;
+  border-radius: 8px;
+  margin-left: 20px; /* Adds gap between text and image */
+}
 
 /* Experience Section */
 #experience {
