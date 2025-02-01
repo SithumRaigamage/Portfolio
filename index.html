@@ -86,7 +86,139 @@
 
   <section class="about dark" id="aboutme">
     <div class="container position-relative">
-      <h2 class="services-heading mb-4">About Me</h2>
+      <h2 class="services-heading mb-4 text-center">About Me</h2>
+
+      <!-- Tab Navigation - Centered and Styled -->
+      <div class="d-flex justify-content-center mb-4">
+        <ul class="nav nav-pills" id="aboutTabs" role="tablist">
+          <li class="nav-item mx-2">
+            <button class="nav-link active px-4 text-white" id="personal-tab" data-bs-toggle="tab" data-bs-target="#personal" type="button">Personal Info</button>
+          </li>
+          <li class="nav-item mx-2">
+            <button class="nav-link px-4 text-white" id="education-tab" data-bs-toggle="tab" data-bs-target="#education" type="button">Education</button>
+          </li>
+          <li class="nav-item mx-2">
+            <button class="nav-link px-4 text-white" id="experience-tab" data-bs-toggle="tab" data-bs-target="#experience" type="button">Experience</button>
+          </li>
+          <li class="nav-item mx-2">
+            <button class="nav-link px-4 text-white" id="stats-tab" data-bs-toggle="tab" data-bs-target="#stats" type="button">Stats</button>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Tab Content -->
+      <div class="tab-content p-4" id="aboutTabsContent">
+        <!-- Personal Info Tab -->
+        <div class="tab-pane fade show active" id="personal" role="tabpanel">
+          <div class="row justify-content-center">
+            <div class="col-md-8 text-center">
+              <h3 class="mb-4">Personal Information</h3>
+              <div class="row g-4">
+                <div class="col-sm-6">
+                  <div class="p-3 rounded shadow-sm">
+                    <i class="fas fa-user mb-3"></i>
+                    <p><strong>Name:</strong> Sithum Raigamage</p>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="p-3 rounded shadow-sm">
+                    <i class="fas fa-map-marker-alt mb-3"></i>
+                    <p><strong>Location:</strong> Colombo, Sri Lanka</p>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="p-3 rounded shadow-sm">
+                    <i class="fas fa-envelope mb-3"></i>
+                    <p><strong>Email:</strong> example@email.com</p>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="p-3 rounded shadow-sm">
+                    <i class="fas fa-language mb-3"></i>
+                    <p><strong>Languages:</strong> English, Sinhala</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Education Tab -->
+        <div class="tab-pane fade" id="education" role="tabpanel">
+          <div class="row justify-content-center">
+            <div class="col-md-8">
+              <h3 class="text-center mb-4">Educational Background</h3>
+              <div class="timeline">
+          <div class="education-item p-4 rounded shadow-sm mb-4">
+            <div class="d-flex align-items-center mb-3"></div>
+                  <p class="text-muted"><i class="fas fa-calendar-alt me-2"></i>2020 - Present</p>
+                  <p>University of Westminster</p>
+                </div>
+                <div class="education-item p-4 rounded shadow-sm">
+                  <h4>Advanced Level</h4>
+                  <p class="text-muted"><i class="fas fa-calendar-alt me-2"></i>2016 - 2018</p>
+                  <p>Richmond College</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Experience Tab -->
+        <div class="tab-pane fade" id="experience" role="tabpanel">
+          <div class="row justify-content-center">
+            <div class="col-md-8">
+              <h3 class="text-center mb-4">Work Experience</h3>
+              <div class="experience-item p-4 rounded shadow-sm">
+                <h4><i class="fas fa-briefcase me-2"></i>Software Engineer Intern</h4>
+                <p class="text-muted">Tech Company Name | 2022 - 2023</p>
+                <ul class="list-unstyled">
+                  <li><i class="fas fa-check-circle me-2"></i>Developed full-stack web applications</li>
+                  <li><i class="fas fa-check-circle me-2"></i>Collaborated with senior developers</li>
+                  <li><i class="fas fa-check-circle me-2"></i>Implemented responsive designs</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Stats Tab -->
+        <div class="tab-pane fade" id="stats" role="tabpanel">
+        <div class="row justify-content-center">
+          <div class="col-md-8">
+            <h3 class="text-center mb-4">Key Statistics</h3>
+            <div class="row g-4">
+              <div class="col-sm-6">
+                <div class="stat-item p-4 rounded shadow-sm text-center">
+                  <i class="fas fa-project-diagram mb-3"></i>
+                  <h4>20+</h4>
+                  <p>Projects Completed</p>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="stat-item p-4 rounded shadow-sm text-center">
+                  <i class="fas fa-code mb-3"></i>
+                  <h4>15000+</h4>
+                  <p>Lines of Code</p>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="stat-item p-4 rounded shadow-sm text-center">
+                  <i class="fas fa-coffee mb-3"></i>
+                  <h4>500+</h4>
+                  <p>Cups of Coffee</p>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="stat-item p-4 rounded shadow-sm text-center">
+                  <i class="fas fa-clock mb-3"></i>
+                  <h4>1000+</h4>
+                  <p>Hours Coded</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
 
     </div>
 
