@@ -5,7 +5,16 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>PortFolio</title>
-  <link rel="stylesheet" href="portfolio.css">
+  <link rel="stylesheet" href="global.css">
+  <link rel="stylesheet" href="navbar.css">
+  <link rel="stylesheet" href="home.css">
+  <link rel="stylesheet" href="aboutme.css">
+  <link rel="stylesheet" href="services.css">
+  <link rel="stylesheet" href="projects.css">
+  <link rel="stylesheet" href="techstack.css">
+  <link rel="stylesheet" href="contact.css">
+  <link rel="stylesheet" href="footer.css">
+
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
   integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
@@ -708,48 +717,64 @@
                 <p class="text-muted">Code Hosting</p>
               </div>
             </div>
-
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <section class="ezy__contact1 dark" id="contactme">
-    <div class="container position-relative">
-      <div class="row py-5 align-items-center">
-        <div class="col-lg-6 mb-3 mb-lg-0">
-          <img src="https://cdn.easyfrontend.com/pictures/contact/contact_1.png" alt=""
-            class="img-fluid ezy__contact1-banner mx-auto" />
-        </div>
-        <div class="col-lg-6 position-relative">
-          <div class="ezy__contact1-shape"></div>
-          <div class="row position-relative">
-            <div class="col-md-10 mx-auto">
-              <div class="ezy__contact1-content rounded text-white my-5 py-4">
-                <div class="mb-5">
-                  <h2 class="ezy__contact1-heading mb-3 mt-0">Get in Touch</h2>
-                  <p class="ezy__contact1-sub-heading mb-0 text-white">
-                    I'm always open to discussing new projects, creative ideas, or opportunities to be part of your
-                    vision.
-                  </p>
-                </div>
-                <!-- Contact Form -->
-                <form class="pe-md-4">
-                  <div class="form-group mb-3">
-                    <input type="text" class="form-control" placeholder="Your Name" required />
-                  </div>
-                  <div class="form-group mb-3">
-                    <input type="email" class="form-control" placeholder="Your Email" required />
-                  </div>
-                  <div class="form-group mb-3">
-                    <textarea name="message" class="form-control" placeholder="Your Message" rows="4" required></textarea>
-                  </div>
-                  <div class="text-end">
-                    <button type="submit" class="btn ezy__contact1-btn mb-3">Send Message</button>
-                  </div>
-                </form>
+  <section class="contact dark">
+    <div class="container">
+      <div class="row justify-content-between">
+        <div class="col-lg-5 mb-5 mb-lg-0">
+          <h2 class="contact-title mb-4 mt-0">How can we help you?</h2>
+          <p class="contact-sub-heading mb-0">It’s easier to reach your savings goals when you have the
+            right savings account. Take a look and find the right one for you!</p>
+  
+          <div class="mt-5 pt-md-4">
+            <div class="card contact-link mt-4">
+              <div class="card-body d-flex align-items-center">
+                <i class="fas fa-envelope-open-text contact-icon fs-3 px-2"></i>
+                <a class="contact-link-content ms-4"
+                  href="mailto:email@easyfrontend.com">email@easyfrontend.com</a>
               </div>
+            </div>
+            <div class="card contact-link mt-4">
+              <div class="card-body d-flex align-items-center">
+                <i class="fas fa-phone-alt contact-icon fs-3 px-2"></i>
+                <a class="contact-link-content ms-4" href="callto:123**56">+880 1742-0****0</a>
+              </div>
+            </div>
+            <div class="card contact-link mt-4">
+              <div class="card-body d-flex align-items-center">
+                <i class="fas fa-hdd fs-3 contact-icon px-2"></i>
+                <a class="contact-link-content ms-4" href="#">easyfrontend.com</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-5">
+          <div class="card contact-form-card">
+            <div class="card-body p-md-5">
+              <h2 class="contact-heading mb-3">Contact Us</h2>
+              <p class="contact-sub-heading mb-5">We list your menu online, help you process orders.
+              </p>
+  
+              <form>
+                <div class="form-group mb-3 mt-2">
+                  <input type="text" class="form-control" placeholder="Enter Name" />
+                </div>
+                <div class="form-group mb-3 mt-2">
+                  <input type="email" class="form-control" placeholder="Enter Email" />
+                </div>
+                <div class="form-group mb-3">
+                  <textarea name="message" class="form-control" placeholder="Enter Message"
+                    rows="3"></textarea>
+                </div>
+                <div class="text-end">
+                  <button type="submit" class="btn btn-primary contact-btn">Submit</button>
+                </div>
+              </form>
             </div>
           </div>
         </div>
@@ -757,28 +782,44 @@
     </div>
   </section>
 
-
-  <section class="ezy__copyright5 dark text-center pt-5 pb-5">
+  <section class="ezy__footer1 dark">
     <div class="container">
-      <div class="row justify-content-between align-items-center">
-        <div class="col-lg-4 d-flex justify-content-center justify-content-lg-start">
-          <ul class="ezy__copyright5-social nav">
-            <li>
-              <a href="" class=""><i class="fab fa-facebook"></i></a>
+      <div class="row d-flex justify-content-between align-items-center">
+        <div class="col-lg-4">
+          <p class="mb-lg-0">Copyright all rights reserved</p>
+        </div>
+        <div class="col-lg-4">
+          <ul class="ezy__footer1-nav nav justify-content-center">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Home</a>
             </li>
-            <li>
-              <a href="" class=""><i class="fab fa-twitter"></i></a>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
             </li>
-            <li>
-              <a href="" class=""><i class="fab fa-pinterest"></i></a>
-            </li>
-            <li>
-              <a href="" class=""><i class="fab fa-linkedin"></i></a>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
             </li>
           </ul>
         </div>
-        <div class="col-lg-4">
-          <p class="text-center text-lg-end mb-0">Copyright all rights reserved</p>
+        <div class="col-lg-4 d-flex justify-content-center justify-content-lg-end">
+          <ul class="ezy__footer1-social nav">
+            <li>
+              <a href="" class="border d-flex justify-content-center align-items-center rounded-circle"><i
+                  class="fab fa-facebook-f"></i></a>
+            </li>
+            <li>
+              <a href="" class="border d-flex justify-content-center align-items-center rounded-circle"><i
+                  class="fab fa-twitter"></i></a>
+            </li>
+            <li>
+              <a href="" class="border d-flex justify-content-center align-items-center rounded-circle"><i
+                  class="fab fa-pinterest-p"></i></a>
+            </li>
+            <li>
+              <a href="" class="border d-flex justify-content-center align-items-center rounded-circle"><i
+                  class="fab fa-linkedin-in"></i></a>
+            </li>
+          </ul>
         </div>
       </div>
     </div>
