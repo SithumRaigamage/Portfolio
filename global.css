@@ -4,14 +4,13 @@ body {
   overflow-x: hidden;
 }
 
-
 html {
   scroll-behavior: smooth;
 }
 
 
 section {
-  padding: 60px 20px;
+  padding: 110px 20px;
   scroll-margin-top: 100px; /* Adjust based on navbar height */
 }
 
