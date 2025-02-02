@@ -1,0 +1,100 @@
+/* ----------- home --------------*/
+
+.home {
+    /* Bootstrap variables */
+    --bs-body-bg: rgb(255, 255, 255);
+    --bs-body-bg-invert: rgb(246, 246, 246);
+  
+    /* Easy Frontend variables */
+    --ezy-theme-color: rgb(13, 110, 253);
+    --ezy-theme-color-rgb: rgb(13, 110, 253);
+    --ezy-body-color-invert: rgb(246, 246, 246);
+  
+    background-color: var(--bs-body-bg);
+    color: var(--bs-body-color);
+    position: relative;
+    padding: 100px 0;
+    z-index: 1;
+  }
+  
+  /* Dark Block Style */
+  .dark .home,
+  .home.dark {
+    /* Bootstrap variables */
+    --bs-body-color: #ffffff;
+    --bs-body-bg: rgb(11, 23, 39);
+  
+    /* Easy Frontend variables */
+    --ezy-body-color-invert: rgb(30, 39, 53);
+  }
+  
+  .home-heading {
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 1.2;
+    letter-spacing: 1px;
+  }
+  
+  .home-sub-heading {
+    font-size: 17px;
+    line-height: 1.8;
+    opacity: 0.8;
+    text-align: justify;
+  }
+  
+  .home-btn {
+    padding: 10px 30px;
+    font-weight: 500;
+    color: #fff;
+    background-color: var(--ezy-theme-color);
+    border-radius: 10px;
+    border: 2px solid var(--ezy-theme-color);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .home-btn:hover {
+    color: #fff;
+    background-color: rgba(var(--ezy-theme-color-rgb), 0.9);
+    border-color: rgba(var(--ezy-theme-color-rgb), 0.7);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+    transform: translateY(-2px);
+  }
+  
+  
+  .home-img {
+    box-shadow: -50px 0 0 0 var(--ezy-body-color-invert);
+    border-radius: 50%;
+  }
+
+  /* For tablet and smaller laptop screens (min-width: 768px) */
+@media (min-width: 768px) {
+    .home {
+      padding: 100px 0; /* Adjust padding for tablets and small laptops */
+    }
+
+}
+
+/* For 14-inch laptop screens (1366px to 1920px) */
+@media (min-width: 1366px) and (max-width: 1920px) {
+  
+    .home {
+      padding: 50px 0; /* Adjust padding for 14-inch laptop screens */
+    }
+  
+    .home-img {
+      width: 396px; /* Set desired width for the image */
+    }
+}
+  
+  /* For 24-inch monitors (1920px and larger) */
+@media (min-width: 1920px) {
+  
+    .home {
+      padding: 158px 0; /* Adjust padding for 24-inch monitor screens */
+    }
+  
+    .home-img {
+      width: 396px; /* Set desired width for the image */
+    }
+}

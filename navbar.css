@@ -100,4 +100,22 @@
     color: var(--bs-body-color);
     opacity: 1;
   }
+
   
+  /* For smaller screens (below 1366px) */
+@media (max-width: 1365px) {
+  .ezy__nav1 {
+    padding: 5px; /* Adjust padding if needed */
+  }
+}
+
+/* For very small screens (below 768px, e.g., mobile) */
+@media (max-width: 768px) {
+  .ezy__nav1 {
+    padding: 5px; /* Adjust padding if needed */
+  }
+}
+
+/* Optional: For larger screens like 24-inch monitors */
+@media (min-width: 1920px) {
+}
