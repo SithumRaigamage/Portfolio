@@ -1,110 +1,108 @@
 .projects {
-    /* Bootstrap variables */
-    --bs-body-color: #373572;
-    --bs-body-bg: rgb(255, 255, 255);
-  
-    /* Easy Frontend variables */
-    --ezy-theme-color: rgb(13, 110, 253);
-    --ezy-theme-color-rgb: 13, 110, 253;
-    --ezy-popup-bg-rgb: 255, 255, 255;
-  
-    background-color: var(--bs-body-bg);
+  /* Bootstrap variables */
+  --bs-body-color: #373572;
+  --bs-body-bg: rgb(255, 255, 255);
+
+  /* Easy Frontend variables */
+  --ezy-theme-color: rgb(13, 110, 253);
+  --ezy-theme-color-rgb: 13, 110, 253;
+  --ezy-popup-bg-rgb: 255, 255, 255;
+
+  background-color: var(--bs-body-bg);
+}
+
+@media (min-width: 768px) {
+  .projects {
+    padding: 100px 0;
   }
-  
-  @media (min-width: 768px) {
-    .projects {
-      padding: 100px 0;
-    }
-  }
-  
-  /* Gray Block Style */
-  .gray .projects,
-  .projects.gray {
-    /* Bootstrap variables */
-    --bs-body-bg: rgb(246, 246, 246);
-  
-    /* Easy Frontend variables */
-    --ezy-popup-bg-rgb: 246, 246, 246;
-  }
-  
-  /* Dark Gray Block Style */
-  .dark-gray .projects,
-  .projects.dark-gray {
-    /* Bootstrap variables */
-    --bs-body-color: #ffffff;
-    --bs-body-bg: rgb(30, 39, 53);
-  
-    /* Easy Frontend variables */
-    --ezy-popup-bg-rgb: 30, 39, 53;
-  }
-  
-  /* Dark Block Style */
-  .dark .projects,
-  .projects.dark {
-    /* Bootstrap variables */
-    --bs-body-color: #ffffff;
-    --bs-body-bg: rgb(11, 23, 39);
-  
-    /* Easy Frontend variables */
-    --ezy-popup-bg-rgb: 11, 23, 39;
-  }
-  
+}
+
+/* Gray Block Style */
+.gray .projects,
+.projects.gray {
+  /* Bootstrap variables */
+  --bs-body-bg: rgb(246, 246, 246);
+
+  /* Easy Frontend variables */
+  --ezy-popup-bg-rgb: 246, 246, 246;
+}
+
+/* Dark Gray Block Style */
+.dark-gray .projects,
+.projects.dark-gray {
+  /* Bootstrap variables */
+  --bs-body-color: #ffffff;
+  --bs-body-bg: rgb(30, 39, 53);
+
+  /* Easy Frontend variables */
+  --ezy-popup-bg-rgb: 30, 39, 53;
+}
+
+/* Dark Block Style */
+.dark .projects,
+.projects.dark {
+  /* Bootstrap variables */
+  --bs-body-color: #ffffff;
+  --bs-body-bg: rgb(11, 23, 39);
+
+  /* Easy Frontend variables */
+  --ezy-popup-bg-rgb: 11, 23, 39;
+}
+
+.projects-heading {
+  font-weight: bold;
+  font-size: 25px;
+  line-height: 25px;
+  color: var(--bs-body-color);
+}
+
+@media (min-width: 768px) {
   .projects-heading {
-    font-weight: bold;
-    font-size: 25px;
-    line-height: 25px;
-    color: var(--bs-body-color);
+    font-size: 45px;
+    line-height: 45px;
   }
-  
-  @media (min-width: 768px) {
-    .projects-heading {
-      font-size: 45px;
-      line-height: 45px;
-    }
-  }
-  
-  .projects-sub-heading {
-    font-size: 16px;
-    line-height: 22px;
-    color: var(--bs-body-color);
-  }
-  
-  .projects-item {
-    border-radius: 12px;
-    overflow: hidden;
-  }
-  
-  .projects-content {
-    position: absolute;
-    left: 16px;
-    right: 16px;
-    bottom: 16px;
-    border-radius: 12px;
-    background-color: rgba(var(--ezy-popup-bg-rgb), 0.7);
-    backdrop-filter: blur(4px) saturate(200%);
-    transform: translateY(20px);
-    opacity: 0;
-    transition: all 0.25s ease-in-out;
-  }
-  
-  .projects-content * {
-    color: var(--bs-body-color);
-  }
-  
-  .projects-item:hover .projects-content {
-    transform: translateY(0);
-    opacity: 1;
-  }
-  
-  .projects-btn-filter {
-    padding: 7px 20px;
-    border-color: var(--ezy-theme-color);
-    color: var(--ezy-theme-color);
-  }
-  
-  .projects-btn-filter:hover,
-  .projects-btn-filter.active {
-    background-color: var(--ezy-theme-color);
-    color: #fff;
-  }
-  
+}
+
+.projects-sub-heading {
+  font-size: 16px;
+  line-height: 22px;
+  color: var(--bs-body-color);
+}
+
+.projects-item {
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.projects-content {
+  position: absolute;
+  left: 16px;
+  right: 16px;
+  bottom: 16px;
+  border-radius: 12px;
+  background-color: rgba(var(--ezy-popup-bg-rgb), 0.7);
+  backdrop-filter: blur(4px) saturate(200%);
+  transform: translateY(20px);
+  opacity: 0;
+  transition: all 0.25s ease-in-out;
+}
+
+.projects-content * {
+  color: var(--bs-body-color);
+}
+
+.projects-item:hover .projects-content {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.projects-btn-filter {
+  padding: 7px 20px;
+  border-color: var(--ezy-theme-color);
+  color: var(--ezy-theme-color);
+}
+
+#noProjectsMessage {
+  font-size: 20px;
+  color: white;
+}
