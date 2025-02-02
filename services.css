@@ -1,0 +1,88 @@
+.services {
+	/* Bootstrap variables */
+	--bs-body-color: #2B323C;
+	--bs-body-bg: rgb(255, 255, 255);
+	--ezy-theme-color-rgb: 13, 110, 253;
+	--ezy-item-bg: #ffffff;
+	--ezy-item-icon-bg: #ffffff;
+	--ezy-item-shadow: 0px 8px 44px rgba(227, 238, 255, 0.48);
+	--ezy-shape-color: #FFE7E7;
+
+	background: var(--bs-body-bg);
+	overflow: hidden;
+	padding: 60px 0;
+	position: relative;
+	z-index: 1;
+}
+
+/* Dark Block Style */
+.dark .services,
+.services.dark {
+	/* Bootstrap variables */
+	--bs-body-color: #ffffff;
+	--bs-body-bg: rgb(11, 23, 39);
+
+	/* Easy Frontend variables */
+	--ezy-item-bg: #162231;
+	--ezy-item-icon-bg: #0B1727;
+	--ezy-item-shadow: none;
+}
+
+.services-heading {
+	font-weight: bold;
+	font-size: 40px;
+	line-height: 25px;
+	color: var(--bs-body-color);
+}
+
+.services-sub-heading {
+	font-size: 18px;
+	line-height: 25px;
+	color: var(--bs-body-color);
+	opacity: .8;
+}
+
+.services-item {
+	background-color: var(--ezy-item-bg);
+	box-shadow: var(--ezy-item-shadow);
+	border-radius: 20px;
+	border: none;
+}
+
+.services-icon {
+	background-color: var(--ezy-item-icon-bg);
+	box-shadow: 0 4px 34px 0 rgba(255, 255, 255, 0.12);
+	color: var(--ezy-theme-color);
+}
+
+.services-icon {
+	width: 85px;
+	height: 85px;
+	border-radius: 50%;
+	font-size: 32px;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: -42px;
+}
+
+.services-title {
+	color: var(--bs-body-color);
+}
+
+.services-content {
+	color: var(--bs-body-color);
+	opacity: .8;
+}
+
+.services-shape {
+	background-color: rgba(var(--ezy-theme-color-rgb), .1);
+	border-radius: 30px 0 0 30px;
+	position: absolute;
+	left: 50%;
+	right: 0;
+	bottom: 60px;
+	top: 0;
+	width: 100vw;
+	z-index: -1;
+}
