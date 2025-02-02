@@ -9,8 +9,6 @@
     --ezy-popup-bg-rgb: 255, 255, 255;
   
     background-color: var(--bs-body-bg);
-    overflow: hidden;
-    padding: 60px 0;
   }
   
   /* Dark Block Style */
