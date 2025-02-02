@@ -8,11 +8,7 @@
 	--ezy-item-shadow: 0px 8px 44px rgba(227, 238, 255, 0.48);
 	--ezy-shape-color: #FFE7E7;
 
-	background: var(--bs-body-bg);
-	overflow: hidden;
-	padding: 60px 0;
-	position: relative;
-	z-index: 1;
+	background: var(--bs-body-bg);  /* Adjust this to account for your navbar height */
 }
 
 /* Dark Block Style */
