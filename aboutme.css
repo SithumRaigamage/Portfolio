@@ -69,12 +69,12 @@
   .timeline {
     display: flex;
     flex-direction: column;
-    gap: 20px; /* Adds space between education items */
+    gap: 15px; /* Reduced gap for tighter layout */
   }
   
   /* Education Item */
   .education-item {
-    background-color: rgba(255, 255, 255, 0.1); /* Subtle background for contrast */
+    background-color: rgba(255, 255, 255, 0.1);
     border-radius: 10px;
     padding: 20px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
@@ -94,10 +94,10 @@
   
   /* Image Styling */
   .education-img {
-    width: 80px; /* Adjust as needed */
+    width: 70px; /* Adjusted for better fit */
     height: auto;
     border-radius: 8px;
-    margin-left: 20px; /* Adds gap between text and image */
+    margin-left: 10px; /* Reduced margin for closer spacing */
   }
   
   /* Experience Section */
@@ -121,6 +121,9 @@
     border-radius: 10px;
     padding: 20px;
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
   }
   
   .experience-item:hover {
@@ -159,6 +162,15 @@
   
   .experience-item li i {
     color: #4caf50; /* Green check icon */
+  }
+
+  /* Experience Image */
+  .experience-img {
+    width: 100px;
+    height: 100px;
+    border-radius: 8px;
+    object-fit: cover;
+    margin-left: 15px;
   }
   
   
