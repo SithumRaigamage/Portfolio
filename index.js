@@ -194,20 +194,20 @@ function displayTechStack() {
 }
 
 const projects = [
-  {
-    title: "Branding Project",
-    description: "Logo Design",
-    category: "branding",
-    imageUrl:
-      "https://cdn.easyfrontend.com/pictures/portfolio/portfolio_1_1.png",
-  },
-  {
-    title: "Web Portal Dev",
-    description: "Front-End Development",
-    category: "code",
-    imageUrl:
-      "https://cdn.easyfrontend.com/pictures/portfolio/portfolio_1_2.png",
-  },
+  // {
+  //   title: "Branding Project",
+  //   description: "Logo Design",
+  //   category: "branding",
+  //   imageUrl:
+  //     "https://cdn.easyfrontend.com/pictures/portfolio/portfolio_1_1.png",
+  // },
+  // {
+  //   title: "Web Portal Dev",
+  //   description: "Front-End Development",
+  //   category: "code",
+  //   imageUrl:
+  //     "https://cdn.easyfrontend.com/pictures/portfolio/portfolio_1_2.png",
+  // },
   // {
   //   title: "Full Stack Web App",
   //   description: "Full Stack Development",
