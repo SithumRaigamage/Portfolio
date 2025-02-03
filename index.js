@@ -3,7 +3,6 @@ function scrollToContact() {
   document.getElementById("contactme").scrollIntoView({ behavior: "smooth" });
 }
 
-
 // Array of project data (can be empty to test the "No projects found" message)
 const projects = [
   // {
@@ -121,3 +120,62 @@ window.onload = function() {
   const buttons = document.querySelectorAll(".projects-btn-filter");
   buttons.forEach(button => addHoverEffect(button));
 };
+
+
+
+
+document.addEventListener("DOMContentLoaded", function () {
+  const techCategories = {
+    web: [
+      { name: "HTML5", img: "https://cdn.worldvectorlogo.com/logos/html-1.svg", desc: "Markup Language" },
+      { name: "CSS3", img: "https://cdn.worldvectorlogo.com/logos/css-3.svg", desc: "Styling Language" },
+      { name: "JavaScript", img: "https://cdn.worldvectorlogo.com/logos/javascript-1.svg", desc: "Programming Language" },
+      { name: "Angular", img: "https://cdn.worldvectorlogo.com/logos/angular-icon-1.svg", desc: "Frontend Framework" },
+    ],
+    mobile: [
+      { name: "React Native", img: "https://cdn.worldvectorlogo.com/logos/react-native-1.svg", desc: "Mobile Framework" },
+      { name: "Flutter", img: "https://cdn.worldvectorlogo.com/logos/flutter.svg", desc: "UI Framework" },
+    ],
+    cloud: [],
+    ai: [{ name: "TensorFlow", img: "https://cdn.worldvectorlogo.com/logos/tensorflow-2.svg", desc: "ML Framework" }],
+    tools: [],
+  };
+
+  function loadTechStack(categoryId) {
+    const category = techCategories[categoryId];
+    const container = document.querySelector(`#${categoryId} .row`);
+
+    container.innerHTML = ""; // Clear existing content
+
+    if (category.length === 0) {
+      // Show loader only for empty categories
+      container.innerHTML = `<div class="spinner-border text-light m-4" role="status"></div>`;
+      setTimeout(() => {
+        container.innerHTML = `<p class="text-center text-muted">No ${categoryId.replace("-", " ")} tools found</p>`;
+      }, 10000); // Show message after 10 seconds
+    } else {
+      // Directly show content if category has technologies
+      category.forEach((tech) => {
+        container.innerHTML += `
+          <div class="col-sm-6 col-md-4 col-xl-3 mt-3 mt-sm-4">
+            <div class="techstack-item p-3 p-lg-5">
+              <img src="${tech.img}" alt="${tech.name}" class="techstack-img img-fluid" />
+              <h4 class="mt-3">${tech.name}</h4>
+              <p class="text-white" style="color: white;">${tech.desc}</p>
+            </div>
+          </div>
+        `;
+      });
+    }
+  }
+
+  document.querySelectorAll(".nav-link").forEach((tab) => {
+    tab.addEventListener("click", function () {
+      const target = this.getAttribute("data-bs-target").substring(1);
+      loadTechStack(target);
+    });
+  });
+
+  // Load default tab on page load
+  loadTechStack("web");
+});
