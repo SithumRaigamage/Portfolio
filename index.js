@@ -6,24 +6,24 @@ function scrollToContact() {
 
 // Array of project data (can be empty to test the "No projects found" message)
 const projects = [
-  {
-    title: "Branding Project",
-    description: "Logo Design",
-    category: "branding",
-    imageUrl: "https://cdn.easyfrontend.com/pictures/portfolio/portfolio_1_1.png",
-  },
-  {
-    title: "Web Portal Dev",
-    description: "Front-End Development",
-    category: "code",
-    imageUrl: "https://cdn.easyfrontend.com/pictures/portfolio/portfolio_1_2.png",
-  },
-  {
-    title: "Full Stack Web App",
-    description: "Full Stack Development",
-    category: "development",
-    imageUrl: "https://cdn.easyfrontend.com/pictures/portfolio/portfolio_1_3.png",
-  },
+  // {
+  //   title: "Branding Project",
+  //   description: "Logo Design",
+  //   category: "branding",
+  //   imageUrl: "https://cdn.easyfrontend.com/pictures/portfolio/portfolio_1_1.png",
+  // },
+  // {
+  //   title: "Web Portal Dev",
+  //   description: "Front-End Development",
+  //   category: "code",
+  //   imageUrl: "https://cdn.easyfrontend.com/pictures/portfolio/portfolio_1_2.png",
+  // },
+  // {
+  //   title: "Full Stack Web App",
+  //   description: "Full Stack Development",
+  //   category: "development",
+  //   imageUrl: "https://cdn.easyfrontend.com/pictures/portfolio/portfolio_1_3.png",
+  // },
   // Uncomment the following to test the "No projects found" case
   // []
 ];
@@ -31,15 +31,17 @@ const projects = [
 
 // Function to filter portfolio items by category
 function filterPortfolio(category) {
-  const items = document.querySelectorAll(".portfolio-item");
+  const portfolioItemsContainer = document.getElementById('portfolioItems');
+  const loadingSpinner = document.getElementById('loadingSpinner');
+  const noProjectsMessage = document.getElementById('noProjectsMessage');
   const buttons = document.querySelectorAll(".projects-btn-filter");
 
   // Remove 'active' class from all buttons and reset their styles
   buttons.forEach(button => {
     button.classList.remove('active');
-    button.style.backgroundColor = ''; // Reset background color
-    button.style.color = ''; // Reset text color
-    button.style.borderColor = ''; // Reset border color
+    button.style.backgroundColor = ''; 
+    button.style.color = ''; 
+    button.style.borderColor = ''; 
   });
 
   // Add styles to the clicked button (active state)
@@ -49,60 +51,24 @@ function filterPortfolio(category) {
   activeButton.style.color = '#fff';
   activeButton.style.borderColor = 'rgb(13, 110, 253)';
 
-  // Filter portfolio items based on selected category
-  if (category === "all") {
-    items.forEach((item) => {
-      item.style.display = "block"; // Show all items
-    });
-  } else {
-    items.forEach((item) => {
-      if (item.classList.contains(category)) {
-        item.style.display = "block"; // Show the selected category items
-      } else {
-        item.style.display = "none"; // Hide the non-selected category items
-      }
-    });
-  }
-}
-
-// Function to add hover effect via JavaScript
-function addHoverEffect(button) {
-  button.addEventListener('mouseover', () => {
-    button.style.backgroundColor = 'rgb(13, 110, 253)';
-    button.style.color = '#fff';
-    button.style.borderColor = 'rgb(13, 110, 253)';
-  });
-
-  button.addEventListener('mouseout', () => {
-    // Reset styles if the button is not active
-    if (!button.classList.contains('active')) {
-      button.style.backgroundColor = '';
-      button.style.color = '';
-      button.style.borderColor = '';
-    }
-  });
-}
-
-// Function to render projects dynamically
-function renderProjects() {
-  const portfolioItemsContainer = document.getElementById('portfolioItems');
-  const loadingSpinner = document.getElementById('loadingSpinner');
-  const noProjectsMessage = document.getElementById('noProjectsMessage');
-  
-  // Show the loading spinner
+  // Show the loading spinner while filtering
   loadingSpinner.style.display = 'block';
-  noProjectsMessage.style.display = 'none'; // Hide "No projects found" message initially
-  portfolioItemsContainer.innerHTML = ''; // Clear any existing content
+  noProjectsMessage.style.display = 'none'; 
+  portfolioItemsContainer.innerHTML = ''; 
 
-  // Simulate a delay of 5 seconds (useful for testing purposes)
   setTimeout(() => {
-    // If no projects in the array, show the "No projects found" message
-    if (projects.length === 0) {
-      loadingSpinner.style.display = 'none'; // Hide loading spinner
-      noProjectsMessage.style.display = 'block'; // Show "No projects found" message
+    // Filter projects based on category
+    const filteredProjects = category === "all" 
+      ? projects 
+      : projects.filter(project => project.category === category);
+
+    // If no projects found, show message after 10 seconds
+    if (filteredProjects.length === 0) {
+      loadingSpinner.style.display = 'none';
+      noProjectsMessage.style.display = 'block';
     } else {
-      // Loop through each project and generate HTML
-      projects.forEach(project => {
+      // Render filtered projects
+      filteredProjects.forEach(project => {
         const projectItem = document.createElement('div');
         projectItem.classList.add('col-md-6', 'col-lg-4', 'portfolio-item', project.category);
 
@@ -118,17 +84,38 @@ function renderProjects() {
 
         portfolioItemsContainer.appendChild(projectItem);
       });
-      
-      // Hide loading spinner after content is loaded
+
+      // Hide the spinner once the projects are loaded
       loadingSpinner.style.display = 'none';
     }
-  }, 5000); // Simulate a 5-second delay
+  }, 10000); // Show spinner for 10 seconds before checking for projects
+}
+
+// Function to add hover effect via JavaScript
+function addHoverEffect(button) {
+  button.addEventListener('mouseover', () => {
+    button.style.backgroundColor = 'rgb(13, 110, 253)';
+    button.style.color = '#fff';
+    button.style.borderColor = 'rgb(13, 110, 253)';
+  });
+
+  button.addEventListener('mouseout', () => {
+    if (!button.classList.contains('active')) {
+      button.style.backgroundColor = '';
+      button.style.color = '';
+      button.style.borderColor = '';
+    }
+  });
+}
+
+// Function to render projects on initial load
+function renderProjects() {
+  filterPortfolio('all'); // Set the "All" category as active initially
 }
 
 // Call the render function when the page loads
 window.onload = function() {
   renderProjects();
-  filterPortfolio('all'); // Set the "All" category as active initially
 
   // Add hover effects to all buttons
   const buttons = document.querySelectorAll(".projects-btn-filter");
