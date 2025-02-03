@@ -20,8 +20,9 @@
   integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
   <!-- Your other content goes here -->
-   <script src="index.js"></script>
-   <script src="projects.js"></script>
+  <script src="index.js"></script>
+  <script src="projects.js"></script>
+  <script src="techstack.js"></script>
 
   <!-- Popper.js (needed for Bootstrap components like tooltips and popovers) -->
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
@@ -346,60 +347,58 @@
       <div class="d-flex justify-content-center mb-4">
         <ul class="nav nav-pills" id="aboutTabs" role="tablist">
           <li class="nav-item mx-2">
-            <button class="nav-link active px-4 text-white" id="web-tab" data-bs-toggle="tab" data-bs-target="#web" type="button" role="tab" aria-controls="web" >Web Development</button>
+            <button class="nav-link active px-4 text-white" id="web-tab" data-bs-toggle="tab" data-bs-target="#web" type="button" role="tab" aria-controls="web">Web Development</button>
           </li>
           <li class="nav-item">
-            <button class="nav-link px-4 text-white" id="mobile-tab" data-bs-toggle="tab" data-bs-target="#mobile" type="button" role="tab" aria-controls="mobile" aria-selected="false">
-              Mobile Development
-            </button>
+            <button class="nav-link px-4 text-white" id="mobile-tab" data-bs-toggle="tab" data-bs-target="#mobile" type="button" role="tab" aria-controls="mobile" aria-selected="false">Mobile Development</button>
           </li>
           <li class="nav-item">
-            <button class="nav-link px-4 text-white" id="cloud-tab" data-bs-toggle="tab" data-bs-target="#cloud" type="button" role="tab" aria-controls="cloud" aria-selected="false">
-              Cloud Technologies
-            </button>
+            <button class="nav-link px-4 text-white" id="cloud-tab" data-bs-toggle="tab" data-bs-target="#cloud" type="button" role="tab" aria-controls="cloud" aria-selected="false">Cloud Technologies</button>
           </li>
           <li class="nav-item">
-            <button class="nav-link px-4 text-white" id="ai-tab" data-bs-toggle="tab" data-bs-target="#ai" type="button" role="tab" aria-controls="ai" aria-selected="false">
-              AI & Machine Learning
-            </button>
+            <button class="nav-link px-4 text-white" id="ai-tab" data-bs-toggle="tab" data-bs-target="#ai" type="button" role="tab" aria-controls="ai" aria-selected="false">AI & Machine Learning</button>
           </li>
           <li class="nav-item">
-            <button class="nav-link px-4 text-white" id="ai-tab" data-bs-toggle="tab" data-bs-target="#tools" type="button" role="tab" aria-controls="ai" aria-selected="false">
-              Tools
-            </button>
+            <button class="nav-link px-4 text-white" id="tools-tab" data-bs-toggle="tab" data-bs-target="#tools" type="button" role="tab" aria-controls="tools" aria-selected="false">Tools</button>
           </li>
         </ul>
       </div>
   
       <!-- Tab Content -->
       <div class="tab-content p-4" id="aboutTabsContent">
-
         <!-- Web -->
         <div class="tab-pane fade show active" id="web" role="tabpanel">
-          <div class="row justify-content-center text-center mb-5">
+          <div class="row justify-content-center text-center mb-5" id="web-stack"></div>
+          <div class="no-data-message text-center d-none" id="web-no-data">
+            <p class="text-white">No Web Development Tech Stack Found</p>
           </div>
         </div>
-  
         <!-- Mobile -->
         <div class="tab-pane fade" id="mobile" role="tabpanel">
-          <div class="row justify-content-center text-center mb-5">
+          <div class="row justify-content-center text-center mb-5" id="mobile-stack"></div>
+          <div class="no-data-message text-center d-none" id="mobile-no-data">
+            <p class="text-white">No Mobile Development Tech Stack Found</p>
           </div>
         </div>
-  
         <!-- Cloud -->
         <div class="tab-pane fade" id="cloud" role="tabpanel">
-          <div class="row justify-content-center text-center mb-5">
+          <div class="row justify-content-center text-center mb-5" id="cloud-stack"></div>
+          <div class="no-data-message text-center d-none" id="cloud-no-data">
+            <p class="text-white">No Cloud Tech Stack Found</p>
           </div>
         </div>
-  
         <!-- AI -->
         <div class="tab-pane fade" id="ai" role="tabpanel">
-          <div class="row justify-content-center text-center mb-5">
+          <div class="row justify-content-center text-center mb-5" id="ai-stack"></div>
+          <div class="no-data-message text-center d-none" id="ai-no-data">
+            <p class="text-white">No AI & Machine Learning Tech Stack Found</p>
           </div>
         </div>
         <!-- Tools -->
         <div class="tab-pane fade" id="tools" role="tabpanel">
-          <div class="row justify-content-center text-center mb-5">
+          <div class="row justify-content-center text-center mb-5" id="tools-stack"></div>
+          <div class="no-data-message text-center d-none" id="tools-no-data">
+            <p class="text-white">No Tools Tech Stack Found</p>
           </div>
         </div>
       </div>
