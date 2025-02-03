@@ -24,7 +24,66 @@ const techCategories = {
       img: "https://cdn.worldvectorlogo.com/logos/angular-icon-1.svg",
       desc: "Frontend Framework",
     },
-    // ... other tech stack items
+    {
+      name: "React",
+      img: "https://cdn.worldvectorlogo.com/logos/react-2.svg",
+      desc: "Frontend Library",
+    },
+    {
+      name: "TypeScript",
+      img: "https://cdn.worldvectorlogo.com/logos/typescript.svg",
+      desc: "Programming Language",
+    },
+    {
+      name: "Node.js",
+      img: "https://cdn.worldvectorlogo.com/logos/nodejs-icon.svg",
+      desc: "Runtime Environment",
+    },
+    {
+      name: "Tailwind CSS",
+      img: "https://cdn.worldvectorlogo.com/logos/tailwind-css-2.svg",
+      desc: "CSS Framework",
+    },
+    {
+      name: "Bootstrap",
+      img: "https://cdn.worldvectorlogo.com/logos/bootstrap-4.svg",
+      desc: "CSS Framework",
+    },
+    {
+      name: "Sass",
+      img: "https://cdn.worldvectorlogo.com/logos/sass-1.svg",
+      desc: "CSS Preprocessor",
+    },
+    {
+      name: "jQuery",
+      img: "https://cdn.worldvectorlogo.com/logos/jquery-1.svg",
+      desc: "JavaScript Library",
+    },
+    {
+      name: "mySQL",
+      img: "https://cdn.worldvectorlogo.com/logos/mysql-2.svg",
+      desc: "Database",
+    },
+    {
+      name: "MongoDB",
+      img: "https://cdn.worldvectorlogo.com/logos/mongodb-icon-1.svg",
+      desc: "Database",
+    },
+    {
+      name: "Java",
+      img: "https://cdn.worldvectorlogo.com/logos/java-4.svg",
+      desc: "Programming Language",
+    },
+    {
+      name: "Spring Boot",
+      img: "https://cdn.worldvectorlogo.com/logos/spring-3.svg",
+      desc: "Backend Framework",
+    },
+    {
+      name: "Python",
+      img: "https://cdn.worldvectorlogo.com/logos/python-5.svg",
+      desc: "Programming Language",
+    },
   ],
   mobile: [
     {
@@ -57,7 +116,51 @@ const techCategories = {
       img: "https://cdn.worldvectorlogo.com/logos/docker-4.svg",
       desc: "Containerization Tool",
     },
-    // ... other tech stack items
+    {
+      name: "Postman",
+      img: "https://cdn.worldvectorlogo.com/logos/postman.svg",
+      desc: "API Testing Tool",
+    },
+    {
+      name: "Jira",
+      img: "https://cdn.worldvectorlogo.com/logos/jira-1.svg",
+      desc: "Project Management Tool",
+    },
+    {
+      name: "IntelliJ IDEA",
+      img: "https://cdn.worldvectorlogo.com/logos/intellij-idea-1.svg",
+      desc: "IDE",
+    },
+    {
+      name: "Visual Studio Code",
+      img: "https://cdn.worldvectorlogo.com/logos/visual-studio-code-1.svg",
+      desc: "Code Editor",
+    },
+    {
+      name: "PyCharm",
+      img: "https://cdn.worldvectorlogo.com/logos/jetbrains-pycharm.svg",
+      desc: "IDE",
+    },
+    {
+      name: "gitHub",
+      img: "https://cdn.worldvectorlogo.com/logos/github-icon-1.svg",
+      desc: "Version Control System",
+    },
+    {
+      name: "Bitbucket",
+      img: "https://cdn.worldvectorlogo.com/logos/bitbucket-icon.svg",
+      desc: "Version Control System",
+    },
+    {
+      name: "Windsurf Ai",
+      img: "https://exafunction.github.io/public/images/windsurf/windsurf-app-icon.svg",
+      desc: "AI Tool",
+    },
+    {
+      name: "figma",
+      img: "https://cdn.worldvectorlogo.com/logos/figma-icon.svg",
+      desc: "Design Tool",
+    },
   ],
 };
 
@@ -76,7 +179,7 @@ function displayTechStack() {
               <div class="techstack-item p-3 p-lg-5">
                 <img src="${tech.img}" alt="${tech.name}" class="techstack-img img-fluid" />
                 <h4 class="mt-3">${tech.name}</h4>
-                <p class="text-muted">${tech.desc}</p>
+                <p class="text-white">${tech.desc}</p>
               </div>
             </div>
           `;
