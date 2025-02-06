@@ -8,7 +8,7 @@ const projects = [
     title: "Branding Project",
     description: "Logo Design",
     category: "branding",
-    imageUrl: "https://cdn.easyfrontend.com/pictures/portfolio/portfolio_1_1.png",
+    imageUrl: "https://images.unsplash.com/photo-1558655146-9f40138edfeb?w=800&auto=format&fit=crop",
     projectLink: "#",
     techStack: [
       { name: "Figma", icon: "https://cdn.worldvectorlogo.com/logos/figma-icon.svg" }
@@ -18,7 +18,7 @@ const projects = [
     title: "Web Portal Dev",
     description: "Front-End Development", 
     category: "code",
-    imageUrl: "https://cdn.easyfrontend.com/pictures/portfolio/portfolio_1_2.png",
+    imageUrl: "https://images.unsplash.com/photo-1517180102446-f3ece451e9d8?w=800&auto=format&fit=crop",
     projectLink: "#",
     techStack: [
       { name: "HTML5", icon: "https://cdn.worldvectorlogo.com/logos/html-1.svg" },
@@ -29,8 +29,8 @@ const projects = [
   {
     title: "Web Portal Dev",
     description: "Front-End Development",
-    category: "code", 
-    imageUrl: "https://cdn.easyfrontend.com/pictures/portfolio/portfolio_1_2.png",
+    category: "code",
+    imageUrl: "https://images.unsplash.com/photo-1547658719-da2b51169166?w=800&auto=format&fit=crop",
     projectLink: "#",
     techStack: [
       { name: "React", icon: "https://cdn.worldvectorlogo.com/logos/react-2.svg" },
@@ -39,9 +39,9 @@ const projects = [
   },
   {
     title: "Web Portal Dev",
-    description: "Front-End Development",
+    description: "Front-End Development", 
     category: "code",
-    imageUrl: "https://cdn.easyfrontend.com/pictures/portfolio/portfolio_1_2.png",
+    imageUrl: "https://images.unsplash.com/photo-1593720213428-28a5b9e94613?w=800&auto=format&fit=crop",
     projectLink: "#",
     techStack: [
       { name: "Angular", icon: "https://cdn.worldvectorlogo.com/logos/angular-icon-1.svg" },
@@ -52,7 +52,7 @@ const projects = [
     title: "Full Stack Web App",
     description: "Full Stack Development",
     category: "development",
-    imageUrl: "https://cdn.easyfrontend.com/pictures/portfolio/portfolio_1_3.png",
+    imageUrl: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=800&auto=format&fit=crop",
     projectLink: "#",
     techStack: [
       { name: "React", icon: "https://cdn.worldvectorlogo.com/logos/react-2.svg" },
@@ -64,7 +64,7 @@ const projects = [
     title: "E-commerce Platform",
     description: "Full Stack Development",
     category: "development",
-    imageUrl: "https://cdn.easyfrontend.com/pictures/portfolio/portfolio_2_1.png",
+    imageUrl: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&auto=format&fit=crop",
     projectLink: "#",
     techStack: [
       { name: "Angular", icon: "https://cdn.worldvectorlogo.com/logos/angular-icon-1.svg" },
@@ -76,7 +76,7 @@ const projects = [
     title: "Mobile App UI",
     description: "UI/UX Design",
     category: "branding",
-    imageUrl: "https://cdn.easyfrontend.com/pictures/portfolio/portfolio_2_2.png",
+    imageUrl: "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=800&auto=format&fit=crop",
     projectLink: "#",
     techStack: [
       { name: "Figma", icon: "https://cdn.worldvectorlogo.com/logos/figma-icon.svg" }
@@ -86,7 +86,7 @@ const projects = [
     title: "Social Media Dashboard",
     description: "Frontend Development",
     category: "code",
-    imageUrl: "https://cdn.easyfrontend.com/pictures/portfolio/portfolio_2_3.png",
+    imageUrl: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&auto=format&fit=crop",
     projectLink: "#",
     techStack: [
       { name: "React", icon: "https://cdn.worldvectorlogo.com/logos/react-2.svg" },
@@ -97,7 +97,7 @@ const projects = [
     title: "Restaurant Website",
     description: "Web Development",
     category: "development",
-    imageUrl: "https://cdn.easyfrontend.com/pictures/portfolio/portfolio_3_1.png",
+    imageUrl: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=800&auto=format&fit=crop",
     projectLink: "#",
     techStack: [
       { name: "Angular", icon: "https://cdn.worldvectorlogo.com/logos/angular-icon-1.svg" },
@@ -108,7 +108,7 @@ const projects = [
     title: "Corporate Identity",
     description: "Branding",
     category: "branding",
-    imageUrl: "https://cdn.easyfrontend.com/pictures/portfolio/portfolio_3_2.png",
+    imageUrl: "https://images.unsplash.com/photo-1434626881859-194d67b2b86f?w=800&auto=format&fit=crop",
     projectLink: "#",
     techStack: [
       { name: "Figma", icon: "https://cdn.worldvectorlogo.com/logos/figma-icon.svg" }
