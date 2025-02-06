@@ -2,35 +2,23 @@
     /* Bootstrap variables */
     --bs-body-color: #28303b;
     --bs-body-bg: rgb(255, 255, 255);
-  
     /* Easy Frontend variables */
     --ezy-theme-color: rgb(13, 110, 253);
     --ezy-theme-color-rgb: 13, 110, 253;
-  
     background-color: var(--bs-body-bg);
     color: var(--bs-body-color);
-    padding: 40px 0;
+    padding: 20px 0;
   }
-  
-  @media (min-width: 768px) {
+
+  @media screen and (max-width: 768px) {
     .ezy__footer1 {
-      padding: 60px 0;
+      height: 35vh;
     }
-  }
-  
-  /* Gray Block Style */
-  .gray .ezy__footer1,
-  .ezy__footer1.gray {
-    /* Bootstrap variables */
-    --bs-body-bg: rgb(246, 246, 246);
-  }
-  
-  /* Dark Gray Block Style */
-  .dark-gray .ezy__footer1,
-  .ezy__footer1.dark-gray {
-    /* Bootstrap variables */
-    --bs-body-color: #ffffff;
-    --bs-body-bg: rgb(30, 39, 53);
+    
+    .ezy__footer1-social {
+      padding: 0;
+      text-align: center;
+    }
   }
   
   .dark .ezy__footer1,
@@ -38,15 +26,6 @@
     /* Bootstrap variables */
     --bs-body-color: #ffffff;
     --bs-body-bg: rgb(11, 23, 39);
-  }
-  
-  .ezy__footer1-nav .nav-link {
-    color: var(--bs-body-color);
-  }
-  
-  .ezy__footer1-nav .nav-link:hover {
-    color: var(--bs-body-color);
-    opacity: 0.8;
   }
   
   .ezy__footer1-social li {
