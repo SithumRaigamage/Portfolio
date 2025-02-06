@@ -102,5 +102,76 @@
 
 /* Mobile Styles */
 @media (max-width: 767px) {
-	
-}
+	/* Contact section */
+	.contact {
+	  padding: 20px;
+	}
+  
+	.contact-title {
+	  font-size: 30px;
+	  line-height: 35px;
+	}
+  
+	.contact-heading {
+	  font-size: 30px;
+	  line-height: 35px;
+	}
+  
+	.contact-sub-heading {
+	  font-size: 16px;
+	  line-height: 22px;
+	}
+  
+	/* Form Section */
+	.contact-form-card {
+	  padding: 15px;
+	}
+  
+	.contact-form-card .card-body {
+	  padding: 20px;
+	}
+  
+	.form-control {
+	  font-size: 14px;
+	}
+  
+	.contact-btn {
+	  font-size: 14px;
+	  padding: 10px 25px;
+	}
+  
+	.contact .col-lg-5 {
+	  width: 100%;
+	  margin-bottom: 20px;
+	}
+  
+	/* Adjust form group spacing */
+	.form-group {
+	  margin-bottom: 15px;
+	}
+  
+	.form-group .form-control {
+	  font-size: 14px;
+	}
+  }
+  
+  /* Larger mobile/tablet (Portrait) styles */
+  @media (max-width: 991px) {
+	.contact-title {
+	  font-size: 35px;
+	}
+  
+	.contact-heading {
+	  font-size: 35px;
+	}
+  
+	.contact-btn {
+	  font-size: 15px;
+	  padding: 10px 25px;
+	}
+  
+	.contact .col-lg-5 {
+	  width: 100%;
+	}
+  }
+  
