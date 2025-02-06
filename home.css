@@ -9,6 +9,32 @@
     --ezy-theme-color: rgb(13, 110, 253);
     --ezy-theme-color-rgb: rgb(13, 110, 253);
     --ezy-body-color-invert: rgb(246, 246, 246);
+
+    /* Add mobile responsiveness - For smartphones (max-width: 767px) */
+    @media (max-width: 767px) {
+      .home {
+      padding: 50px 20px; /* Reduce padding for mobile */
+      }
+    
+      .home-heading {
+      font-size: 24px; /* Smaller heading for mobile */
+      }
+    
+      .home-sub-heading {
+      font-size: 15px; /* Smaller sub-heading for mobile */
+      }
+    
+      .home-img {
+      width: 100%;
+      max-width: 400px; /* Limit image size on mobile */
+      margin: 30px auto; /* Center image */
+      box-shadow: none; /* Remove shadow on mobile */
+      }
+
+      home-bg-shape {
+        display: none; /* Hide background shape on mobile */
+      }
+    }
   
     background-color: var(--bs-body-bg);
     color: var(--bs-body-color);
