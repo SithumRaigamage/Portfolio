@@ -8,66 +8,111 @@ const projects = [
     title: "Branding Project",
     description: "Logo Design",
     category: "branding",
-    imageUrl:
-      "https://cdn.easyfrontend.com/pictures/portfolio/portfolio_1_1.png",
+    imageUrl: "https://cdn.easyfrontend.com/pictures/portfolio/portfolio_1_1.png",
+    projectLink: "#",
+    techStack: [
+      { name: "Figma", icon: "https://cdn.worldvectorlogo.com/logos/figma-icon.svg" }
+    ]
+  },
+  {
+    title: "Web Portal Dev",
+    description: "Front-End Development", 
+    category: "code",
+    imageUrl: "https://cdn.easyfrontend.com/pictures/portfolio/portfolio_1_2.png",
+    projectLink: "#",
+    techStack: [
+      { name: "HTML5", icon: "https://cdn.worldvectorlogo.com/logos/html-1.svg" },
+      { name: "CSS3", icon: "https://cdn.worldvectorlogo.com/logos/css-3.svg" },
+      { name: "JavaScript", icon: "https://cdn.worldvectorlogo.com/logos/javascript-1.svg" }
+    ]
+  },
+  {
+    title: "Web Portal Dev",
+    description: "Front-End Development",
+    category: "code", 
+    imageUrl: "https://cdn.easyfrontend.com/pictures/portfolio/portfolio_1_2.png",
+    projectLink: "#",
+    techStack: [
+      { name: "React", icon: "https://cdn.worldvectorlogo.com/logos/react-2.svg" },
+      { name: "Node.js", icon: "https://cdn.worldvectorlogo.com/logos/nodejs-icon.svg" }
+    ]
   },
   {
     title: "Web Portal Dev",
     description: "Front-End Development",
     category: "code",
-    imageUrl:
-      "https://cdn.easyfrontend.com/pictures/portfolio/portfolio_1_2.png",
-  },
-  {
-    title: "Web Portal Dev",
-    description: "Front-End Development",
-    category: "code",
-    imageUrl:
-      "https://cdn.easyfrontend.com/pictures/portfolio/portfolio_1_2.png",
-  },
-  {
-    title: "Web Portal Dev",
-    description: "Front-End Development",
-    category: "code",
-    imageUrl:
-      "https://cdn.easyfrontend.com/pictures/portfolio/portfolio_1_2.png",
+    imageUrl: "https://cdn.easyfrontend.com/pictures/portfolio/portfolio_1_2.png",
+    projectLink: "#",
+    techStack: [
+      { name: "Angular", icon: "https://cdn.worldvectorlogo.com/logos/angular-icon-1.svg" },
+      { name: "TypeScript", icon: "https://cdn.worldvectorlogo.com/logos/typescript.svg" }
+    ]
   },
   {
     title: "Full Stack Web App",
     description: "Full Stack Development",
     category: "development",
-    imageUrl:
-      "https://cdn.easyfrontend.com/pictures/portfolio/portfolio_1_3.png",
+    imageUrl: "https://cdn.easyfrontend.com/pictures/portfolio/portfolio_1_3.png",
+    projectLink: "#",
+    techStack: [
+      { name: "React", icon: "https://cdn.worldvectorlogo.com/logos/react-2.svg" },
+      { name: "Node.js", icon: "https://cdn.worldvectorlogo.com/logos/nodejs-icon.svg" },
+      { name: "MongoDB", icon: "https://cdn.worldvectorlogo.com/logos/mongodb-icon-1.svg" }
+    ]
   },
   {
     title: "E-commerce Platform",
     description: "Full Stack Development",
     category: "development",
     imageUrl: "https://cdn.easyfrontend.com/pictures/portfolio/portfolio_2_1.png",
+    projectLink: "#",
+    techStack: [
+      { name: "Angular", icon: "https://cdn.worldvectorlogo.com/logos/angular-icon-1.svg" },
+      { name: "Spring Boot", icon: "https://cdn.worldvectorlogo.com/logos/spring-3.svg" },
+      { name: "MySQL", icon: "https://cdn.worldvectorlogo.com/logos/mysql-2.svg" }
+    ]
   },
   {
     title: "Mobile App UI",
     description: "UI/UX Design",
     category: "branding",
     imageUrl: "https://cdn.easyfrontend.com/pictures/portfolio/portfolio_2_2.png",
+    projectLink: "#",
+    techStack: [
+      { name: "Figma", icon: "https://cdn.worldvectorlogo.com/logos/figma-icon.svg" }
+    ]
   },
   {
     title: "Social Media Dashboard",
     description: "Frontend Development",
     category: "code",
     imageUrl: "https://cdn.easyfrontend.com/pictures/portfolio/portfolio_2_3.png",
+    projectLink: "#",
+    techStack: [
+      { name: "React", icon: "https://cdn.worldvectorlogo.com/logos/react-2.svg" },
+      { name: "Tailwind CSS", icon: "https://cdn.worldvectorlogo.com/logos/tailwind-css-2.svg" }
+    ]
   },
   {
     title: "Restaurant Website",
     description: "Web Development",
     category: "development",
     imageUrl: "https://cdn.easyfrontend.com/pictures/portfolio/portfolio_3_1.png",
+    projectLink: "#",
+    techStack: [
+      { name: "Angular", icon: "https://cdn.worldvectorlogo.com/logos/angular-icon-1.svg" },
+      { name: "Bootstrap", icon: "https://cdn.worldvectorlogo.com/logos/bootstrap-4.svg" }
+    ]
   },
   {
     title: "Corporate Identity",
     description: "Branding",
     category: "branding",
     imageUrl: "https://cdn.easyfrontend.com/pictures/portfolio/portfolio_3_2.png",
+    projectLink: "#",
+    techStack: [
+      { name: "Figma", icon: "https://cdn.worldvectorlogo.com/logos/figma-icon.svg" }
+    ]
   }
 ];
 
@@ -139,8 +184,14 @@ function filterPortfolio(category, page = 1) {
         <div class="projects-item position-relative mt-4">
           <img src="${project.imageUrl}" alt="${project.title}" class="img-fluid w-100" />
           <div class="projects-content text-center p-4">
-            <h5>${project.title}</h5>
-            <p class="mb-0">${project.description}</p>
+        <h5>${project.title}</h5>
+        <p class="mb-0">${project.description}</p>
+        <div class="tech-stack mt-2">
+          ${project.techStack ? project.techStack.map(tech => `
+            <img src="${tech.icon}" alt="${tech.name}" title="${tech.name}" class="tech-icon mx-1" style="width: 20px; height: 20px;">
+          `).join('') : ''}
+        </div>
+        <a href="${project.projectLink}" class="btn btn-primary mt-3">View Project</a>
           </div>
         </div>
       `;
