@@ -2,6 +2,181 @@ function scrollToContact() {
   document.getElementById("contactme").scrollIntoView({ behavior: "smooth" });
 }
 
+
+const projects = [
+  {
+    title: "Branding Project",
+    description: "Logo Design",
+    category: "branding",
+    imageUrl:
+      "https://cdn.easyfrontend.com/pictures/portfolio/portfolio_1_1.png",
+  },
+  {
+    title: "Web Portal Dev",
+    description: "Front-End Development",
+    category: "code",
+    imageUrl:
+      "https://cdn.easyfrontend.com/pictures/portfolio/portfolio_1_2.png",
+  },
+  {
+    title: "Web Portal Dev",
+    description: "Front-End Development",
+    category: "code",
+    imageUrl:
+      "https://cdn.easyfrontend.com/pictures/portfolio/portfolio_1_2.png",
+  },
+  {
+    title: "Web Portal Dev",
+    description: "Front-End Development",
+    category: "code",
+    imageUrl:
+      "https://cdn.easyfrontend.com/pictures/portfolio/portfolio_1_2.png",
+  },
+  {
+    title: "Full Stack Web App",
+    description: "Full Stack Development",
+    category: "development",
+    imageUrl:
+      "https://cdn.easyfrontend.com/pictures/portfolio/portfolio_1_3.png",
+  },
+  {
+    title: "E-commerce Platform",
+    description: "Full Stack Development",
+    category: "development",
+    imageUrl: "https://cdn.easyfrontend.com/pictures/portfolio/portfolio_2_1.png",
+  },
+  {
+    title: "Mobile App UI",
+    description: "UI/UX Design",
+    category: "branding",
+    imageUrl: "https://cdn.easyfrontend.com/pictures/portfolio/portfolio_2_2.png",
+  },
+  {
+    title: "Social Media Dashboard",
+    description: "Frontend Development",
+    category: "code",
+    imageUrl: "https://cdn.easyfrontend.com/pictures/portfolio/portfolio_2_3.png",
+  },
+  {
+    title: "Restaurant Website",
+    description: "Web Development",
+    category: "development",
+    imageUrl: "https://cdn.easyfrontend.com/pictures/portfolio/portfolio_3_1.png",
+  },
+  {
+    title: "Corporate Identity",
+    description: "Branding",
+    category: "branding",
+    imageUrl: "https://cdn.easyfrontend.com/pictures/portfolio/portfolio_3_2.png",
+  }
+];
+
+const ITEMS_PER_PAGE = 6; // Number of items to show per page
+let currentPage = 1;
+
+// Function to filter portfolio items by category
+function filterPortfolio(category, page = 1) {
+  const portfolioItemsContainer = document.getElementById("portfolioItems");
+  const loadingSpinner = document.getElementById("loadingSpinner");
+  const noProjectsMessage = document.getElementById("noProjectsMessage");
+  const paginationContainer = document.getElementById("paginationContainer");
+  const buttons = document.querySelectorAll(".projects-btn-filter");
+
+  currentPage = page;
+
+  // Remove 'active' class from all buttons and reset their styles
+  buttons.forEach((button) => {
+    button.classList.remove("active");
+    button.style.backgroundColor = "";
+    button.style.color = "";
+    button.style.borderColor = "";
+  });
+
+  // Add styles to the clicked button (active state)
+  const activeButton = document.querySelector(
+    `button[onclick="filterPortfolio('${category}')"]`
+  );
+  activeButton.classList.add("active");
+  activeButton.style.backgroundColor = "rgb(13, 110, 253)";
+  activeButton.style.color = "#fff";
+  activeButton.style.borderColor = "rgb(13, 110, 253)";
+
+  // Show the loading spinner while filtering
+  loadingSpinner.style.display = "block";
+  noProjectsMessage.style.display = "none";
+  portfolioItemsContainer.innerHTML = "";
+  paginationContainer.innerHTML = "";
+  paginationContainer.style.display = "none";
+
+  // Filter projects based on category
+  const filteredProjects =
+    category === "all"
+      ? projects
+      : projects.filter((project) => project.category === category);
+
+  if (filteredProjects.length === 0) {
+    loadingSpinner.style.display = "none";
+    noProjectsMessage.style.display = "block";
+    paginationContainer.style.display = "none"; // Hide pagination when no projects
+  } else {
+    // Calculate pagination
+    const totalPages = Math.ceil(filteredProjects.length / ITEMS_PER_PAGE);
+    const startIndex = (currentPage - 1) * ITEMS_PER_PAGE;
+    const endIndex = startIndex + ITEMS_PER_PAGE;
+    const currentProjects = filteredProjects.slice(startIndex, endIndex);
+
+    // Render current page projects
+    currentProjects.forEach((project) => {
+      const projectItem = document.createElement("div");
+      projectItem.classList.add(
+        "col-md-6",
+        "col-lg-4",
+        "portfolio-item",
+        project.category
+      );
+
+      projectItem.innerHTML = `
+        <div class="projects-item position-relative mt-4">
+          <img src="${project.imageUrl}" alt="${project.title}" class="img-fluid w-100" />
+          <div class="projects-content text-center p-4">
+            <h5>${project.title}</h5>
+            <p class="mb-0">${project.description}</p>
+          </div>
+        </div>
+      `;
+
+      portfolioItemsContainer.appendChild(projectItem);
+    });
+
+    // Show pagination only if there are multiple pages
+    if (totalPages > 1) {
+      paginationContainer.style.display = "block";
+      const pagination = document.createElement("div");
+      pagination.classList.add("pagination", "justify-content-center", "mt-4");
+      
+      for (let i = 1; i <= totalPages; i++) {
+        const pageLink = document.createElement("button");
+        pageLink.classList.add("btn", "btn-outline-primary", "mx-1");
+        if (i === currentPage) pageLink.classList.add("active");
+        pageLink.textContent = i;
+        pageLink.onclick = () => filterPortfolio(category, i);
+        pagination.appendChild(pageLink);
+      }
+      
+      paginationContainer.appendChild(pagination);
+    }
+
+    loadingSpinner.style.display = "none";
+  }
+}
+
+// Function to render projects on initial load
+function renderProjects() {
+  filterPortfolio("all"); // Set the "All" category as active initially
+}
+
+
+
 const techCategories = {
   web: [
     {
@@ -193,98 +368,7 @@ function displayTechStack() {
   });
 }
 
-const projects = [
-  // {
-  //   title: "Branding Project",
-  //   description: "Logo Design",
-  //   category: "branding",
-  //   imageUrl:
-  //     "https://cdn.easyfrontend.com/pictures/portfolio/portfolio_1_1.png",
-  // },
-  // {
-  //   title: "Web Portal Dev",
-  //   description: "Front-End Development",
-  //   category: "code",
-  //   imageUrl:
-  //     "https://cdn.easyfrontend.com/pictures/portfolio/portfolio_1_2.png",
-  // },
-  // {
-  //   title: "Full Stack Web App",
-  //   description: "Full Stack Development",
-  //   category: "development",
-  //   imageUrl: "https://cdn.easyfrontend.com/pictures/portfolio/portfolio_1_3.png",
-  // },
-  // Uncomment the following to test the "No projects found" case
-  // []
-];
 
-// Function to filter portfolio items by category
-function filterPortfolio(category) {
-  const portfolioItemsContainer = document.getElementById("portfolioItems");
-  const loadingSpinner = document.getElementById("loadingSpinner");
-  const noProjectsMessage = document.getElementById("noProjectsMessage");
-  const buttons = document.querySelectorAll(".projects-btn-filter");
-
-  // Remove 'active' class from all buttons and reset their styles
-  buttons.forEach((button) => {
-    button.classList.remove("active");
-    button.style.backgroundColor = "";
-    button.style.color = "";
-    button.style.borderColor = "";
-  });
-
-  // Add styles to the clicked button (active state)
-  const activeButton = document.querySelector(
-    `button[onclick="filterPortfolio('${category}')"]`
-  );
-  activeButton.classList.add("active");
-  activeButton.style.backgroundColor = "rgb(13, 110, 253)";
-  activeButton.style.color = "#fff";
-  activeButton.style.borderColor = "rgb(13, 110, 253)";
-
-  // Show the loading spinner while filtering
-  loadingSpinner.style.display = "block";
-  noProjectsMessage.style.display = "none";
-  portfolioItemsContainer.innerHTML = "";
-
-  // Filter projects based on category
-  const filteredProjects =
-    category === "all"
-      ? projects
-      : projects.filter((project) => project.category === category);
-
-  if (filteredProjects.length === 0) {
-    // If no projects found, show the message after hiding the spinner
-    loadingSpinner.style.display = "none";
-    noProjectsMessage.style.display = "block";
-  } else {
-    // Render filtered projects
-    filteredProjects.forEach((project) => {
-      const projectItem = document.createElement("div");
-      projectItem.classList.add(
-        "col-md-6",
-        "col-lg-4",
-        "portfolio-item",
-        project.category
-      );
-
-      projectItem.innerHTML = `
-          <div class="projects-item position-relative mt-4">
-            <img src="${project.imageUrl}" alt="${project.title}" class="img-fluid w-100" />
-            <div class="projects-content text-center p-4">
-              <h5>${project.title}</h5>
-              <p class="mb-0">${project.description}</p>
-            </div>
-          </div>
-        `;
-
-      portfolioItemsContainer.appendChild(projectItem);
-    });
-
-    // Hide the spinner once the projects are loaded
-    loadingSpinner.style.display = "none";
-  }
-}
 
 // Function to add hover effect via JavaScript
 function addHoverEffect(button) {
@@ -303,10 +387,8 @@ function addHoverEffect(button) {
   });
 }
 
-// Function to render projects on initial load
-function renderProjects() {
-  filterPortfolio("all"); // Set the "All" category as active initially
-}
+
+
 
 // Single window.onload to initialize both tech stack and projects
 window.onload = function () {
