@@ -65,6 +65,8 @@
 .home-img {
   box-shadow: -50px 0 0 0 var(--ezy-body-color-invert);
   border-radius: 50%;
+  width: 80%; ;
+  height:80% ;
 }
 
 /* Add mobile responsiveness - For smartphones (max-width: 767px) */
