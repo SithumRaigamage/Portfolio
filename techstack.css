@@ -54,3 +54,30 @@
 .techstack .techstack-item p {
   color: #ffffff; /* Set the text color to white */
 }
+
+
+/* Responsive CSS for Mobile Devices */
+@media (max-width: 768px) {
+  /* For small screen sizes, stack the navigation items in a column */
+  .nav-pills {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav-item {
+    margin-bottom: 1rem;
+  }
+
+  /* Adjust the padding for mobile */
+  .nav-link {
+    padding: 1rem 2rem;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .nav-link {
+    padding: 0.8rem 1.5rem;
+    font-size: 0.9rem;
+  }
+}

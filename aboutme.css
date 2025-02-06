@@ -34,39 +34,6 @@
   .info-box {
     padding: 10px;
   }
-  .nav-tabs {
-    justify-content: flex-start;
-    flex-wrap: nowrap;
-    border-bottom: none;
-    display: flex;
-    gap: 8px;
-    overflow-x: auto;
-    padding-bottom: 10px;
-    -webkit-overflow-scrolling: touch;
-    max-width: 100%;
-  }
-
-  .nav-tabs .nav-link {
-    padding: 8px 12px;
-    font-size: 14px;
-    margin: 0;
-    border-radius: 16px;
-    white-space: nowrap;
-    flex: 0 0 auto;
-    min-width: 100px;
-    text-align: center;
-    background-color: var(--ezy-item-bg);
-    border: 1px solid rgba(255, 255, 255, 0.2);
-  }
-
-  .nav-tabs::-webkit-scrollbar {
-    height: 3px;
-  }
-
-  .nav-tabs::-webkit-scrollbar-thumb {
-    background-color: rgba(255, 255, 255, 0.2);
-    border-radius: 3px;
-  }
   #personal i {
     font-size: 20px;
   }
