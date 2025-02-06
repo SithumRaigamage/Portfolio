@@ -16,10 +16,99 @@
 }
 
 .about-heading {
+  margin-bottom: 30px;
+  text-align: center;
   font-weight: bold;
   font-size: 25px;
   line-height: 25px;
   color: var(--bs-body-color);
+}
+
+@media (max-width: 768px) {
+  #personal .col-sm-6 {
+    margin-bottom: 15px;
+    width: 100%;
+    padding: 0 10px;
+  }
+
+  .info-box {
+    padding: 10px;
+  }
+  #personal i {
+    font-size: 20px;
+  }
+
+  #personal p {
+    font-size: 14px;
+  }
+
+  .education-item {
+    text-align: center;
+    padding: 15px;
+  }
+
+  .education-item .d-flex {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+  }
+
+  .education-item .image-container {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .education-img {
+    width: 50px; /* Adjust image size */
+    height: auto;
+    display: flex;
+  }
+
+  .timeline {
+    padding-left: 0; /* Remove extra left padding */
+  }
+
+  .education-item p {
+    font-size: 14px; /* Reduce text size for better fit */
+    margin-bottom: 5px;
+  }
+
+  .experience-item {
+    flex-direction: column;
+    text-align: center;
+    gap: 15px;
+    padding: 15px;
+  }
+
+  .experience-item h4 {
+    font-size: 18px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .experience-item ul {
+    width: 100%;
+    text-align: left;
+    padding-left: 10px;
+  }
+
+  .experience-item li {
+    font-size: 14px;
+  }
+
+  .experience-img {
+    width: 80px;
+    height: 80px;
+  }
+
+  #experience {
+    padding: 20px;
+  }
+
+  .experience-item p {
+    font-size: 14px;
+  }
 }
 
 /* Personal Info Section */
