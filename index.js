@@ -508,3 +508,91 @@ window.onload = function () {
 };
 
 
+
+
+
+//appending certificates
+// Certificates data
+const certificates = [
+  {
+    title: "React Development",
+    description: "Advanced certification in React development, covering components, hooks, state management, and modern React practices.",
+    imageUrl: "https://cdn.worldvectorlogo.com/logos/react-2.svg",
+    platformLogo: "https://cdn.worldvectorlogo.com/logos/udemy-1.svg",
+    platformName: "Udemy"
+  },
+  {
+    title: "AWS Cloud Practitioner", 
+    description: "Certified in AWS cloud services, infrastructure, security, and best practices for cloud computing.",
+    imageUrl: "https://cdn.worldvectorlogo.com/logos/aws-2.svg",
+    platformLogo: "https://cdn.worldvectorlogo.com/logos/coursera-1.svg",
+    platformName: "Coursera"
+  },
+  {
+    title: "Full Stack Development",
+    description: "Comprehensive certification in full stack development, including frontend, backend, and database technologies.",
+    imageUrl: "https://cdn.worldvectorlogo.com/logos/nodejs-icon.svg",
+    platformLogo: "https://cdn.worldvectorlogo.com/logos/linkedin-icon-2.svg", 
+    platformName: "LinkedIn"
+  },
+  {
+    title: "Machine Learning",
+    description: "Specialization in machine learning, covering regression, classification, clustering, and neural networks.",
+    imageUrl: "https://cdn.worldvectorlogo.com/logos/tensorflow-2.svg",
+    platformLogo: "https://cdn.worldvectorlogo.com/logos/coursera-1.svg",
+    platformName: "Coursera"
+  },
+  {
+    title: "Docker Mastery",
+    description: "Advanced certification in Docker, covering containers, images, volumes, and Docker Compose.",
+    imageUrl: "https://cdn.worldvectorlogo.com/logos/docker-4.svg",
+    platformLogo: "https://cdn.worldvectorlogo.com/logos/udemy-1.svg",
+    platformName: "Udemy"
+  },
+  {
+    title: "Python Programming", 
+    description: "Certification in Python programming, covering data types, functions, OOP, and advanced Python concepts.",
+    imageUrl: "https://cdn.worldvectorlogo.com/logos/python-5.svg",
+    platformLogo: "https://cdn.worldvectorlogo.com/logos/linkedin-icon-2.svg",
+    platformName: "LinkedIn"
+  }
+];
+
+function renderCertificates() {
+  const certificatesContainer = document.getElementById('certificates');
+  const row = document.createElement('div');
+  row.className = 'row';
+
+  certificates.forEach((cert, index) => {
+    const certDiv = document.createElement('div');
+    certDiv.className = 'col-md-6 col-lg-4';
+    certDiv.innerHTML = `
+      <div class="certificates-item ${index === 1 ? 'active' : ''} mt-4">
+      <img src="${cert.imageUrl}" alt="${cert.title} Certificate" class="cert-img w-100" style="height: 100px; width: 100px; margin-top:30px; object-fit: contain;" />
+      <div class="certificates-content p-4 p-lg-5">
+        <div class="text-center mb-3">
+        <img src="${cert.platformLogo}" alt="${cert.platformName} Logo" 
+          style="width: 30px; height: 30px;" 
+          class="mb-2" />
+        <h4 class="certificates-heading mb-0">${cert.title}</h4>
+        </div>
+        <p class="certificates-sub-heading opacity-30 mb-0">${cert.description}</p>
+      </div>
+      </div>
+    `;
+    row.appendChild(certDiv);
+  });
+
+  certificatesContainer.innerHTML = '';
+  certificatesContainer.appendChild(row);
+}
+
+// Add this line to window.onload to render certificates
+window.onload = function () {
+  displayTechStack();
+  renderProjects();
+  renderCertificates();
+  
+  const buttons = document.querySelectorAll(".projects-btn-filter");
+  buttons.forEach((button) => addHoverEffect(button));
+};
