@@ -4,33 +4,23 @@ function scrollToContact() {
 
 
 const projects = [
+  // Existing web development projects...
   {
-    title: "Branding Project",
-    description: "Logo Design",
-    category: "branding",
-    imageUrl: "https://images.unsplash.com/photo-1558655146-9f40138edfeb?w=800&auto=format&fit=crop",
+    title: "Flutter Mobile App",
+    description: "Cross-platform Mobile App",
+    category: "mobile",
+    imageUrl: "https://images.unsplash.com/photo-1551650975-87deedd944c3?w=800&auto=format&fit=crop",
     projectLink: "#",
     techStack: [
-      { name: "Figma", icon: "https://cdn.worldvectorlogo.com/logos/figma-icon.svg" }
+      { name: "Flutter", icon: "https://cdn.worldvectorlogo.com/logos/flutter.svg" },
+      { name: "Dart", icon: "https://cdn.worldvectorlogo.com/logos/dart.svg" }
     ]
   },
   {
-    title: "Web Portal Dev",
-    description: "Front-End Development", 
-    category: "code",
-    imageUrl: "https://images.unsplash.com/photo-1517180102446-f3ece451e9d8?w=800&auto=format&fit=crop",
-    projectLink: "#",
-    techStack: [
-      { name: "HTML5", icon: "https://cdn.worldvectorlogo.com/logos/html-1.svg" },
-      { name: "CSS3", icon: "https://cdn.worldvectorlogo.com/logos/css-3.svg" },
-      { name: "JavaScript", icon: "https://cdn.worldvectorlogo.com/logos/javascript-1.svg" }
-    ]
-  },
-  {
-    title: "Web Portal Dev",
-    description: "Front-End Development",
-    category: "code",
-    imageUrl: "https://images.unsplash.com/photo-1547658719-da2b51169166?w=800&auto=format&fit=crop",
+    title: "iOS Fitness Tracker",
+    description: "Native iOS Development",
+    category: "mobile",
+    imageUrl: "https://images.unsplash.com/photo-1539683255143-73a6b838b106?w=800&auto=format&fit=crop",
     projectLink: "#",
     techStack: [
       { name: "React", icon: "https://cdn.worldvectorlogo.com/logos/react-2.svg" },
@@ -40,7 +30,7 @@ const projects = [
   {
     title: "Web Portal Dev",
     description: "Front-End Development", 
-    category: "code",
+    category: "web_development",
     imageUrl: "https://images.unsplash.com/photo-1593720213428-28a5b9e94613?w=800&auto=format&fit=crop",
     projectLink: "#",
     techStack: [
@@ -51,7 +41,7 @@ const projects = [
   {
     title: "Full Stack Web App",
     description: "Full Stack Development",
-    category: "development",
+    category: "web_development",
     imageUrl: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=800&auto=format&fit=crop",
     projectLink: "#",
     techStack: [
@@ -63,7 +53,7 @@ const projects = [
   {
     title: "E-commerce Platform",
     description: "Full Stack Development",
-    category: "development",
+    category: "web_development",
     imageUrl: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&auto=format&fit=crop",
     projectLink: "#",
     techStack: [
@@ -75,7 +65,7 @@ const projects = [
   {
     title: "Mobile App UI",
     description: "UI/UX Design",
-    category: "branding",
+    category: "mobile",
     imageUrl: "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=800&auto=format&fit=crop",
     projectLink: "#",
     techStack: [
@@ -85,7 +75,7 @@ const projects = [
   {
     title: "Social Media Dashboard",
     description: "Frontend Development",
-    category: "code",
+    category: "web_development",
     imageUrl: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&auto=format&fit=crop",
     projectLink: "#",
     techStack: [
@@ -96,7 +86,7 @@ const projects = [
   {
     title: "Restaurant Website",
     description: "Web Development",
-    category: "development",
+    category: "web_development",
     imageUrl: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=800&auto=format&fit=crop",
     projectLink: "#",
     techStack: [
@@ -105,13 +95,79 @@ const projects = [
     ]
   },
   {
-    title: "Corporate Identity",
-    description: "Branding",
-    category: "branding",
-    imageUrl: "https://images.unsplash.com/photo-1434626881859-194d67b2b86f?w=800&auto=format&fit=crop",
+    title: "Flutter Mobile App",
+    description: "Cross-platform Mobile App",
+    category: "mobile",
+    imageUrl: "https://images.unsplash.com/photo-1551650975-87deedd944c3?w=800&auto=format&fit=crop",
     projectLink: "#",
     techStack: [
-      { name: "Figma", icon: "https://cdn.worldvectorlogo.com/logos/figma-icon.svg" }
+      { name: "Flutter", icon: "https://cdn.worldvectorlogo.com/logos/flutter.svg" },
+      { name: "Dart", icon: "https://cdn.worldvectorlogo.com/logos/dart.svg" }
+    ]
+  },
+  {
+    title: "iOS Fitness Tracker",
+    description: "Native iOS Development",
+    category: "mobile",
+    imageUrl: "https://images.unsplash.com/photo-1539683255143-73a6b838b106?w=800&auto=format&fit=crop",
+    projectLink: "#",
+    techStack: [
+      { name: "Swift", icon: "https://cdn.worldvectorlogo.com/logos/swift-15.svg" }
+    ]
+  },
+  {
+    title: "Image Recognition App",
+    description: "AI/ML Development",
+    category: "AI_ML",
+    imageUrl: "https://images.unsplash.com/photo-1507146426996-ef05306b995a?w=800&auto=format&fit=crop",
+    projectLink: "#",
+    techStack: [
+      { name: "TensorFlow", icon: "https://cdn.worldvectorlogo.com/logos/tensorflow-2.svg" },
+      { name: "Python", icon: "https://cdn.worldvectorlogo.com/logos/python-5.svg" }
+    ]
+  },
+  {
+    title: "Smart Home System",
+    description: "IoT Development",
+    category: "IOT",
+    imageUrl: "https://images.unsplash.com/photo-1557324232-b8917d3c3dcb?w=800&auto=format&fit=crop",
+    projectLink: "#",
+    techStack: [
+      { name: "Arduino", icon: "https://cdn.worldvectorlogo.com/logos/arduino-1.svg" },
+      { name: "C++", icon: "https://cdn.worldvectorlogo.com/logos/c.svg" }
+    ]
+  },
+  {
+    title: "Predictive Analytics",
+    description: "Machine Learning",
+    category: "AI_ML",
+    imageUrl: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&auto=format&fit=crop",
+    projectLink: "#",
+    techStack: [
+      { name: "Python", icon: "https://cdn.worldvectorlogo.com/logos/python-5.svg" },
+      { name: "R", icon: "https://cdn.worldvectorlogo.com/logos/r-lang.svg" }
+    ]
+  },
+  {
+    title: "Weather Station",
+    description: "Embedded Systems",
+    category: "IOT",
+    imageUrl: "https://images.unsplash.com/photo-1527066579998-dbbae57f45ce?w=800&auto=format&fit=crop",
+    projectLink: "#",
+    techStack: [
+      { name: "Arduino", icon: "https://cdn.worldvectorlogo.com/logos/arduino-1.svg" },
+      { name: "C", icon: "https://cdn.worldvectorlogo.com/logos/c-1.svg" }
+    ]
+  },
+  {
+    title: "smart Car",
+    description: "Embedded Systems",
+    category: "IOT",
+    imageUrl: "https://images.unsplash.com/photo-1527066579998-dbbae57f45ce?w=800&auto=format&fit=crop",
+    projectLink: "#",
+    techStack: [
+      { name: "Arduino", icon: "https://cdn.worldvectorlogo.com/logos/arduino-1.svg" },
+      { name: "C", icon: "https://cdn.worldvectorlogo.com/logos/c-1.svg" }
     ]
   }
 ];
@@ -450,3 +506,5 @@ window.onload = function () {
   const buttons = document.querySelectorAll(".projects-btn-filter");
   buttons.forEach((button) => addHoverEffect(button));
 };
+
+
