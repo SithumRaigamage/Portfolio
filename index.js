@@ -5,6 +5,106 @@ function scrollToContact() {
 
 const projects = [
   // Existing web development projects...
+  {
+    title: "CeraFlaw",
+    description: "Cross-platform CeraFlaw Marketing Page",
+    category: "web_development", 
+    imageUrl: "Images/tile.jpeg",
+    projectLink: "#",
+    techStack: [
+      { name: "HTML5", icon: "https://cdn.worldvectorlogo.com/logos/html-1.svg" },
+      { name: "CSS3", icon: "https://cdn.worldvectorlogo.com/logos/css-3.svg" },
+      { name: "JavaScript", icon: "https://cdn.worldvectorlogo.com/logos/javascript-1.svg" },
+    ],
+  },
+  {
+    title: "Predictive Analytics",
+    description: "Machine Learning Clustering and Neural Network",
+    category: "AI_ML",
+    imageUrl: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&auto=format&fit=crop",
+    projectLink: "#",
+    techStack: [
+      { name: "R", icon: "https://cdn.worldvectorlogo.com/logos/r-lang.svg" }
+    ]
+  },
+  {
+    title: "To Do App",
+    description: "To Do App",
+    category: "web_development",
+    imageUrl: "https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?w=800&auto=format&fit=crop",
+    projectLink: "",
+    techStack: [
+      { name: "HTML5", icon: "https://cdn.worldvectorlogo.com/logos/html-1.svg" },
+      { name: "CSS3", icon: "https://cdn.worldvectorlogo.com/logos/css-3.svg" },
+      { name: "JavaScript", icon: "https://cdn.worldvectorlogo.com/logos/javascript-1.svg" },
+    ],
+  },
+  {
+    title : "QR Code Generator",
+    description : "QR Code Generator", 
+    category : "web_development",
+    imageUrl : "https://images.unsplash.com/photo-1595079676339-1534801ad6cf?w=800&auto=format&fit=crop",
+    projectLink : "",
+    techStack : [
+      { name : "HTML5", icon : "https://cdn.worldvectorlogo.com/logos/html-1.svg"},
+      { name : "CSS3", icon : "https://cdn.worldvectorlogo.com/logos/css-3.svg"},
+      { name : "JavaScript", icon : "https://cdn.worldvectorlogo.com/logos/javascript-1.svg"},
+      {name : "python", icon : "https://cdn.worldvectorlogo.com/logos/python-5.svg"}
+    ]
+  },
+  {
+    title : "Weather App",
+    description : "Weather App", 
+    category : "web_development",
+    imageUrl : "https://images.unsplash.com/photo-1592210454359-9043f067919b?w=800&auto=format&fit=crop",
+    projectLink : "",
+    techStack : [
+      { name : "HTML5", icon : "https://cdn.worldvectorlogo.com/logos/html-1.svg"},
+      { name : "CSS3", icon : "https://cdn.worldvectorlogo.com/logos/css-3.svg"},
+      { name : "JavaScript", icon : "https://cdn.worldvectorlogo.com/logos/javascript-1.svg"},
+      {name : "python", icon : "https://cdn.worldvectorlogo.com/logos/python-5.svg"}
+    ]
+  },
+  {
+    title : "Music Player",
+    description : "Music Player",
+    category : "web_development",
+    imageUrl : "https://images.unsplash.com/photo-1470225620780-dba8ba36b745?w=800&auto=format&fit=crop",
+    projectLink : "",
+    techStack : [
+      { name : "HTML5", icon : "https://cdn.worldvectorlogo.com/logos/html-1.svg"},
+      { name : "CSS3", icon : "https://cdn.worldvectorlogo.com/logos/css-3.svg"},
+      { name : "JavaScript", icon : "https://cdn.worldvectorlogo.com/logos/javascript-1.svg"},
+      {name : "python", icon : "https://cdn.worldvectorlogo.com/logos/python-5.svg"}
+    ]
+  },
+  {
+    title : "Demon Slayer Website",
+    description : "Demon Slayer Website",
+    category : "web_development",
+    imageUrl : "Images/1317168.jpeg",
+    projectLink : "",
+    techStack : [
+      { name : "HTML5", icon : "https://cdn.worldvectorlogo.com/logos/html-1.svg"},
+      { name : "CSS3", icon : "https://cdn.worldvectorlogo.com/logos/css-3.svg"},
+      { name : "JavaScript", icon : "https://cdn.worldvectorlogo.com/logos/javascript-1.svg"},
+      {name : "BootStrap", icon : "https://cdn.worldvectorlogo.com/logos/bootstrap-1.svg"}
+    ]
+  },
+  // {
+  //   title : "Calculator",
+  //   description : "Calculator",
+  //   category : "web_development",
+  //   imageUrl : "Images/charlesdeluvio-GlavtG-umzE-unsplash.jpg",
+  //   projectLink : "",
+  //   techStack : [
+  //     { name : "HTML5", icon : "https://cdn.worldvectorlogo.com/logos/html-1.svg"},
+  //     { name : "CSS3", icon : "https://cdn.worldvectorlogo.com/logos/css-3.svg"},
+  //     { name : "JavaScript", icon : "https://cdn.worldvectorlogo.com/logos/javascript-1.svg"},
+  //     {name : "python", icon : "https://cdn.worldvectorlogo.com/logos/python-5.svg"}
+  //   ]
+  // },
+
   // {
   //   title: "Flutter Mobile App",
   //   description: "Cross-platform Mobile App",
@@ -29,7 +129,7 @@ const projects = [
   // },
   // {
   //   title: "Web Portal Dev",
-  //   description: "Front-End Development", 
+  //   description: "Front-End Development",
   //   category: "web_development",
   //   imageUrl: "https://images.unsplash.com/photo-1593720213428-28a5b9e94613?w=800&auto=format&fit=crop",
   //   projectLink: "#",
