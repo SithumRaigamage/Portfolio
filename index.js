@@ -514,55 +514,70 @@ window.onload = function () {
 //appending certificates
 // Certificates data
 const certificates = [
+
   {
-    title: "React Development",
-    description: "Advanced certification in React development, covering components, hooks, state management, and modern React practices.",
-    imageUrl: "https://cdn.worldvectorlogo.com/logos/react-2.svg",
-    platformLogo: "https://cdn.worldvectorlogo.com/logos/udemy-1.svg",
-    platformName: "Udemy"
-  },
-  {
-    title: "AWS Cloud Practitioner", 
-    description: "Certified in AWS cloud services, infrastructure, security, and best practices for cloud computing.",
-    imageUrl: "https://cdn.worldvectorlogo.com/logos/aws-2.svg",
-    platformLogo: "https://cdn.worldvectorlogo.com/logos/coursera-1.svg",
-    platformName: "Coursera"
-  },
-  {
-    title: "Full Stack Development",
-    description: "Comprehensive certification in full stack development, including frontend, backend, and database technologies.",
-    imageUrl: "https://cdn.worldvectorlogo.com/logos/nodejs-icon.svg",
-    platformLogo: "https://cdn.worldvectorlogo.com/logos/linkedin-icon-2.svg", 
-    platformName: "LinkedIn"
-  },
-  {
-    title: "Machine Learning",
-    description: "Specialization in machine learning, covering regression, classification, clustering, and neural networks.",
-    imageUrl: "https://cdn.worldvectorlogo.com/logos/tensorflow-2.svg",
-    platformLogo: "https://cdn.worldvectorlogo.com/logos/coursera-1.svg",
-    platformName: "Coursera"
-  },
-  {
-    title: "Docker Mastery",
-    description: "Advanced certification in Docker, covering containers, images, volumes, and Docker Compose.",
-    imageUrl: "https://cdn.worldvectorlogo.com/logos/docker-4.svg",
-    platformLogo: "https://cdn.worldvectorlogo.com/logos/udemy-1.svg",
-    platformName: "Udemy"
-  },
-  {
-    title: "Python Programming", 
-    description: "Certification in Python programming, covering data types, functions, OOP, and advanced Python concepts.",
-    imageUrl: "https://cdn.worldvectorlogo.com/logos/python-5.svg",
+    title: "Learning Angular",
+    description: "Basic certification in Angular development, covering components, services, routing, and Angular CLI.",
+    imageUrl: "https://cdn.worldvectorlogo.com/logos/angular-icon-1.svg",
     platformLogo: "https://cdn.worldvectorlogo.com/logos/linkedin-icon-2.svg",
     platformName: "LinkedIn"
   },
   {
-    title: "Java Fundamentals",
-    description: "Fundamental certification in Java programming, covering syntax, data structures, and object-oriented programming.",
-    imageUrl: "https://cdn.worldvectorlogo.com/logos/java-4.svg",
-    platformLogo: "https://cdn.worldvectorlogo.com/logos/udemy-1.svg",
-    platformName: "Udemy"
+    title: "BitBucket",
+    description: "Certified in BitBucket version control system, covering repositories, branches, pull requests, and merging.",
+    imageUrl: "https://cdn.worldvectorlogo.com/logos/bitbucket-icon.svg",
+    platformLogo: "https://cdn.worldvectorlogo.com/logos/linkedin-icon-2.svg",
+    platformName: "LinkedIn"
   },
+  {
+    title: "Introduction to Dart",
+    description: "Basic certification in Dart programming, covering syntax, data types, functions, and object-oriented programming.",
+    imageUrl: "https://cdn.worldvectorlogo.com/logos/dart.svg",
+    platformLogo: "https://cdn.worldvectorlogo.com/logos/linkedin-icon-2.svg",
+    platformName: "LinkedIn"
+  },
+  {
+    title: "Git Essential Training",
+    description: "Certified in Git version control system, covering repositories, branches, pull requests, and merging.",
+    imageUrl: "https://cdn.worldvectorlogo.com/logos/git-icon.svg",
+    platformLogo: "https://cdn.worldvectorlogo.com/logos/linkedin-icon-2.svg",
+    platformName: "LinkedIn"
+  },
+  {
+    title: "Java Object-Oriented Programming",
+    description: "Certification in Java programming, covering classes, objects, inheritance, polymorphism, and interfaces.",
+    imageUrl: "https://cdn.worldvectorlogo.com/logos/java-4.svg",
+    platformLogo: "https://cdn.worldvectorlogo.com/logos/linkedin-icon-2.svg",
+    platformName: "LinkedIn"
+  },
+  {
+    title: "Java Swing",
+    description: "Certification in Java Swing, covering GUI components, event handling, and Java Swing applications.",
+    imageUrl: "https://cdn.worldvectorlogo.com/logos/java-4.svg",
+    platformLogo: "https://cdn.worldvectorlogo.com/logos/linkedin-icon-2.svg",
+    platformName: "LinkedIn"
+  },
+  {
+    title: "MYSQL Essential Training",
+    description: "Certified in MySQL database, covering tables, queries, joins, and database management.",
+    imageUrl: "https://cdn.worldvectorlogo.com/logos/mysql-2.svg",
+    platformLogo: "https://cdn.worldvectorlogo.com/logos/linkedin-icon-2.svg",
+    platformName: "LinkedIn"
+  },
+  {
+    title: "Web Development Workshop",
+    description: "Workshop in web development, covering HTML, CSS, JavaScript,React and responsive web design.",
+    imageUrl: "https://cdn.worldvectorlogo.com/logos/react-1.svg",
+    platformLogo: "Images/ieee_computer_society_student_chapter_of_iit_logo.jpeg",
+    platformName: "WebSpire"
+  },
+  {
+    title: "Professional Certificate in Java Programming",
+    description: "Professional certification in Java programming, covering syntax, data structures, and object-oriented programming.",
+    imageUrl: "https://cdn.worldvectorlogo.com/logos/java-4.svg",
+    platformLogo: "Images/informatics_institute_of_technology_logo.jpeg",
+    platformName: "IIT"
+  }
 ];
 
 const CERTS_PER_PAGE = 6;
@@ -586,7 +601,7 @@ function renderCertificates(page = 1) {
     certDiv.className = 'col-md-6 col-lg-4';
     certDiv.innerHTML = `
       <div class="certificates-item ${index === 1 ? 'active' : ''} mt-4">
-        <img src="${cert.imageUrl}" alt="${cert.title} Certificate" class="cert-img w-100" style="height: 100px; width: 100px; margin-top:30px; object-fit: contain;" />
+        <img src="${cert.imageUrl}" alt="${cert.title} Certificate" class="cert-img w-100" style="height: 50px; width: 50px; margin-top:30px; object-fit: contain;" />
         <div class="certificates-content p-4 p-lg-5">
           <div class="text-center mb-3">
             <img src="${cert.platformLogo}" alt="${cert.platformName} Logo" 
