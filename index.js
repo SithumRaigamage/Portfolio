@@ -5,171 +5,171 @@ function scrollToContact() {
 
 const projects = [
   // Existing web development projects...
-  {
-    title: "Flutter Mobile App",
-    description: "Cross-platform Mobile App",
-    category: "mobile",
-    imageUrl: "https://images.unsplash.com/photo-1551650975-87deedd944c3?w=800&auto=format&fit=crop",
-    projectLink: "#",
-    techStack: [
-      { name: "Flutter", icon: "https://cdn.worldvectorlogo.com/logos/flutter.svg" },
-      { name: "Dart", icon: "https://cdn.worldvectorlogo.com/logos/dart.svg" }
-    ]
-  },
-  {
-    title: "iOS Fitness Tracker",
-    description: "Native iOS Development",
-    category: "mobile",
-    imageUrl: "https://images.unsplash.com/photo-1539683255143-73a6b838b106?w=800&auto=format&fit=crop",
-    projectLink: "#",
-    techStack: [
-      { name: "React", icon: "https://cdn.worldvectorlogo.com/logos/react-2.svg" },
-      { name: "Node.js", icon: "https://cdn.worldvectorlogo.com/logos/nodejs-icon.svg" }
-    ]
-  },
-  {
-    title: "Web Portal Dev",
-    description: "Front-End Development", 
-    category: "web_development",
-    imageUrl: "https://images.unsplash.com/photo-1593720213428-28a5b9e94613?w=800&auto=format&fit=crop",
-    projectLink: "#",
-    techStack: [
-      { name: "Angular", icon: "https://cdn.worldvectorlogo.com/logos/angular-icon-1.svg" },
-      { name: "TypeScript", icon: "https://cdn.worldvectorlogo.com/logos/typescript.svg" }
-    ]
-  },
-  {
-    title: "Full Stack Web App",
-    description: "Full Stack Development",
-    category: "web_development",
-    imageUrl: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=800&auto=format&fit=crop",
-    projectLink: "#",
-    techStack: [
-      { name: "React", icon: "https://cdn.worldvectorlogo.com/logos/react-2.svg" },
-      { name: "Node.js", icon: "https://cdn.worldvectorlogo.com/logos/nodejs-icon.svg" },
-      { name: "MongoDB", icon: "https://cdn.worldvectorlogo.com/logos/mongodb-icon-1.svg" }
-    ]
-  },
-  {
-    title: "E-commerce Platform",
-    description: "Full Stack Development",
-    category: "web_development",
-    imageUrl: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&auto=format&fit=crop",
-    projectLink: "#",
-    techStack: [
-      { name: "Angular", icon: "https://cdn.worldvectorlogo.com/logos/angular-icon-1.svg" },
-      { name: "Spring Boot", icon: "https://cdn.worldvectorlogo.com/logos/spring-3.svg" },
-      { name: "MySQL", icon: "https://cdn.worldvectorlogo.com/logos/mysql-2.svg" }
-    ]
-  },
-  {
-    title: "Mobile App UI",
-    description: "UI/UX Design",
-    category: "mobile",
-    imageUrl: "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=800&auto=format&fit=crop",
-    projectLink: "#",
-    techStack: [
-      { name: "Figma", icon: "https://cdn.worldvectorlogo.com/logos/figma-icon.svg" }
-    ]
-  },
-  {
-    title: "Social Media Dashboard",
-    description: "Frontend Development",
-    category: "web_development",
-    imageUrl: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&auto=format&fit=crop",
-    projectLink: "#",
-    techStack: [
-      { name: "React", icon: "https://cdn.worldvectorlogo.com/logos/react-2.svg" },
-      { name: "Tailwind CSS", icon: "https://cdn.worldvectorlogo.com/logos/tailwind-css-2.svg" }
-    ]
-  },
-  {
-    title: "Restaurant Website",
-    description: "Web Development",
-    category: "web_development",
-    imageUrl: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=800&auto=format&fit=crop",
-    projectLink: "#",
-    techStack: [
-      { name: "Angular", icon: "https://cdn.worldvectorlogo.com/logos/angular-icon-1.svg" },
-      { name: "Bootstrap", icon: "https://cdn.worldvectorlogo.com/logos/bootstrap-4.svg" }
-    ]
-  },
-  {
-    title: "Flutter Mobile App",
-    description: "Cross-platform Mobile App",
-    category: "mobile",
-    imageUrl: "https://images.unsplash.com/photo-1551650975-87deedd944c3?w=800&auto=format&fit=crop",
-    projectLink: "#",
-    techStack: [
-      { name: "Flutter", icon: "https://cdn.worldvectorlogo.com/logos/flutter.svg" },
-      { name: "Dart", icon: "https://cdn.worldvectorlogo.com/logos/dart.svg" }
-    ]
-  },
-  {
-    title: "iOS Fitness Tracker",
-    description: "Native iOS Development",
-    category: "mobile",
-    imageUrl: "https://images.unsplash.com/photo-1539683255143-73a6b838b106?w=800&auto=format&fit=crop",
-    projectLink: "#",
-    techStack: [
-      { name: "Swift", icon: "https://cdn.worldvectorlogo.com/logos/swift-15.svg" }
-    ]
-  },
-  {
-    title: "Image Recognition App",
-    description: "AI/ML Development",
-    category: "AI_ML",
-    imageUrl: "https://images.unsplash.com/photo-1507146426996-ef05306b995a?w=800&auto=format&fit=crop",
-    projectLink: "#",
-    techStack: [
-      { name: "TensorFlow", icon: "https://cdn.worldvectorlogo.com/logos/tensorflow-2.svg" },
-      { name: "Python", icon: "https://cdn.worldvectorlogo.com/logos/python-5.svg" }
-    ]
-  },
-  {
-    title: "Smart Home System",
-    description: "IoT Development",
-    category: "IOT",
-    imageUrl: "https://images.unsplash.com/photo-1557324232-b8917d3c3dcb?w=800&auto=format&fit=crop",
-    projectLink: "#",
-    techStack: [
-      { name: "Arduino", icon: "https://cdn.worldvectorlogo.com/logos/arduino-1.svg" },
-      { name: "C++", icon: "https://cdn.worldvectorlogo.com/logos/c.svg" }
-    ]
-  },
-  {
-    title: "Predictive Analytics",
-    description: "Machine Learning",
-    category: "AI_ML",
-    imageUrl: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&auto=format&fit=crop",
-    projectLink: "#",
-    techStack: [
-      { name: "Python", icon: "https://cdn.worldvectorlogo.com/logos/python-5.svg" },
-      { name: "R", icon: "https://cdn.worldvectorlogo.com/logos/r-lang.svg" }
-    ]
-  },
-  {
-    title: "Weather Station",
-    description: "Embedded Systems",
-    category: "IOT",
-    imageUrl: "https://images.unsplash.com/photo-1527066579998-dbbae57f45ce?w=800&auto=format&fit=crop",
-    projectLink: "#",
-    techStack: [
-      { name: "Arduino", icon: "https://cdn.worldvectorlogo.com/logos/arduino-1.svg" },
-      { name: "C", icon: "https://cdn.worldvectorlogo.com/logos/c-1.svg" }
-    ]
-  },
-  {
-    title: "smart Car",
-    description: "Embedded Systems",
-    category: "IOT",
-    imageUrl: "https://images.unsplash.com/photo-1527066579998-dbbae57f45ce?w=800&auto=format&fit=crop",
-    projectLink: "#",
-    techStack: [
-      { name: "Arduino", icon: "https://cdn.worldvectorlogo.com/logos/arduino-1.svg" },
-      { name: "C", icon: "https://cdn.worldvectorlogo.com/logos/c-1.svg" }
-    ]
-  }
+  // {
+  //   title: "Flutter Mobile App",
+  //   description: "Cross-platform Mobile App",
+  //   category: "mobile",
+  //   imageUrl: "https://images.unsplash.com/photo-1551650975-87deedd944c3?w=800&auto=format&fit=crop",
+  //   projectLink: "#",
+  //   techStack: [
+  //     { name: "Flutter", icon: "https://cdn.worldvectorlogo.com/logos/flutter.svg" },
+  //     { name: "Dart", icon: "https://cdn.worldvectorlogo.com/logos/dart.svg" }
+  //   ]
+  // },
+  // {
+  //   title: "iOS Fitness Tracker",
+  //   description: "Native iOS Development",
+  //   category: "mobile",
+  //   imageUrl: "https://images.unsplash.com/photo-1539683255143-73a6b838b106?w=800&auto=format&fit=crop",
+  //   projectLink: "#",
+  //   techStack: [
+  //     { name: "React", icon: "https://cdn.worldvectorlogo.com/logos/react-2.svg" },
+  //     { name: "Node.js", icon: "https://cdn.worldvectorlogo.com/logos/nodejs-icon.svg" }
+  //   ]
+  // },
+  // {
+  //   title: "Web Portal Dev",
+  //   description: "Front-End Development", 
+  //   category: "web_development",
+  //   imageUrl: "https://images.unsplash.com/photo-1593720213428-28a5b9e94613?w=800&auto=format&fit=crop",
+  //   projectLink: "#",
+  //   techStack: [
+  //     { name: "Angular", icon: "https://cdn.worldvectorlogo.com/logos/angular-icon-1.svg" },
+  //     { name: "TypeScript", icon: "https://cdn.worldvectorlogo.com/logos/typescript.svg" }
+  //   ]
+  // },
+  // {
+  //   title: "Full Stack Web App",
+  //   description: "Full Stack Development",
+  //   category: "web_development",
+  //   imageUrl: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=800&auto=format&fit=crop",
+  //   projectLink: "#",
+  //   techStack: [
+  //     { name: "React", icon: "https://cdn.worldvectorlogo.com/logos/react-2.svg" },
+  //     { name: "Node.js", icon: "https://cdn.worldvectorlogo.com/logos/nodejs-icon.svg" },
+  //     { name: "MongoDB", icon: "https://cdn.worldvectorlogo.com/logos/mongodb-icon-1.svg" }
+  //   ]
+  // },
+  // {
+  //   title: "E-commerce Platform",
+  //   description: "Full Stack Development",
+  //   category: "web_development",
+  //   imageUrl: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&auto=format&fit=crop",
+  //   projectLink: "#",
+  //   techStack: [
+  //     { name: "Angular", icon: "https://cdn.worldvectorlogo.com/logos/angular-icon-1.svg" },
+  //     { name: "Spring Boot", icon: "https://cdn.worldvectorlogo.com/logos/spring-3.svg" },
+  //     { name: "MySQL", icon: "https://cdn.worldvectorlogo.com/logos/mysql-2.svg" }
+  //   ]
+  // },
+  // {
+  //   title: "Mobile App UI",
+  //   description: "UI/UX Design",
+  //   category: "mobile",
+  //   imageUrl: "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=800&auto=format&fit=crop",
+  //   projectLink: "#",
+  //   techStack: [
+  //     { name: "Figma", icon: "https://cdn.worldvectorlogo.com/logos/figma-icon.svg" }
+  //   ]
+  // },
+  // {
+  //   title: "Social Media Dashboard",
+  //   description: "Frontend Development",
+  //   category: "web_development",
+  //   imageUrl: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&auto=format&fit=crop",
+  //   projectLink: "#",
+  //   techStack: [
+  //     { name: "React", icon: "https://cdn.worldvectorlogo.com/logos/react-2.svg" },
+  //     { name: "Tailwind CSS", icon: "https://cdn.worldvectorlogo.com/logos/tailwind-css-2.svg" }
+  //   ]
+  // },
+  // {
+  //   title: "Restaurant Website",
+  //   description: "Web Development",
+  //   category: "web_development",
+  //   imageUrl: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=800&auto=format&fit=crop",
+  //   projectLink: "#",
+  //   techStack: [
+  //     { name: "Angular", icon: "https://cdn.worldvectorlogo.com/logos/angular-icon-1.svg" },
+  //     { name: "Bootstrap", icon: "https://cdn.worldvectorlogo.com/logos/bootstrap-4.svg" }
+  //   ]
+  // },
+  // {
+  //   title: "Flutter Mobile App",
+  //   description: "Cross-platform Mobile App",
+  //   category: "mobile",
+  //   imageUrl: "https://images.unsplash.com/photo-1551650975-87deedd944c3?w=800&auto=format&fit=crop",
+  //   projectLink: "#",
+  //   techStack: [
+  //     { name: "Flutter", icon: "https://cdn.worldvectorlogo.com/logos/flutter.svg" },
+  //     { name: "Dart", icon: "https://cdn.worldvectorlogo.com/logos/dart.svg" }
+  //   ]
+  // },
+  // {
+  //   title: "iOS Fitness Tracker",
+  //   description: "Native iOS Development",
+  //   category: "mobile",
+  //   imageUrl: "https://images.unsplash.com/photo-1539683255143-73a6b838b106?w=800&auto=format&fit=crop",
+  //   projectLink: "#",
+  //   techStack: [
+  //     { name: "Swift", icon: "https://cdn.worldvectorlogo.com/logos/swift-15.svg" }
+  //   ]
+  // },
+  // {
+  //   title: "Image Recognition App",
+  //   description: "AI/ML Development",
+  //   category: "AI_ML",
+  //   imageUrl: "https://images.unsplash.com/photo-1507146426996-ef05306b995a?w=800&auto=format&fit=crop",
+  //   projectLink: "#",
+  //   techStack: [
+  //     { name: "TensorFlow", icon: "https://cdn.worldvectorlogo.com/logos/tensorflow-2.svg" },
+  //     { name: "Python", icon: "https://cdn.worldvectorlogo.com/logos/python-5.svg" }
+  //   ]
+  // },
+  // {
+  //   title: "Smart Home System",
+  //   description: "IoT Development",
+  //   category: "IOT",
+  //   imageUrl: "https://images.unsplash.com/photo-1557324232-b8917d3c3dcb?w=800&auto=format&fit=crop",
+  //   projectLink: "#",
+  //   techStack: [
+  //     { name: "Arduino", icon: "https://cdn.worldvectorlogo.com/logos/arduino-1.svg" },
+  //     { name: "C++", icon: "https://cdn.worldvectorlogo.com/logos/c.svg" }
+  //   ]
+  // },
+  // {
+  //   title: "Predictive Analytics",
+  //   description: "Machine Learning",
+  //   category: "AI_ML",
+  //   imageUrl: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&auto=format&fit=crop",
+  //   projectLink: "#",
+  //   techStack: [
+  //     { name: "Python", icon: "https://cdn.worldvectorlogo.com/logos/python-5.svg" },
+  //     { name: "R", icon: "https://cdn.worldvectorlogo.com/logos/r-lang.svg" }
+  //   ]
+  // },
+  // {
+  //   title: "Weather Station",
+  //   description: "Embedded Systems",
+  //   category: "IOT",
+  //   imageUrl: "https://images.unsplash.com/photo-1527066579998-dbbae57f45ce?w=800&auto=format&fit=crop",
+  //   projectLink: "#",
+  //   techStack: [
+  //     { name: "Arduino", icon: "https://cdn.worldvectorlogo.com/logos/arduino-1.svg" },
+  //     { name: "C", icon: "https://cdn.worldvectorlogo.com/logos/c-1.svg" }
+  //   ]
+  // },
+  // {
+  //   title: "smart Car",
+  //   description: "Embedded Systems",
+  //   category: "IOT",
+  //   imageUrl: "https://images.unsplash.com/photo-1527066579998-dbbae57f45ce?w=800&auto=format&fit=crop",
+  //   projectLink: "#",
+  //   techStack: [
+  //     { name: "Arduino", icon: "https://cdn.worldvectorlogo.com/logos/arduino-1.svg" },
+  //     { name: "C", icon: "https://cdn.worldvectorlogo.com/logos/c-1.svg" }
+  //   ]
+  // }
 ];
 
 const ITEMS_PER_PAGE = 6; // Number of items to show per page
@@ -555,29 +555,47 @@ const certificates = [
     imageUrl: "https://cdn.worldvectorlogo.com/logos/python-5.svg",
     platformLogo: "https://cdn.worldvectorlogo.com/logos/linkedin-icon-2.svg",
     platformName: "LinkedIn"
-  }
+  },
+  {
+    title: "Java Fundamentals",
+    description: "Fundamental certification in Java programming, covering syntax, data structures, and object-oriented programming.",
+    imageUrl: "https://cdn.worldvectorlogo.com/logos/java-4.svg",
+    platformLogo: "https://cdn.worldvectorlogo.com/logos/udemy-1.svg",
+    platformName: "Udemy"
+  },
 ];
 
-function renderCertificates() {
-  const certificatesContainer = document.getElementById('certificates');
+const CERTS_PER_PAGE = 6;
+let currentCertPage = 1;
+
+function renderCertificates(page = 1) {
+  const certificatesContainer = document.getElementById('certificatesList');
+  const paginationContainer = document.getElementById('certificatesPagination');
+  
+  // Calculate pagination
+  const totalPages = Math.ceil(certificates.length / CERTS_PER_PAGE);
+  const startIndex = (page - 1) * CERTS_PER_PAGE;
+  const endIndex = startIndex + CERTS_PER_PAGE;
+  const currentCerts = certificates.slice(startIndex, endIndex);
+
   const row = document.createElement('div');
   row.className = 'row';
 
-  certificates.forEach((cert, index) => {
+  currentCerts.forEach((cert, index) => {
     const certDiv = document.createElement('div');
     certDiv.className = 'col-md-6 col-lg-4';
     certDiv.innerHTML = `
       <div class="certificates-item ${index === 1 ? 'active' : ''} mt-4">
-      <img src="${cert.imageUrl}" alt="${cert.title} Certificate" class="cert-img w-100" style="height: 100px; width: 100px; margin-top:30px; object-fit: contain;" />
-      <div class="certificates-content p-4 p-lg-5">
-        <div class="text-center mb-3">
-        <img src="${cert.platformLogo}" alt="${cert.platformName} Logo" 
-          style="width: 30px; height: 30px;" 
-          class="mb-2" />
-        <h4 class="certificates-heading mb-0">${cert.title}</h4>
+        <img src="${cert.imageUrl}" alt="${cert.title} Certificate" class="cert-img w-100" style="height: 100px; width: 100px; margin-top:30px; object-fit: contain;" />
+        <div class="certificates-content p-4 p-lg-5">
+          <div class="text-center mb-3">
+            <img src="${cert.platformLogo}" alt="${cert.platformName} Logo" 
+              style="width: 30px; height: 30px;" 
+              class="mb-2" />
+            <h4 class="certificates-heading mb-0">${cert.title}</h4>
+          </div>
+          <p class="certificates-sub-heading opacity-30 mb-0">${cert.description}</p>
         </div>
-        <p class="certificates-sub-heading opacity-30 mb-0">${cert.description}</p>
-      </div>
       </div>
     `;
     row.appendChild(certDiv);
@@ -585,6 +603,21 @@ function renderCertificates() {
 
   certificatesContainer.innerHTML = '';
   certificatesContainer.appendChild(row);
+
+  // Update pagination
+  paginationContainer.innerHTML = `
+    <li class="page-item ${page === 1 ? 'disabled' : ''}">
+      <a class="page-link" href="#" onclick="renderCertificates(${page - 1}); return false;">Previous</a>
+    </li>
+    ${Array.from({length: totalPages}, (_, i) => i + 1).map(num => `
+      <li class="page-item ${num === page ? 'active' : ''}">
+        <a class="page-link" href="#" onclick="renderCertificates(${num}); return false;">${num}</a>
+      </li>
+    `).join('')}
+    <li class="page-item ${page === totalPages ? 'disabled' : ''}">
+      <a class="page-link" href="#" onclick="renderCertificates(${page + 1}); return false;">Next</a>
+    </li>
+  `;
 }
 
 // Add this line to window.onload to render certificates
