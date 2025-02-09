@@ -223,7 +223,27 @@
         </div>
 
         <!-- Certifications Tab -->
-        <div class="tab-pane fade" id="certificates" role="tabpanel"></div>
+        <div class="tab-pane fade" id="certificates" role="tabpanel">
+          <div class="row justify-content-center">
+            <div id="certificatesList">
+              <!-- Certificates will be loaded here -->
+            </div>
+            <!-- Pagination -->
+            <nav aria-label="Certificates pagination" class="mt-4">
+              <ul class="pagination justify-content-center" id="certificatesPagination">
+                <li class="page-item disabled">
+                  <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
+                </li>
+                <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item">
+                  <a class="page-link" href="#">Next</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
   
         <!-- Stats Tab -->
         <div class="tab-pane fade" id="stats" role="tabpanel">
