@@ -359,3 +359,35 @@
 .certificates-item img {
   border-radius: 20px;
 }
+
+/* Pagination Styling */
+.pagination {
+  margin-top: 20px;
+}
+
+.pagination .page-link {
+  background-color: var(--ezy-item-bg);
+  border-color: var(--bs-body-color);
+  color: var(--bs-body-color);
+  padding: 8px 16px;
+  margin: 0 4px;
+  border-radius: 6px;
+}
+
+.pagination .page-link:hover {
+  background-color: var(--ezy-item-icon-bg);
+  border-color: var(--bs-body-color);
+  color: var(--bs-body-color);
+}
+
+.pagination .page-item.active .page-link {
+  background-color: var(--ezy-item-icon-bg);
+  border-color: var(--bs-body-color);
+  color: var(--bs-body-color);
+}
+
+.pagination .page-item.disabled .page-link {
+  background-color: var(--ezy-item-bg);
+  border-color: var(--bs-body-color);
+  color: rgba(255, 255, 255, 0.5);
+}
