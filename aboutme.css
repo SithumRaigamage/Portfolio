@@ -327,3 +327,67 @@
   font-size: 16px;
   color: rgba(255, 255, 255, 0.8);
 }
+
+/* certifications */
+
+.certificates-heading {
+  font-weight: bold;
+  font-size: 25px;
+  line-height: 25px;
+  color: var(--bs-body-color);
+}
+
+.certificates-sub-heading {
+  font-size: 16px;
+  line-height: 22px;
+  color: var(--bs-body-color);
+}
+
+.certificates-item {
+  background-color: var(--ezy-item-bg);
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: var(--ezy-item-shadow);
+  transition: transform 0.25s ease-in-out;
+}
+
+.certificates-item:hover {
+  transform: translateY(-5px);
+}
+
+
+.certificates-item img {
+  border-radius: 20px;
+}
+
+/* Pagination Styling */
+.pagination {
+  margin-top: 20px;
+}
+
+.pagination .page-link {
+  background-color: var(--ezy-item-bg);
+  border-color: var(--bs-body-color);
+  color: var(--bs-body-color);
+  padding: 8px 16px;
+  margin: 0 4px;
+  border-radius: 6px;
+}
+
+.pagination .page-link:hover {
+  background-color: var(--ezy-item-icon-bg);
+  border-color: var(--bs-body-color);
+  color: var(--bs-body-color);
+}
+
+.pagination .page-item.active .page-link {
+  background-color: var(--ezy-item-icon-bg);
+  border-color: var(--bs-body-color);
+  color: var(--bs-body-color);
+}
+
+.pagination .page-item.disabled .page-link {
+  background-color: var(--ezy-item-bg);
+  border-color: var(--bs-body-color);
+  color: rgba(255, 255, 255, 0.5);
+}

@@ -46,7 +46,7 @@
 
 .projects-heading {
   font-weight: bold;
-  font-size: 25px;
+  font-size: 40px;
   line-height: 25px;
   color: var(--bs-body-color);
 }
@@ -96,4 +96,67 @@
 #noProjectsMessage {
   font-size: 20px;
   color: white;
+}
+
+
+
+/* Pagination styles */
+.pagination__list > li {
+  display: inline-block;
+}
+
+.pagination--split .pagination__list {
+  width: 100%;
+}
+.pagination--split .pagination__list > *:first-child {
+  margin-right: auto;
+}
+.pagination--split .pagination__list > *:last-child {
+  margin-left: auto;
+}
+
+.pagination__item {
+  display: inline-flex;
+  height: 100%;
+  align-items: center;
+  padding: 8px 12px;
+  white-space: nowrap;
+  line-height: 1;
+  border-radius: 12px;
+  text-decoration: none;
+  color: var(--bs-body-color);
+  will-change: transform;
+  transition: 0.2s;
+}
+
+.pagination__item:hover:not(.pagination__item--selected):not(.pagination__item--ellipsis) {
+  background-color: rgba(var(--ezy-theme-color-rgb), 0.1);
+}
+
+.pagination__item:active {
+  transform: translateY(2px);
+}
+
+.pagination__item--selected {
+  background-color: var(--ezy-theme-color);
+  color: #ffffff;
+  box-shadow: 0 2px 4px rgba(var(--ezy-theme-color-rgb), 0.2);
+}
+
+.pagination__item--disabled {
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+.pagination__jumper .form-control {
+  width: 3em;
+  margin-right: 8px;
+  background-color: var(--bs-body-bg);
+  color: var(--bs-body-color);
+}
+
+.pagination__jumper em {
+  flex-shrink: 0;
+  white-space: nowrap;
+  color: var(--bs-body-color);
 }
