@@ -84,7 +84,7 @@ export const projects: Project[] = [
     id: '7',
     title: 'Demon Slayer Website',
     description: 'React Native Mobile App for IEEE Computer Society Student Chapter of IIT',
-    category: 'mobile_app',
+    category: 'mobile',
     imageUrl: `${import.meta.env.BASE_URL}images/projects/1317168.jpeg`,
     projectLink: '#',
     techStack: [
