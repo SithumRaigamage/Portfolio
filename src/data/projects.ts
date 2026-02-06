@@ -6,7 +6,7 @@ export const projects: Project[] = [
     title: 'CeraFlaw',
     description: 'Cross-platform CeraFlaw Marketing Page',
     category: 'web_development',
-    imageUrl: '/images/projects/tile.jpeg',
+    imageUrl: `${import.meta.env.BASE_URL}images/projects/tile.jpeg`,
     projectLink: '#',
     techStack: [
       { name: 'HTML5', icon: 'https://cdn.worldvectorlogo.com/logos/html-1.svg' },
@@ -83,9 +83,9 @@ export const projects: Project[] = [
   {
     id: '7',
     title: 'Demon Slayer Website',
-    description: 'Demon Slayer Website',
-    category: 'web_development',
-    imageUrl: '/images/projects/1317168.jpeg',
+    description: 'React Native Mobile App for IEEE Computer Society Student Chapter of IIT',
+    category: 'mobile_app',
+    imageUrl: `${import.meta.env.BASE_URL}images/projects/1317168.jpeg`,
     projectLink: '#',
     techStack: [
       { name: 'HTML5', icon: 'https://cdn.worldvectorlogo.com/logos/html-1.svg' },

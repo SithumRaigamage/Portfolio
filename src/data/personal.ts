@@ -7,7 +7,7 @@ export const personalInfo: PersonalInfo = {
   email: 'sraig2002@gmail.com',
   github: 'https://github.com/SithumRaigamage',
   linkedin: 'https://www.linkedin.com/in/sithum-raigamage/',
-  profileImage: '/images/profile/DSC_4735.jpg',
+  profileImage: `${import.meta.env.BASE_URL}images/profile/DSC_4735.jpg`,
   bio: [
     "I'm a passionate Software Engineering student with a talent for problem-solving and a deep curiosity for exploring innovative technologies. With a strong foundation in frameworks like Angular, React, and Node.js, and proficiency in databases such as MySQL and MongoDB, I thrive in crafting seamless user experiences and scalable back-end solutions.",
     "My journey has been marked by hands-on experience in modern web development, CI/CD practices, and IoT solutions. I bring a collaborative spirit, a drive to excel, and an eagerness to contribute to impactful projects. Let's connect and build something exceptional together!",
@@ -35,7 +35,7 @@ export const experience: Experience[] = [
     title: 'Software Engineer Intern',
     company: 'Wavenet',
     period: '2024 - 2025 (Present)',
-    companyLogo: '/images/logos/wavenet-logo.jpeg',
+    companyLogo: `${import.meta.env.BASE_URL}images/logos/wavenet-logo.jpeg`,
     responsibilities: [
       'Developed full-stack web applications',
       'Collaborated with senior developers',

@@ -28,10 +28,18 @@ export const certificates: Certificate[] = [
   {
     id: '4',
     title: 'Git Essential Training',
-    description: 'Certified in Git version control system, covering repositories, branches, pull requests, and merging.',
+    description: 'Certified in Git version control system, covering branching, merging, conflict resolution, and remote repositories.',
     imageUrl: 'https://cdn.worldvectorlogo.com/logos/git-icon.svg',
-    platformLogo: 'https://cdn.worldvectorlogo.com/logos/linkedin-icon-2.svg',
-    platformName: 'LinkedIn',
+    platformLogo: `${import.meta.env.BASE_URL}images/logos/ieee_computer_society_student_chapter_of_iit_logo.jpeg`,
+    platformName: 'IEEE CS',
+  },
+  {
+    id: '5',
+    title: 'React.js Essential Training',
+    description: 'Certified in React.js, covering components, state management, props, hooks, and lifecycle methods.',
+    imageUrl: 'https://cdn.worldvectorlogo.com/logos/react-2.svg',
+    platformLogo: `${import.meta.env.BASE_URL}images/logos/informatics_institute_of_technology_logo.jpeg`,
+    platformName: 'IIT',
   },
   {
     id: '5',
